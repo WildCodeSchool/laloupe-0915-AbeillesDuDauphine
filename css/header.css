@@ -1,0 +1,70 @@
+/* Header CSS */
+
+/* Valeurs recurrentes :
+ - bleu clair #001a26
+ - bleu foncé #00131c
+ - jaune #F1C501
+ */
+
+
+/* Pour le full size - hauteur 120px */
+.fullwidth {
+    max-width: 2000px;
+}
+.top-bar {
+ 	height: 120px;
+ 	background-color: #001a26;
+ }
+
+
+/* Logo*/
+ .logo-area {
+ 	height: 120px;
+ 	width: 105px;
+ 	float: left;
+ }
+ .logo {
+ 	height: 120px;
+ 	padding-top: 14px;
+ }
+ .logo img {
+ 	width: 105px;
+ 	height: 90px;
+ }
+
+
+/* Title */
+ .title-area {
+ 	height: 120px;
+ }
+ .name {
+ 	height: 120px;
+ 	padding-top: 22px;
+ }
+
+ .name h1 a {
+ 	font-size: 35px;
+    color: white;
+    font-family: 'Lobster Two';
+    line-height: 35px;
+ 	text-align: center;
+ } 
+ .name h1 a small{
+    color: white;
+ } 
+
+
+/* Slide accueil */
+.headerphoto {
+	background-color: #00131c;
+	padding-bottom: 38px;
+}
+.headerphoto img {
+	width: 1920px;
+}
+
+/* NavBar */
+.top-menu {
+ 	height: 50px;
+ 	background-color: #00131c;
+ }
