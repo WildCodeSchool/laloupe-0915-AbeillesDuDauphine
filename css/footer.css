@@ -1,0 +1,57 @@
+/* Footer CSS */
+
+
+/* Valeurs recurrentes :
+ - bleu clair #001a26
+ - bleu foncé #00131c
+ - jaune #F1C501
+ */
+
+/* .mapper > #map-opener / #map 
+ .mapper = Contient tout les elements du mapper */
+
+.mapper {
+	min-height: 200px;
+	background-color: #001a26;
+	padding-bottom: 50px;
+}
+.mapper nav {
+	height: 100px;
+	background-color: #001a26;
+}
+
+/* #map-opener = Bouton pour activer l'ouverture de la map */
+#map-opener{
+	height: 50px;
+	width: 270px;
+	padding-top: 15px;
+	margin-left: 200px;
+	float: left;
+}
+#map-opener a{
+	font-family:"Lobster Two";
+	color: white;
+	font-size: 26px;
+	text-decoration: none;
+	line-height: 20px;
+}
+#map-opener img{
+	float:right;
+	margin-top: 15px;
+}
+
+/* #map = Contient la map */
+#map {
+	height: 300px;
+	margin-bottom: -250px;
+	opacity: 0.05;
+}
+
+
+#scroll-top {
+	float: right;
+	width: 70px;
+	height: 70px;
+	margin-right: 25px;
+	padding-top: 15px;
+}

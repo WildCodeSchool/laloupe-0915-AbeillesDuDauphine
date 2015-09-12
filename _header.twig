@@ -21,9 +21,12 @@
     <link rel="stylesheet" href="{{ paths.theme }}css/foundation.css">
     <link rel="stylesheet" href="{{ paths.theme }}css/app.css">
     <link rel="stylesheet" href="{{ paths.theme }}css/header.css">  
+    <link rel="stylesheet" href="{{ paths.theme }}css/footer.css">  
     {# Bolt comes with Magnific Popup, as it's used in the backend. We can use it here, or you can
       just swap it out for the image-viewing script of your choice. Or delete it altogether. #}
     <link rel="stylesheet" href="{{ paths.theme }}css/magnific-popup.css">
+    {# Lien vers le css du plugin map leaflet#}
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
 
 
     {#<!-- A variable from the theme's config: {{ theme.foo }} -->#}
@@ -38,10 +41,11 @@
 
 <div class="row fullwidth">
     <header>
+        <div id="top"></div>
           <nav class="top-bar" data-topbar>
             <ul class="logo-area">
                 <li class="logo">
-                    <a href="{{ paths.root }}"><img src="theme/projet-abeilles_du_dauphine/images/logo.gif" /></a>
+                    <a href="{{ paths.root }}"><img src="{{ paths.theme }}images/logo.gif" /></a>
                 </li>
             </ul>
 
@@ -67,7 +71,7 @@
             </section>
         </nav>
 
-        <nav class="top-menu">
+        <nav id="top-menu">
 
         </nav>
 

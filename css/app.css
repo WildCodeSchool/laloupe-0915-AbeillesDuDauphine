@@ -1,3 +1,8 @@
+/* Pour le full width */
+.fullwidth {
+    max-width: 2000px;
+}
+
 body {
     background-color: #F8F8F8;
 }

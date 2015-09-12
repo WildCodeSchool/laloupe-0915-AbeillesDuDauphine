@@ -8,9 +8,6 @@
 
 
 /* Pour le full size - hauteur 120px */
-.fullwidth {
-    max-width: 2000px;
-}
 .top-bar {
  	height: 120px;
  	background-color: #001a26;
@@ -64,7 +61,7 @@
 }
 
 /* NavBar */
-.top-menu {
+#top-menu {
  	height: 50px;
  	background-color: #00131c;
  }
