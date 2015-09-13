@@ -1,10 +1,6 @@
         /* Script de map */
         var map = L.map('map').setView([45.180, 5.759], 12);
         var marker = L.marker([45.163, 5.759]).addTo(map);
-        var popup = L.popup()
-            .setLatLng([45.172, 5.759])
-            .setContent("L'Abeille Dauphinoise")
-            .openOn(map);
 
         L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',

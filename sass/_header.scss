@@ -49,7 +49,7 @@
  }
 
 
-/* Slide accueil */
+/* Photo full size accueil */
 .headerphoto {
 	background-color: $dark-blue;
 	padding-bottom: 38px;
@@ -60,6 +60,12 @@
 .top-menu ul {
     margin-bottom: 0;
     list-style: none;
+}
+
+/* Slider */
+.slider {
+	height: 300px;
+	background-color: #1e1e1e;
 }
 
 /* NavBar */

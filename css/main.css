@@ -144,7 +144,7 @@ article p {
   background-color: #001a26;
 }
 
-/* Slide accueil */
+/* Photo full size accueil */
 /* line 53, ../sass/_header.scss */
 .headerphoto {
   background-color: #00131c;
@@ -162,8 +162,15 @@ article p {
   list-style: none;
 }
 
-/* NavBar */
+/* Slider */
 /* line 66, ../sass/_header.scss */
+.slider {
+  height: 300px;
+  background-color: #1e1e1e;
+}
+
+/* NavBar */
+/* line 72, ../sass/_header.scss */
 .top-menu {
   height: 50px;
   background-color: #00131c;
