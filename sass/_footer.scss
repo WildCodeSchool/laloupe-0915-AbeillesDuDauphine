@@ -4,33 +4,42 @@
  .mapper = Contient tout les elements du mapper */
 
 .mapper {
-	min-height: 200px;
-	background-color: $blue;
+	min-height: 50px;
+	background-color: $dark-blue;
 	padding-bottom: 50px;
+	text-align: center;
 }
 .mapper nav {
 	height: 100px;
-	background-color: $blue;
+	background-color: $dark-blue;
 }
 
 /* #map-opener = Bouton pour activer l'ouverture de la map */
 #map-opener{
-	height: 50px;
-	width: 270px;
 	padding-top: 15px;
-	margin-left: 200px;
-	float: left;
+	display: inline-block;
 }
 #map-opener a{
 	font-family:$font-title;
 	color: white;
-	font-size: 26px;
+	font-size: 24px;
 	text-decoration: none;
 	line-height: 20px;
 }
+@media screen and (max-width: 640px){
+	#map-opener a {
+		font-family:$font-title;
+		color: white;
+		font-size: 20px;
+		text-decoration: none;
+		line-height: 18px;
+	}
+}
 #map-opener img{
 	float:right;
-	margin-top: 15px;
+	margin-top: 25px;
+	width: 30px;
+	height: 30px;
 }
 
 /* #map = Contient la map */
@@ -43,8 +52,14 @@
 
 #scroll-top {
 	float: right;
-	width: 70px;
+	width: 50px;
+	height: 50px;
+	margin-right: 20px;
+	padding-top: 25px;
+}
+
+.footer-links {
 	height: 70px;
-	margin-right: 25px;
-	padding-top: 15px;
+	background-color: $blue;
+	margin-bottom: -16px;
 }

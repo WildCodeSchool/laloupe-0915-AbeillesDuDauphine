@@ -8,57 +8,74 @@
  .mapper = Contient tout les elements du mapper */
 /* line 6, ../sass/_footer.scss */
 .mapper {
-  min-height: 200px;
-  background-color: #001a26;
+  min-height: 50px;
+  background-color: #00131c;
   padding-bottom: 50px;
+  text-align: center;
 }
 
-/* line 11, ../sass/_footer.scss */
+/* line 12, ../sass/_footer.scss */
 .mapper nav {
   height: 100px;
-  background-color: #001a26;
+  background-color: #00131c;
 }
 
 /* #map-opener = Bouton pour activer l'ouverture de la map */
-/* line 17, ../sass/_footer.scss */
+/* line 18, ../sass/_footer.scss */
 #map-opener {
-  height: 50px;
-  width: 270px;
   padding-top: 15px;
-  margin-left: 200px;
-  float: left;
+  display: inline-block;
 }
 
-/* line 24, ../sass/_footer.scss */
+/* line 22, ../sass/_footer.scss */
 #map-opener a {
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
   color: white;
-  font-size: 26px;
+  font-size: 24px;
   text-decoration: none;
   line-height: 20px;
 }
 
-/* line 31, ../sass/_footer.scss */
+@media screen and (max-width: 640px) {
+  /* line 30, ../sass/_footer.scss */
+  #map-opener a {
+    font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 18px;
+  }
+}
+/* line 38, ../sass/_footer.scss */
 #map-opener img {
   float: right;
-  margin-top: 15px;
+  margin-top: 25px;
+  width: 30px;
+  height: 30px;
 }
 
 /* #map = Contient la map */
-/* line 37, ../sass/_footer.scss */
+/* line 46, ../sass/_footer.scss */
 #map {
   height: 300px;
   margin-bottom: -250px;
   opacity: 0.05;
 }
 
-/* line 44, ../sass/_footer.scss */
+/* line 53, ../sass/_footer.scss */
 #scroll-top {
   float: right;
-  width: 70px;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  padding-top: 25px;
+}
+
+/* line 61, ../sass/_footer.scss */
+.footer-links {
   height: 70px;
-  margin-right: 25px;
-  padding-top: 15px;
+  background-color: #001a26;
+  margin-bottom: -16px;
 }
 
 /* News CSS */
@@ -71,7 +88,7 @@ article h1 {
 article h3 {
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
   background-color: #00131c;
-  text-align: center;
+  padding-left: 10px;
 }
 
 /* line 11, ../sass/_news.scss */
@@ -124,53 +141,54 @@ article p {
   padding-top: 22px;
 }
 
-/* line 35, ../sass/_header.scss */
+/* line 34, ../sass/_header.scss */
 .name h1 a {
-  font-size: 35px;
+  font-size: 40px;
   color: white;
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
   line-height: 35px;
   text-align: center;
 }
 
-/* line 42, ../sass/_header.scss */
-.name h1 a small {
-  color: white;
+@media screen and (max-width: 640px) {
+  /* line 42, ../sass/_header.scss */
+  .name h1 a {
+    font-size: 28px;
+  }
 }
-
 /* Rechercher */
-/* line 47, ../sass/_header.scss */
+/* line 48, ../sass/_header.scss */
 .top-bar-section .has-form {
   background-color: #001a26;
 }
 
 /* Photo full size accueil */
-/* line 53, ../sass/_header.scss */
+/* line 54, ../sass/_header.scss */
 .headerphoto {
   background-color: #00131c;
   padding-bottom: 38px;
 }
 
-/* line 57, ../sass/_header.scss */
+/* line 58, ../sass/_header.scss */
 .headerphoto img {
   width: 1920px;
 }
 
-/* line 60, ../sass/_header.scss */
+/* line 61, ../sass/_header.scss */
 .top-menu ul {
   margin-bottom: 0;
   list-style: none;
 }
 
 /* Slider */
-/* line 66, ../sass/_header.scss */
+/* line 67, ../sass/_header.scss */
 .slider {
   height: 300px;
   background-color: #1e1e1e;
 }
 
 /* NavBar */
-/* line 72, ../sass/_header.scss */
+/* line 73, ../sass/_header.scss */
 .top-menu {
   height: 50px;
   background-color: #00131c;

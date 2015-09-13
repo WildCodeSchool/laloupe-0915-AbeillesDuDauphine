@@ -31,17 +31,18 @@
  	height: 120px;
  	padding-top: 22px;
  }
-
  .name h1 a {
- 	font-size: 35px;
+ 	font-size: 40px;
     color: white;
     font-family: $font-title;
     line-height: 35px;
  	text-align: center;
- } 
- .name h1 a small{
-    color: white;
- } 
+ }
+@media screen and (max-width: 640px){
+    .name h1 a {
+        font-size: 28px;
+    }
+ }
 
 /* Rechercher */
  .top-bar-section .has-form {
