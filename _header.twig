@@ -13,15 +13,14 @@
     </title>
 
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-    {# Ajout de la font pour le titre#}
+    {# Ajout des fonts#}
     <link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
     {# paths.theme is always a correct path to the current theme. Even if you rename the theme-folder,
        this will keep working. See the documentation on paths: http://docs.bolt.cm/internals#paths #}
     <link rel="stylesheet" href="{{ paths.theme }}css/foundation.css">
-    <link rel="stylesheet" href="{{ paths.theme }}css/app.css">
-    <link rel="stylesheet" href="{{ paths.theme }}css/header.css">  
-    <link rel="stylesheet" href="{{ paths.theme }}css/footer.css">  
+    <link rel="stylesheet" href="{{ paths.theme }}css/main.css">   
     {# Bolt comes with Magnific Popup, as it's used in the backend. We can use it here, or you can
       just swap it out for the image-viewing script of your choice. Or delete it altogether. #}
     <link rel="stylesheet" href="{{ paths.theme }}css/magnific-popup.css">
@@ -71,8 +70,7 @@
             </section>
         </nav>
 
-        <nav id="top-menu">
-
+        <nav class="top-menu" data-topbar>
         </nav>
 
 

@@ -1,23 +1,16 @@
 /* Footer CSS */
 
-
-/* Valeurs recurrentes :
- - bleu clair #001a26
- - bleu foncé #00131c
- - jaune #F1C501
- */
-
 /* .mapper > #map-opener / #map 
  .mapper = Contient tout les elements du mapper */
 
 .mapper {
 	min-height: 200px;
-	background-color: #001a26;
+	background-color: $blue;
 	padding-bottom: 50px;
 }
 .mapper nav {
 	height: 100px;
-	background-color: #001a26;
+	background-color: $blue;
 }
 
 /* #map-opener = Bouton pour activer l'ouverture de la map */
@@ -29,7 +22,7 @@
 	float: left;
 }
 #map-opener a{
-	font-family:"Lobster Two";
+	font-family:$font-title;
 	color: white;
 	font-size: 26px;
 	text-decoration: none;

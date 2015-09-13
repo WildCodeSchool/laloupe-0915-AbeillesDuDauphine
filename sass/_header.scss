@@ -1,16 +1,9 @@
 /* Header CSS */
 
-/* Valeurs recurrentes :
- - bleu clair #001a26
- - bleu foncé #00131c
- - jaune #F1C501
- */
-
-
 /* Pour le full size - hauteur 120px */
 .top-bar {
  	height: 120px;
- 	background-color: #001a26;
+ 	background-color: $blue;
  }
 
 
@@ -42,7 +35,7 @@
  .name h1 a {
  	font-size: 35px;
     color: white;
-    font-family: 'Lobster Two';
+    font-family: $font-title;
     line-height: 35px;
  	text-align: center;
  } 
@@ -50,18 +43,28 @@
     color: white;
  } 
 
+/* Rechercher */
+ .top-bar-section .has-form {
+ 	background-color: $blue;
+ }
+
 
 /* Slide accueil */
 .headerphoto {
-	background-color: #00131c;
+	background-color: $dark-blue;
 	padding-bottom: 38px;
 }
 .headerphoto img {
 	width: 1920px;
 }
+.top-menu ul {
+    margin-bottom: 0;
+    list-style: none;
+}
 
 /* NavBar */
-#top-menu {
+.top-menu {
  	height: 50px;
- 	background-color: #00131c;
+ 	background-color: $dark-blue;
  }
+

@@ -1,0 +1,16 @@
+/* main.scss */
+
+/* Définiation des typos*/
+$font-title: Lobster Two, Helvetica Neue,Helvetica,Helvetica,Arial,sans-serif;
+$font-p: Roboto, Open Sans, serif;
+
+/* Définition des couleurs*/
+$dark-blue: #00131c;
+$blue: #001a26;
+$yellow: #F1C501;
+
+/* Import des partials */
+@import 'footer';
+@import 'news';
+@import 'header';
+@import 'app';
