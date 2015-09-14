@@ -268,36 +268,37 @@ a:hover {
 p, ul, ol {
   margin: 0 0 1em 0;
   font-family: Roboto, Open Sans, serif;
+  color: #333333;
 }
 
-/* line 62, ../sass/_app.scss */
+/* line 63, ../sass/_app.scss */
 ul {
   margin-left: 17px;
 }
 
-/* line 66, ../sass/_app.scss */
+/* line 67, ../sass/_app.scss */
 ol {
   margin-left: 20px;
 }
 
-/* line 70, ../sass/_app.scss */
+/* line 71, ../sass/_app.scss */
 pre {
   padding: 4px 0;
   overflow-y: auto;
   overflow-x: scroll;
 }
 
-/* line 76, ../sass/_app.scss */
+/* line 77, ../sass/_app.scss */
 aside {
   margin-top: 20px;
 }
 
-/* line 80, ../sass/_app.scss */
+/* line 81, ../sass/_app.scss */
 aside p {
   font-size: 14px;
 }
 
-/* line 84, ../sass/_app.scss */
+/* line 85, ../sass/_app.scss */
 .container {
   padding-top: 20px;
   margin: 0 auto 20px;
@@ -305,29 +306,29 @@ aside p {
   background-color: #FFF;
 }
 
-/* line 91, ../sass/_app.scss */
+/* line 92, ../sass/_app.scss */
 .top-bar h1 {
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 
-/* line 95, ../sass/_app.scss */
+/* line 96, ../sass/_app.scss */
 .top-bar h5 {
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 
-/* line 99, ../sass/_app.scss */
+/* line 100, ../sass/_app.scss */
 .top-bar a:hover {
   text-decoration: none;
 }
 
-/* line 103, ../sass/_app.scss */
+/* line 104, ../sass/_app.scss */
 .headerphoto {
   position: relative;
   margin-bottom: 30px;
   text-align: right;
 }
 
-/* line 109, ../sass/_app.scss */
+/* line 110, ../sass/_app.scss */
 .headerphoto p {
   margin: 0;
   position: absolute;
@@ -342,7 +343,7 @@ aside p {
   font-weight: bold;
 }
 
-/* line 122, ../sass/_app.scss */
+/* line 123, ../sass/_app.scss */
 .headerphoto small {
   font-size: 28px;
   color: #DDD;
@@ -351,7 +352,7 @@ aside p {
   margin-right: 14px;
 }
 
-/* line 130, ../sass/_app.scss */
+/* line 131, ../sass/_app.scss */
 div.imageholder {
   background-color: #FFF;
   border: 1px solid #BBBBBB;
@@ -361,13 +362,13 @@ div.imageholder {
   margin: 0 0 5px 5px;
 }
 
-/* line 139, ../sass/_app.scss */
+/* line 140, ../sass/_app.scss */
 footer ul.dropdown {
   display: none;
 }
 
 /* "bolt_widget" is the default container for widgets in Bolt. */
-/* line 144, ../sass/_app.scss */
+/* line 145, ../sass/_app.scss */
 .bolt_widget {
   background: #f2f2f2;
   border: solid 1px #e6e6e6;
@@ -375,13 +376,13 @@ footer ul.dropdown {
   padding: 6px;
 }
 
-/* line 151, ../sass/_app.scss */
+/* line 152, ../sass/_app.scss */
 .pagination a:hover {
   text-decoration: none;
 }
 
 /* Styles for 'responsive video embeds' --------------------------------  */
-/* line 157, ../sass/_app.scss */
+/* line 158, ../sass/_app.scss */
 .responsive-video {
   padding-top: 25px;
   position: relative;
@@ -391,7 +392,7 @@ footer ul.dropdown {
   margin: 0 0 1em 0;
 }
 
-/* line 165, ../sass/_app.scss */
+/* line 166, ../sass/_app.scss */
 .responsive-video iframe {
   width: 100%;
   position: absolute;
@@ -403,17 +404,17 @@ footer ul.dropdown {
 
 /* Styles for 'max-width 479px' -----------------------------------------  */
 @media only screen and (max-width: 479px) {
-  /* line 177, ../sass/_app.scss */
+  /* line 178, ../sass/_app.scss */
   .headerphoto {
     margin-bottom: 0px;
   }
 
-  /* line 181, ../sass/_app.scss */
+  /* line 182, ../sass/_app.scss */
   .headerphoto span {
     display: none;
   }
 
-  /* line 184, ../sass/_app.scss */
+  /* line 185, ../sass/_app.scss */
   .headerphoto small {
     display: block;
     font-size: 22px;
@@ -421,37 +422,37 @@ footer ul.dropdown {
     line-height: 26px;
   }
 
-  /* line 191, ../sass/_app.scss */
+  /* line 192, ../sass/_app.scss */
   h1 {
     font-size: 32px;
   }
 
-  /* line 196, ../sass/_app.scss */
+  /* line 197, ../sass/_app.scss */
   h2 {
     font-size: 28px;
   }
 
-  /* line 201, ../sass/_app.scss */
+  /* line 202, ../sass/_app.scss */
   h3 {
     font-size: 24px;
   }
 
-  /* line 206, ../sass/_app.scss */
+  /* line 207, ../sass/_app.scss */
   h4 {
     font-size: 20px;
   }
 
-  /* line 210, ../sass/_app.scss */
+  /* line 211, ../sass/_app.scss */
   h5 {
     font-size: 18px;
   }
 
-  /* line 215, ../sass/_app.scss */
+  /* line 216, ../sass/_app.scss */
   h6 {
     font-size: 15px;
   }
 
-  /* line 219, ../sass/_app.scss */
+  /* line 220, ../sass/_app.scss */
   div.imageholder {
     float: none;
     margin: 0 -17px 10px -17px;
