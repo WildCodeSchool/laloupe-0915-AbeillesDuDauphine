@@ -1,7 +1,3 @@
-/* Pour le full width */
-.fullwidth {
-    max-width: 2000px;
-}
 body {
     background-color: #F8F8F8;
 }
@@ -13,36 +9,35 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockqu
 h1 {
     font-weight: normal;
     font-size: 40px;
-    font-family: $font-title;
+    font-family: 'Open Sans', serif;
 }
 
 h2 {
     font-weight: normal;
     font-size: 34px;
-    font-family: $font-title;
+    font-family: 'Open Sans', serif;
 }
 
 h3 {
     font-weight: normal;
     font-size: 28px;
-    font-family: $font-title;
+    font-family: 'Open Sans', serif;
 }
 
 h4 {
     font-size: 24px;
-    font-family: $font-title;
+    font-family: 'Open Sans', serif;
 }
 
 h5 {
     font-size: 20px;
-    font-family: $font-title;
+    font-family: 'Open Sans', serif;
 }
 
 h6 {
     font-size: 15px;
     color: #666;
     line-height: 1.5em;
-    font-family: $font-p;
 }
 
 a {
@@ -56,7 +51,6 @@ a:hover {
 
 p, ul, ol {
     margin: 0 0 1em 0;
-    font-family: $font-p;
 }
 
 ul {
@@ -89,11 +83,11 @@ aside p {
 }
 
 .top-bar h1 {
-    font-family: $font-title;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
 
 .top-bar h5 {
-    font-family: $font-title;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
 
 .top-bar a:hover {
@@ -115,14 +109,14 @@ aside p {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
     font-size: 48px;
     line-height: 48px;
-    font-family: $font-p;
+    font-family: 'Open Sans', serif;
     padding: 0 12px 12px 0;
     font-weight: bold;
 }
 .headerphoto small {
     font-size: 28px;
     color: #DDD;
-    font-family: $font-p;
+    font-family: 'Open Sans', serif;
     font-weight: normal;
     margin-right: 14px;
 }
@@ -209,6 +203,7 @@ footer ul.dropdown {
 
     h5 {
         font-size: 18px;
+        font-family: 'Open Sans', serif;
     }
 
 
