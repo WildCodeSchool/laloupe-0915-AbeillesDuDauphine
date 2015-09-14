@@ -16,14 +16,13 @@
 
 /* #map-opener = Bouton pour activer l'ouverture de la map */
 #map-opener{
-	padding-top: 15px;
+	padding-top: 16px;
 	display: inline-block;
 }
 #map-opener a{
 	font-family:$font-title;
 	color: white;
 	font-size: 24px;
-	text-decoration: none;
 	line-height: 20px;
 }
 @media screen and (max-width: 640px){
@@ -31,22 +30,24 @@
 		font-family:$font-title;
 		color: white;
 		font-size: 20px;
-		text-decoration: none;
 		line-height: 18px;
 	}
 }
 #map-opener img{
 	float:right;
-	margin-top: 25px;
-	width: 30px;
-	height: 30px;
+	margin-top: 15px;
+	width: 40px;
+	height: 40px;
 }
 
 /* #map = Contient la map */
 #map {
-	height: 300px;
-	margin-bottom: -250px;
-	opacity: 0.05;
+	height: 120px;
+	opacity: 0.15;
+}
+
+#map-close {
+	display: none;
 }
 
 
@@ -63,3 +64,4 @@
 	background-color: $blue;
 	margin-bottom: -16px;
 }
+
