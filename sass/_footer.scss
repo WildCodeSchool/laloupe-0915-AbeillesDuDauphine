@@ -6,7 +6,7 @@
 .mapper {
 	min-height: 50px;
 	background-color: $dark-blue;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 	text-align: center;
 }
 .mapper nav {
@@ -16,28 +16,30 @@
 
 /* #map-opener = Bouton pour activer l'ouverture de la map */
 #map-opener{
-	padding-top: 16px;
+	padding-top: 10px;
 	display: inline-block;
+	min-height: 30px;
 }
 #map-opener a{
 	font-family:$font-title;
 	color: white;
-	font-size: 24px;
-	line-height: 20px;
+	font-size: 22px;
+	line-height: 18px;
 }
 @media screen and (max-width: 640px){
 	#map-opener a {
 		font-family:$font-title;
 		color: white;
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 18px;
 	}
 }
 #map-opener img{
-	float:right;
-	margin-top: 15px;
-	width: 40px;
-	height: 40px;
+	width: 25px;
+	height: 25px;
+}
+#map-open {
+	display: inline-block;
 }
 
 /* #map = Contient la map */
