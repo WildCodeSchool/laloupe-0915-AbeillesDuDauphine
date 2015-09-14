@@ -1,0 +1,77 @@
+/* Header CSS */
+
+/* Pour le full size - hauteur 120px */
+.top-bar {
+ 	height: 120px;
+ 	background-color: $blue;
+ }
+
+
+/* Logo*/
+ .logo-area {
+ 	height: 120px;
+ 	width: 105px;
+ 	float: left;
+ }
+ .logo {
+ 	height: 120px;
+ 	padding-top: 14px;
+ }
+ .logo img {
+ 	width: 105px;
+ 	height: 90px;
+ }
+
+
+/* Title */
+ .title-area {
+ 	height: 120px;
+ }
+ .name {
+ 	height: 120px;
+ 	padding-top: 22px;
+ }
+ .name h1 a {
+ 	font-size: 40px;
+    color: white;
+    font-family: $font-title;
+    line-height: 35px;
+ 	text-align: center;
+ }
+@media screen and (max-width: 640px){
+    .name h1 a {
+        font-size: 28px;
+    }
+ }
+
+/* Rechercher */
+ .top-bar-section .has-form {
+ 	background-color: $blue;
+ }
+
+
+/* Photo full size accueil */
+.headerphoto {
+	background-color: $dark-blue;
+	padding-bottom: 38px;
+}
+.headerphoto img {
+	width: 1920px;
+}
+.top-menu ul {
+    margin-bottom: 0;
+    list-style: none;
+}
+
+/* Slider */
+.slider {
+	height: 300px;
+	background-color: #1e1e1e;
+}
+
+/* NavBar */
+.top-menu {
+ 	height: 50px;
+ 	background-color: $dark-blue;
+ }
+

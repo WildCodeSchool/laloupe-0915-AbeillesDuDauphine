@@ -1,0 +1,16 @@
+/* News CSS */
+
+article h1 {
+	font-family: $font-title;
+}
+article h3 {
+	font-family: $font-title;
+	background-color: $dark-blue;
+	padding-left: 10px;
+}
+article h3 a {
+	color:white;
+}
+article p {
+	font-family: $font-p;
+}

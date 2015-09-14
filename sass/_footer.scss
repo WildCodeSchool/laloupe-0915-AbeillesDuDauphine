@@ -1,0 +1,65 @@
+/* Footer CSS */
+
+/* .mapper > #map-opener / #map 
+ .mapper = Contient tout les elements du mapper */
+
+.mapper {
+	min-height: 50px;
+	background-color: $dark-blue;
+	padding-bottom: 50px;
+	text-align: center;
+}
+.mapper nav {
+	height: 100px;
+	background-color: $dark-blue;
+}
+
+/* #map-opener = Bouton pour activer l'ouverture de la map */
+#map-opener{
+	padding-top: 15px;
+	display: inline-block;
+}
+#map-opener a{
+	font-family:$font-title;
+	color: white;
+	font-size: 24px;
+	text-decoration: none;
+	line-height: 20px;
+}
+@media screen and (max-width: 640px){
+	#map-opener a {
+		font-family:$font-title;
+		color: white;
+		font-size: 20px;
+		text-decoration: none;
+		line-height: 18px;
+	}
+}
+#map-opener img{
+	float:right;
+	margin-top: 25px;
+	width: 30px;
+	height: 30px;
+}
+
+/* #map = Contient la map */
+#map {
+	height: 300px;
+	margin-bottom: -250px;
+	opacity: 0.05;
+}
+
+
+#scroll-top {
+	float: right;
+	width: 50px;
+	height: 50px;
+	margin-right: 20px;
+	padding-top: 25px;
+}
+
+.footer-links {
+	height: 70px;
+	background-color: $blue;
+	margin-bottom: -16px;
+}
