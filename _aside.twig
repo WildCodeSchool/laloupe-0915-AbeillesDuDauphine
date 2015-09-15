@@ -1,7 +1,5 @@
-<!-- Sidebar -->
 
 <aside class="large-3 columns">
-
 
         <h5><u>Actualités</u></h5>
         {% setcontent records = "pages/latest/5" %}
@@ -11,14 +9,6 @@
         {% endfor %}
           <p><a href="{{ paths.root }}pages"><br><i>Plus d'articles...</i></br></a></p>
         <ul>
-        <!--<ul>
-            {% for record in records %}
-                <li><a href="{{ record.link }}">{{ record.title }}</a></li>
-            {% else %}
-                <li>{{ __('contenttypes.generic.no-recent', {'%contenttype%': ct.slug}) }}</li>
-            {% endfor %}
-        </ul>
-        <p><a href="{{ paths.root }}{{ct.slug}}">{{ __('contenttypes.generic.overview',{'%contenttypes%': ct.slug}) }} &raquo;</a></p>-->
 
 </aside>
-<!-- End Sidebar -->
+
