@@ -136,30 +136,18 @@ article p {
 }
 
 /* Title */
-<<<<<<< HEAD
-/* line 26, ../sass/_header.scss */
-=======
 /* line 25, ../sass/_header.scss */
->>>>>>> 34a707d47c2997b980e00b430c7e085622fe22a0
 .title-area {
   height: 120px;
 }
 
-<<<<<<< HEAD
-/* line 29, ../sass/_header.scss */
-=======
 /* line 28, ../sass/_header.scss */
->>>>>>> 34a707d47c2997b980e00b430c7e085622fe22a0
 .name {
   height: 120px;
   padding-top: 22px;
 }
 
-<<<<<<< HEAD
-/* line 33, ../sass/_header.scss */
-=======
 /* line 32, ../sass/_header.scss */
->>>>>>> 34a707d47c2997b980e00b430c7e085622fe22a0
 .name h1 a {
   font-size: 40px;
   color: white;
@@ -169,68 +157,33 @@ article p {
 }
 
 @media screen and (max-width: 640px) {
-<<<<<<< HEAD
-  /* line 41, ../sass/_header.scss */
-=======
   /* line 40, ../sass/_header.scss */
->>>>>>> 34a707d47c2997b980e00b430c7e085622fe22a0
   .name h1 a {
     font-size: 28px;
   }
 }
-<<<<<<< HEAD
-/* Rechercher */
-/* line 47, ../sass/_header.scss */
-.top-bar-section .has-form {
-  background-color: #001a26;
-}
-
-/* Photo full size accueil */
-/* line 53, ../sass/_header.scss */
-=======
 /* Photo full size accueil */
 /* line 46, ../sass/_header.scss */
->>>>>>> 34a707d47c2997b980e00b430c7e085622fe22a0
 .headerphoto {
   background-color: #00131c;
   padding-bottom: 38px;
 }
 
-<<<<<<< HEAD
-/* line 57, ../sass/_header.scss */
-=======
 /* line 50, ../sass/_header.scss */
->>>>>>> 34a707d47c2997b980e00b430c7e085622fe22a0
 .headerphoto img {
   width: 1920px;
 }
 
-<<<<<<< HEAD
-/* line 60, ../sass/_header.scss */
-.top-menu ul {
-  margin-bottom: 0;
-  list-style: none;
-}
-
-/* Slider */
-/* line 66, ../sass/_header.scss */
-=======
 /* Slider */
 /* line 55, ../sass/_header.scss */
->>>>>>> 34a707d47c2997b980e00b430c7e085622fe22a0
 .slider {
   height: 300px;
   background-color: #1e1e1e;
 }
 
 /* NavBar */
-<<<<<<< HEAD
-/* line 72, ../sass/_header.scss */
-.top-menu {
-=======
 /* line 61, ../sass/_header.scss */
 .top-bar-menu {
->>>>>>> 34a707d47c2997b980e00b430c7e085622fe22a0
   height: 50px;
   background-color: #00131c;
 }
@@ -253,7 +206,7 @@ article p {
   font-size: 16px;
   line-height: 50px;
   padding: 0 15px;
-  border-radius: 5px;
+  border-radius: 15px / 30px;
 }
 
 /* line 80, ../sass/_header.scss */
