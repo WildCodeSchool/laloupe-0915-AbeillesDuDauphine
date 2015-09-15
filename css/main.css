@@ -194,35 +194,67 @@ article p {
 }
 
 /* line 72, ../sass/_header.scss */
+.top-bar-section li a:hover {
+  background: #ff8c00 !important;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 78, ../sass/_header.scss */
 .top-bar-section li.active:not(.has-form) a:not(.button) {
   background: #F1C501 none repeat scroll 0 0;
   color: #00131c;
   font-size: 16px;
   line-height: 50px;
   padding: 0 15px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
   border-radius: 5px;
 }
 
-/* line 80, ../sass/_header.scss */
+/* line 88, ../sass/_header.scss */
 .top-bar-section li:not(.has-form) a:not(.button) {
   background: #00131c none repeat scroll 0 0;
   line-height: 50px;
   padding: 0 15px;
-  color: #F1C501;
+  color: #fff;
   font-size: 16px;
 }
 
-/* line 87, ../sass/_header.scss */
-.has-dropdown ul li {
+/* line 95, ../sass/_header.scss */
+.top-menu-bar a:hover {
   background: #001a26;
 }
 
 /* Rechercher */
-/* line 90, ../sass/_header.scss */
+/* line 100, ../sass/_header.scss */
 .top-bar-section .has-form {
   background: #00131c none repeat scroll 0 0;
   height: 50px;
   padding: 0 15px;
+}
+
+/* line 105, ../sass/_header.scss */
+button.small {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #FF8C00;
+  height: 30px;
+  width: 60%;
+  margin-top: 10px;
+  font-weight: bold;
+  padding: 0.5rem 0.5rem 0.5rem !important;
+}
+
+/* line 116, ../sass/_header.scss */
+input[type="search"] {
+  height: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
 /* Pour le full width */
