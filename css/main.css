@@ -255,14 +255,14 @@ h5 p {
 
 
 
-ul
+aside ul
 {
   list-style-type: none;
   padding: 0;
   
 }  
 
-li
+aside li
 {
   margin: 1em 0;
 }
