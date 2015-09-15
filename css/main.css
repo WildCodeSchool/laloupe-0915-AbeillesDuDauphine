@@ -105,43 +105,43 @@ article p {
 /* Pour le full size - hauteur 120px */
 /* line 4, ../sass/_header.scss */
 .top-bar {
-  height: 120px;
+  height: 160px;
   background-color: #001a26;
 }
 
 /* Logo*/
-/* line 11, ../sass/_header.scss */
+/* line 10, ../sass/_header.scss */
 .logo-area {
   height: 120px;
   width: 105px;
   float: left;
 }
 
-/* line 16, ../sass/_header.scss */
+/* line 15, ../sass/_header.scss */
 .logo {
   height: 120px;
   padding-top: 14px;
 }
 
-/* line 20, ../sass/_header.scss */
+/* line 19, ../sass/_header.scss */
 .logo img {
   width: 105px;
   height: 90px;
 }
 
 /* Title */
-/* line 27, ../sass/_header.scss */
+/* line 25, ../sass/_header.scss */
 .title-area {
   height: 120px;
 }
 
-/* line 30, ../sass/_header.scss */
+/* line 28, ../sass/_header.scss */
 .name {
   height: 120px;
   padding-top: 22px;
 }
 
-/* line 34, ../sass/_header.scss */
+/* line 32, ../sass/_header.scss */
 .name h1 a {
   font-size: 40px;
   color: white;
@@ -151,47 +151,78 @@ article p {
 }
 
 @media screen and (max-width: 640px) {
-  /* line 42, ../sass/_header.scss */
+  /* line 40, ../sass/_header.scss */
   .name h1 a {
     font-size: 28px;
   }
 }
-/* Rechercher */
-/* line 48, ../sass/_header.scss */
-.top-bar-section .has-form {
-  background-color: #001a26;
-}
-
 /* Photo full size accueil */
-/* line 54, ../sass/_header.scss */
+/* line 46, ../sass/_header.scss */
 .headerphoto {
   background-color: #00131c;
   padding-bottom: 38px;
 }
 
-/* line 58, ../sass/_header.scss */
+/* line 50, ../sass/_header.scss */
 .headerphoto img {
   width: 1920px;
 }
 
-/* line 61, ../sass/_header.scss */
-.top-menu ul {
-  margin-bottom: 0;
-  list-style: none;
-}
-
 /* Slider */
-/* line 67, ../sass/_header.scss */
+/* line 55, ../sass/_header.scss */
 .slider {
   height: 300px;
   background-color: #1e1e1e;
 }
 
 /* NavBar */
-/* line 73, ../sass/_header.scss */
-.top-menu {
+/* line 61, ../sass/_header.scss */
+.top-bar-menu {
   height: 50px;
   background-color: #00131c;
+}
+
+/* line 65, ../sass/_header.scss */
+.top-bar-menu ul {
+  margin-bottom: 0;
+  list-style: none;
+}
+
+/* line 69, ../sass/_header.scss */
+.top-bar-menu ul li a {
+  text-decoration: none;
+}
+
+/* line 72, ../sass/_header.scss */
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+  background: #F1C501 none repeat scroll 0 0;
+  color: #00131c;
+  font-size: 16px;
+  line-height: 50px;
+  padding: 0 15px;
+  border-radius: 5px;
+}
+
+/* line 80, ../sass/_header.scss */
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background: #00131c none repeat scroll 0 0;
+  line-height: 50px;
+  padding: 0 15px;
+  color: #F1C501;
+  font-size: 16px;
+}
+
+/* line 87, ../sass/_header.scss */
+.has-dropdown ul li {
+  background: #001a26;
+}
+
+/* Rechercher */
+/* line 90, ../sass/_header.scss */
+.top-bar-section .has-form {
+  background: #00131c none repeat scroll 0 0;
+  height: 50px;
+  padding: 0 15px;
 }
 
 /* Pour le full width */
