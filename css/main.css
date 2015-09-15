@@ -315,6 +315,33 @@ h5 {
 h5 p {
   font-size: 30px;
 }
+<<<<<<< HEAD
+/* line 42, ../sass/_app.scss */
+
+
+
+
+
+
+aside ul
+{
+  list-style-type: none;
+  padding: 0;
+  
+}  
+
+aside li
+{
+  margin: 1em 0;
+}
+
+
+
+
+
+
+=======
+>>>>>>> 5032dec805cab6a4d6469b3696c3edbbe78e38ac
 
 /* line 42, ../sass/_app.scss */
 h6 {
