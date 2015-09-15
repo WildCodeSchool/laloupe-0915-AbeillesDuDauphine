@@ -36,6 +36,7 @@ h4 {
 h5 {
     font-size: 20px;
     font-family: $font-title;
+p{ font-size: 30px; }
 }
 
 h6 {
@@ -222,3 +223,16 @@ footer ul.dropdown {
     }
 
 }
+
+aside ul
+{
+  list-style-type: none;
+  padding: 0;
+  
+}  
+
+aside li
+{
+  margin: 1em 0;
+}
+
