@@ -1,77 +1,122 @@
 /* Header CSS */
 
-/* Pour le full size - hauteur 120px */
+/* hauteur 120px */
 .top-bar {
- 	height: 120px;
- 	background-color: $blue;
- }
-
+    height: 160px;
+    background-color: $blue;
+}
 
 /* Logo*/
- .logo-area {
- 	height: 120px;
- 	width: 105px;
- 	float: left;
- }
- .logo {
- 	height: 120px;
- 	padding-top: 14px;
- }
- .logo img {
- 	width: 105px;
- 	height: 90px;
- }
-
+.logo-area {
+    height: 120px;
+    width: 105px;
+    float: left;
+}
+.logo {
+    height: 120px;
+    padding-top: 14px;
+}
+.logo img {
+    width: 105px;
+    height: 90px;
+}
 
 /* Title */
- .title-area {
- 	height: 120px;
- }
- .name {
- 	height: 120px;
- 	padding-top: 22px;
- }
- .name h1 a {
- 	font-size: 40px;
+.title-area {
+    height: 120px;
+}
+.name {
+    height: 120px;
+    padding-top: 22px;
+}
+.name h1 a {
+    font-size: 40px;
     color: white;
     font-family: $font-title;
     line-height: 35px;
- 	text-align: center;
- }
+    text-align: center;
+}
 @media screen and (max-width: 640px){
     .name h1 a {
         font-size: 28px;
     }
  }
 
-/* Rechercher */
- .top-bar-section .has-form {
- 	background-color: $blue;
- }
-
-
 /* Photo full size accueil */
 .headerphoto {
-	background-color: $dark-blue;
-	padding-bottom: 38px;
+    background-color: $dark-blue;
+    padding-bottom: 38px;
 }
 .headerphoto img {
-	width: 1920px;
-}
-.top-menu ul {
-    margin-bottom: 0;
-    list-style: none;
+    width: 1920px;
 }
 
 /* Slider */
 .slider {
-	height: 300px;
-	background-color: #1e1e1e;
+    height: 300px;
+    background-color: #1e1e1e;
 }
 
 /* NavBar */
-.top-menu {
- 	height: 50px;
- 	background-color: $dark-blue;
- }
+.top-bar-menu {
+    height: 50px;
+    background-color: $dark-blue;
+}
+.top-bar-menu ul {
+    margin-bottom: 0;
+    list-style: none;
+}
+.top-bar-menu ul li a {
+    text-decoration: none;
+}
+.top-bar-section li a:hover {
+    background: #ff8c00 !important;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+    background: $yellow none repeat scroll 0 0;
+    color: $dark-blue;
+    font-size: 16px;
+    line-height: 50px;
+    padding: 0 15px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.top-bar-section li:not(.has-form) a:not(.button) {
+    background: $dark-blue none repeat scroll 0 0;
+    line-height: 50px;
+    padding: 0 15px;
+    color: #fff;
+    font-size: 16px;
+}
+.top-menu-bar a:hover {
+    background: $blue;
+}
 
+/* Rechercher */
+.top-bar-section .has-form {
+    background: $dark-blue none repeat scroll 0 0;
+    height: 50px;
+    padding: 0 15px;
+}
+button.small {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: #FF8C00;
+    height: 30px;
+    width: 60%;
+    margin-top: 10px;
+    font-weight: bold;
+    padding: 0.5rem 0.5rem 0.5rem !important;
+}
+input[type="search"] {
+    height: 30px;
+   -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 10px
+}
