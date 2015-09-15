@@ -228,14 +228,14 @@ article p {
 }
 
 /* Rechercher */
-/* line 100, ../sass/_header.scss */
+/* line 99, ../sass/_header.scss */
 .top-bar-section .has-form {
   background: #00131c none repeat scroll 0 0;
   height: 50px;
   padding: 0 15px;
 }
 
-/* line 105, ../sass/_header.scss */
+/* line 104, ../sass/_header.scss */
 button.small {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -248,7 +248,7 @@ button.small {
   padding: 0.5rem 0.5rem 0.5rem !important;
 }
 
-/* line 116, ../sass/_header.scss */
+/* line 115, ../sass/_header.scss */
 input[type="search"] {
   height: 30px;
   -webkit-border-radius: 5px;
