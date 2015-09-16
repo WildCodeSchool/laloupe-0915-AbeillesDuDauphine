@@ -1,0 +1,19 @@
+.accordion {  
+   dt, dd {
+      padding: 10px;
+      border-bottom: 0; 
+      a {
+        display: block;
+        color: black;
+        font-weight: bold;
+      }
+   }
+  dd {
+     border-top: 0; 
+     font-size: 12px;
+     &:last-of-type {
+       position: relative;
+       top: -1px;
+     }
+  }
+}

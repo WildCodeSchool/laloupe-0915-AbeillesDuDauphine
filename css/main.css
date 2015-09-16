@@ -315,33 +315,6 @@ h5 {
 h5 p {
   font-size: 30px;
 }
-<<<<<<< HEAD
-/* line 42, ../sass/_app.scss */
-
-
-
-
-
-
-aside ul
-{
-  list-style-type: none;
-  padding: 0;
-  
-}  
-
-aside li
-{
-  margin: 1em 0;
-}
-
-
-
-
-
-
-=======
->>>>>>> 5032dec805cab6a4d6469b3696c3edbbe78e38ac
 
 /* line 42, ../sass/_app.scss */
 h6 {
@@ -564,4 +537,26 @@ aside ul {
 /* line 234, ../sass/_app.scss */
 aside li {
   margin: 1em 0;
+}
+
+/* line 2, ../sass/_accordeon.scss */
+.accordion dt, .accordion dd {
+  padding: 10px;
+  border-bottom: 0;
+}
+/* line 5, ../sass/_accordeon.scss */
+.accordion dt a, .accordion dd a {
+  display: block;
+  color: black;
+  font-weight: bold;
+}
+/* line 11, ../sass/_accordeon.scss */
+.accordion dd {
+  border-top: 0;
+  font-size: 12px;
+}
+/* line 14, ../sass/_accordeon.scss */
+.accordion dd:last-of-type {
+  position: relative;
+  top: -1px;
 }

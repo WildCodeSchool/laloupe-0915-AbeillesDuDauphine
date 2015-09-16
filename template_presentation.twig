@@ -1,0 +1,98 @@
+{% include '_header.twig' %}
+
+<!-- Main Page Content and Sidebar -->
+    {# include the sidebar. The include tag can be used to break up your templates in logical parts,
+       and re-use them across different templates/pages. #}
+    {% include '_aside.twig' %}
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+      <main>
+          {# Titre de la page #}
+
+          <h1>{{ record.titre }}</h1>
+
+
+
+          {# Ici les blocs #}
+
+          <h2>{{ record.titre_1 }}</h2>
+          <p>{{ record.corps_1 }}</p>
+          {{ record.image_1 }}
+
+          <h2>{{ record.titre_2 }}</h2>
+          <p>{{ record.corps_2 }}</p>
+          {{ record.image_2 }}
+
+          <h2>{{ record.titre_3 }}</h2>
+          <p>{{ record.corps_3 }}</p>
+          {{ record.image_3 }}
+
+          <h2>{{ record.titre_4 }}</h2>
+          <p>{{ record.corps_4 }}</p>
+          {{ record.image_4 }}
+
+          <h2>{{ record.titre_5 }}</h2>
+          <p>{{ record.corps_5 }}</p>
+          {{ record.image_5 }}
+        
+
+
+
+        <dl class='accordion'>
+
+          <dt><a href="">{{ record.a_titre_1 }}</a></dt>
+          <dd>{{ record.a_corps_1 }}</dd>
+          {{ record.a_image_1 }}
+
+          <dt><a href="">{{ record.a_titre_2 }}</a></dt>
+          <dd>{{ record.a_corps_2 }}</dd>
+          {{ record.a_image_2 }}
+
+          <dt>{{ record.a_titre_3 }}</dt>
+          <dd>{{ record.a_corps_3 }}</dd>
+          {{ record.a_image_3 }}
+
+          <dt><a href="">{{ record.a_titre_4 }}</a></dt>
+          <dd>{{ record.a_corps_4 }}</dd>
+          {{ record.a_image_4 }}
+
+          <dt>{{ record.a_titre_5 }}</dt>
+          <dd>{{ record.a_corps_5 }}</dd>
+          {{ record.a_image_5 }}
+
+          <dt>{{ record.a_titre_6 }}</dt>
+          <dd>{{ record.a_corps_6 }}</dd>
+          {{ record.a_image_6 }}
+
+          <dt>{{ record.a_titre_7 }}</dt>
+          <dd>{{ record.a_corps_7 }}</dd>
+          {{ record.a_image_7 }}
+
+          <dt>{{ record.a_titre_8 }}</dt>
+          <dd>{{ record.a_corps_8 }}</dd>
+          {{ record.a_image_8 }}
+
+          <dt>{{ record.a_titre_9 }}</dt>
+          <dd>{{ record.a_corps_9 }}</dd>
+          {{ record.a_image_9 }}
+
+          <dt>{{ record.a_titre_10 }}</dt>
+          <dd>{{ record.a_corps_10 }}</dd>
+          {{ record.a_image_10 }}
+
+        </dl>
+
+
+
+
+      </main>
+    </div>
+
+    <!-- End Main Content -->
+
+<!-- End Main Content and Sidebar -->
+
+
+
+{% include '_footer.twig' %}
