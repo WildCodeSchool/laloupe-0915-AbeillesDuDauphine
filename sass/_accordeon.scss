@@ -1,19 +1,54 @@
-.accordion {  
-   dt, dd {
-      padding: 10px;
-      border-bottom: 0; 
-      a {
-        display: block;
-        color: black;
-        font-weight: bold;
-      }
-   }
-  dd {
-     border-top: 0; 
-     font-size: 12px;
-     &:last-of-type {
-       position: relative;
-       top: -1px;
-     }
-  }
+.ac-container{
+  width: 100%;
+  text-align: left;
+}
+.ac-container label{
+  font-family: $font-title;
+  padding:0px 15px 15px 15px;
+  padding-top: 0px;
+  position: relative;
+  z-index: 20;
+  display: block;
+  height: 30px;
+  min-width: 200px;
+  cursor: pointer;
+  color: #FFFFFF;
+  line-height: 43px;
+  font-size: 22px;
+  background: $dark-blue;
+}
+.ac-container label:hover{
+  background: $blue;
+}
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover{
+  background: $blue;
+  color: #FFFFFF;
+}
+.ac-container label:hover:after,
+.ac-container input:checked + label:hover:after{
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 13px;
+  top: 7px;
+}
+.ac-container input{
+  display: none;
+}
+.ac-container article{
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: -1px;
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  z-index: 10;
+}
+.ac-container article p{
+  line-height: 23px;
+  font-size: 14px;
+}
+.ac-container input:checked ~ article.ac-small{
+  height: auto;
 }

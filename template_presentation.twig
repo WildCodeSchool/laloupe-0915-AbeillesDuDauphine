@@ -12,7 +12,7 @@
 
           <h1>{{ record.titre }}</h1>
 
-
+          <section class="blocs">
 
           {# Ici les blocs #}
 
@@ -36,56 +36,82 @@
           <p>{{ record.corps_5 }}</p>
           {{ record.image_5 }}
         
+          </section>
 
 
-
-        <dl class='accordion'>
-
-          <dt><a href="">{{ record.a_titre_1 }}</a></dt>
-          <dd>{{ record.a_corps_1 }}</dd>
-          {{ record.a_image_1 }}
-
-          <dt><a href="">{{ record.a_titre_2 }}</a></dt>
-          <dd>{{ record.a_corps_2 }}</dd>
-          {{ record.a_image_2 }}
-
-          <dt>{{ record.a_titre_3 }}</dt>
-          <dd>{{ record.a_corps_3 }}</dd>
-          {{ record.a_image_3 }}
-
-          <dt><a href="">{{ record.a_titre_4 }}</a></dt>
-          <dd>{{ record.a_corps_4 }}</dd>
-          {{ record.a_image_4 }}
-
-          <dt>{{ record.a_titre_5 }}</dt>
-          <dd>{{ record.a_corps_5 }}</dd>
-          {{ record.a_image_5 }}
-
-          <dt>{{ record.a_titre_6 }}</dt>
-          <dd>{{ record.a_corps_6 }}</dd>
-          {{ record.a_image_6 }}
-
-          <dt>{{ record.a_titre_7 }}</dt>
-          <dd>{{ record.a_corps_7 }}</dd>
-          {{ record.a_image_7 }}
-
-          <dt>{{ record.a_titre_8 }}</dt>
-          <dd>{{ record.a_corps_8 }}</dd>
-          {{ record.a_image_8 }}
-
-          <dt>{{ record.a_titre_9 }}</dt>
-          <dd>{{ record.a_corps_9 }}</dd>
-          {{ record.a_image_9 }}
-
-          <dt>{{ record.a_titre_10 }}</dt>
-          <dd>{{ record.a_corps_10 }}</dd>
-          {{ record.a_image_10 }}
-
-        </dl>
-
-
-
-
+          <section class="ac-container">
+            <div>
+              <input id="ac-1" name="accordion-1" type="checkbox" />
+              <label for="ac-1">{{ record.a_titre_1 }}</label>
+              <article class="ac-small">
+                <p>{{ record.a_corps_1 }}</p>
+              </article>
+            </div>
+            <div>
+              <input id="ac-2" name="accordion-1" type="checkbox" />
+              <label for="ac-2">{{ record.a_titre_2 }}</label>
+              <article class="ac-small">
+                <p>{{ record.a_corp_2 }}</p>
+              </article>
+            </div>
+            <div>
+              <input id="ac-3" name="accordion-1" type="checkbox" />
+              <label for="ac-3">{{ record.a_titre_3 }}</label>
+              <article class="ac-small">
+                <p>{{ record.a_corps_3 }}</p>
+              </article>
+            </div>
+            <div>
+              <input id="ac-4" name="accordion-1" type="checkbox" />
+              <label for="ac-4">{{ record.a_titre_4 }}</label>
+              <article class="ac-small">
+                <p>{{ record.a_corps_4 }}</p>
+              </article>
+            </div>
+            <div>
+              <input id="ac-5" name="accordion-1" type="checkbox" />
+              <label for="ac-5">{{ record.a_titre_5 }}</label>
+              <article class="ac-small">
+                <p>{{ record.a_corps_5 }}</p>
+              </article>
+            </div>
+            <div>
+              <input id="ac-6" name="accordion-1" type="checkbox" />
+              <label for="ac-6">{{ record.a_titre_1 }}</label>
+              <article class="ac-small">
+                <p>{{ record.a_corps_6 }}</p>
+              </article>
+            </div>
+            <div>
+              <input id="ac-7" name="accordion-1" type="checkbox" />
+              <label for="ac-7">{{ record.a_titre_7 }}</label>
+              <article class="ac-small">
+                <p>{{ record.a_corps_7 }}</p>
+              </article>
+            </div>
+            <div>
+              <input id="ac-8" name="accordion-1" type="checkbox" />
+              <label for="ac-8">{{ record.a_titre_8 }}</label>
+              <article class="ac-small">
+                <p>{{ record.a_corps_8 }}</p>
+              </article>
+            </div>
+            <div>
+              <input id="ac-9" name="accordion-1" type="checkbox" />
+              <label for="ac-9">{{ record.a_titre_9 }}</label>
+              <article class="ac-small">
+                <p>{{ record.a_corps_9 }}</p>
+              </article>
+            </div>
+            <div>
+              <input id="ac-10" name="accordion-1" type="checkbox" />
+              <label for="ac-10">{{ record.a_titre_10 }}</label>
+              <article class="ac-small">
+                <p>{{ record.a_corps_10 }}</p>
+              </article>
+            </div>
+           
+          </section>
       </main>
     </div>
 

@@ -539,24 +539,74 @@ aside li {
   margin: 1em 0;
 }
 
-/* line 2, ../sass/_accordeon.scss */
-.accordion dt, .accordion dd {
-  padding: 10px;
-  border-bottom: 0;
+/* line 1, ../sass/_accordeon.scss */
+.ac-container {
+  width: 100%;
+  text-align: left;
 }
+
 /* line 5, ../sass/_accordeon.scss */
-.accordion dt a, .accordion dd a {
-  display: block;
-  color: black;
-  font-weight: bold;
-}
-/* line 11, ../sass/_accordeon.scss */
-.accordion dd {
-  border-top: 0;
-  font-size: 12px;
-}
-/* line 14, ../sass/_accordeon.scss */
-.accordion dd:last-of-type {
+.ac-container label {
+  font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
+  padding: 0px 15px 15px 15px;
+  padding-top: 0px;
   position: relative;
-  top: -1px;
+  z-index: 20;
+  display: block;
+  height: 30px;
+  min-width: 200px;
+  cursor: pointer;
+  color: #FFFFFF;
+  line-height: 43px;
+  font-size: 22px;
+  background: #00131c;
+}
+
+/* line 20, ../sass/_accordeon.scss */
+.ac-container label:hover {
+  background: #001a26;
+}
+
+/* line 23, ../sass/_accordeon.scss */
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover {
+  background: #001a26;
+  color: #FFFFFF;
+}
+
+/* line 28, ../sass/_accordeon.scss */
+.ac-container label:hover:after,
+.ac-container input:checked + label:hover:after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 13px;
+  top: 7px;
+}
+
+/* line 37, ../sass/_accordeon.scss */
+.ac-container input {
+  display: none;
+}
+
+/* line 40, ../sass/_accordeon.scss */
+.ac-container article {
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: -1px;
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  z-index: 10;
+}
+
+/* line 48, ../sass/_accordeon.scss */
+.ac-container article p {
+  line-height: 23px;
+  font-size: 14px;
+}
+
+/* line 52, ../sass/_accordeon.scss */
+.ac-container input:checked ~ article.ac-small {
+  height: auto;
 }
