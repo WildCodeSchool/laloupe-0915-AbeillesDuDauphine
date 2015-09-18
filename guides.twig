@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {# make sure we always display a proper title: The record's title if there is one, appended with the
         sitename. If there is no title, we append the sitename with the payoff, if there is one. #}
-    <title>
-        {% if record.title is defined %}{{ record.title|striptags }} | {% endif %}
-        {{ app.config.get('general/sitename') }}
-        {% if record.title is not defined and app.config.get('general/payoff') %} | {{ app.config.get('general/payoff') }}{% endif %}
-    </title>
+    <title> Guide de l'apiculteur </title>
 
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
     {# Ajout des fonts#}
@@ -103,7 +99,7 @@
                 </div>
                 <!-- Header bar -->
                 {# Affiche l'image full page si c'est l'accueil, sinon affiche le slider#}
-                {% if record.slug == 'descriptif-syndicat' %}
+                {% if record.slug == 'bienvenue-sur-l-abeille-dauphinoise' %}
                     <div class="headerphoto">
                         {# You can either hardcode the filename for the header, or take a value from the current
                         content in 'record', or - as we do in this example - take a random one from the list
@@ -119,3 +115,50 @@
         </div>
         <div class="row">
             <div class="container large-12 columns">
+
+
+<!-- Main Page Content and Sidebar -->
+    {# include the sidebar. The include tag can be used to break up your templates in logical parts,
+       and re-use them across different templates/pages. #}
+    {% include '_aside.twig' %}
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+      <main>
+        
+      	<h1>Guide de l'apiculteur</h1><br/><br/>
+
+      	{% setcontent guides = 'guide' orderby 'sous_partie' %}
+
+      	<nav>
+      		<ul style="list-style-type:none">
+				{% for guide in guides %}
+					<li>
+					<a href="#{{ guide.sous_partie }}">{{ guide.sous_partie }} {{ guide.titre }} </a>
+					</li>
+				{% endfor %}
+
+			</ul>
+		</nav>
+
+		{% for guide in guides %}
+		<div id="{{ guide.sous_partie }}"></div>
+		<br/><br/>
+	    <h3>{{ guide.sous_partie }} {{ guide.titre }} <br/></h3>
+	    <p>{{ guide.texte }}<p>
+
+
+
+	    	JAIAJAOAOIAJL
+	    {% endfor %}
+
+      </main>
+    </div>
+
+    <!-- End Main Content -->
+
+<!-- End Main Content and Sidebar -->
+
+
+
+{% include '_footer.twig' %}
