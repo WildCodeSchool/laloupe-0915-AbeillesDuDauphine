@@ -134,11 +134,11 @@
 				{% for guide in guides %}
                     {% if guide.sous_partie|length == 1 %}
     					<li class="guide_section">
-    					<a href="#{{ guide.sous_partie }}">{{ guide.sous_partie }} {{ guide.titre }} </a>
+    					<a href="#{{ guide.sous_partie }}">{{ guide.sous_partie }}  {{ guide.titre }} </a>
     					</li>
                     {% else %}
                         <li class="guide_sous_section">
-                        <a href="#{{ guide.sous_partie }}">{{ guide.sous_partie }} {{ guide.titre }} </a>
+                        <a href="#{{ guide.sous_partie }}">{{ guide.sous_partie }}  {{ guide.titre }} </a>
                         </li>
                     {% endif %}
 				{% endfor %}

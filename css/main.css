@@ -314,9 +314,10 @@ h5 {
 /* line 39, ../sass/_app.scss */
 h5 p {
   font-size: 30px;
+  color: #313131;
 }
 
-/* line 42, ../sass/_app.scss */
+/* line 43, ../sass/_app.scss */
 h6 {
   font-size: 15px;
   color: #666;
@@ -325,50 +326,55 @@ h6 {
 }
 
 /* line 49, ../sass/_app.scss */
+p {
+  color: #313131;
+}
+
+/* line 53, ../sass/_app.scss */
 a {
   color: #284F76;
 }
 
-/* line 53, ../sass/_app.scss */
+/* line 57, ../sass/_app.scss */
 a:hover {
   color: #4D9C9A;
   text-decoration: underline;
 }
 
-/* line 58, ../sass/_app.scss */
+/* line 62, ../sass/_app.scss */
 p, ul, ol {
   margin: 0 0 1em 0;
   font-family: Roboto, Open Sans, serif;
 }
 
-/* line 63, ../sass/_app.scss */
+/* line 67, ../sass/_app.scss */
 ul {
   margin-left: 17px;
 }
 
-/* line 67, ../sass/_app.scss */
+/* line 71, ../sass/_app.scss */
 ol {
   margin-left: 20px;
 }
 
-/* line 71, ../sass/_app.scss */
+/* line 75, ../sass/_app.scss */
 pre {
   padding: 4px 0;
   overflow-y: auto;
   overflow-x: scroll;
 }
 
-/* line 77, ../sass/_app.scss */
+/* line 81, ../sass/_app.scss */
 aside {
   margin-top: 20px;
 }
 
-/* line 81, ../sass/_app.scss */
+/* line 85, ../sass/_app.scss */
 aside p {
   font-size: 14px;
 }
 
-/* line 85, ../sass/_app.scss */
+/* line 89, ../sass/_app.scss */
 .container {
   padding-top: 20px;
   margin: 0 auto 20px;
@@ -376,29 +382,29 @@ aside p {
   background-color: #FFF;
 }
 
-/* line 92, ../sass/_app.scss */
+/* line 96, ../sass/_app.scss */
 .top-bar h1 {
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 
-/* line 96, ../sass/_app.scss */
+/* line 100, ../sass/_app.scss */
 .top-bar h5 {
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 
-/* line 100, ../sass/_app.scss */
+/* line 104, ../sass/_app.scss */
 .top-bar a:hover {
   text-decoration: none;
 }
 
-/* line 104, ../sass/_app.scss */
+/* line 108, ../sass/_app.scss */
 .headerphoto {
   position: relative;
   margin-bottom: 30px;
   text-align: right;
 }
 
-/* line 110, ../sass/_app.scss */
+/* line 114, ../sass/_app.scss */
 .headerphoto p {
   margin: 0;
   position: absolute;
@@ -413,7 +419,7 @@ aside p {
   font-weight: bold;
 }
 
-/* line 123, ../sass/_app.scss */
+/* line 127, ../sass/_app.scss */
 .headerphoto small {
   font-size: 28px;
   color: #DDD;
@@ -422,7 +428,7 @@ aside p {
   margin-right: 14px;
 }
 
-/* line 131, ../sass/_app.scss */
+/* line 135, ../sass/_app.scss */
 div.imageholder {
   background-color: #FFF;
   border: 1px solid #BBBBBB;
@@ -432,13 +438,13 @@ div.imageholder {
   margin: 0 0 5px 5px;
 }
 
-/* line 140, ../sass/_app.scss */
+/* line 144, ../sass/_app.scss */
 footer ul.dropdown {
   display: none;
 }
 
 /* "bolt_widget" is the default container for widgets in Bolt. */
-/* line 145, ../sass/_app.scss */
+/* line 149, ../sass/_app.scss */
 .bolt_widget {
   background: #f2f2f2;
   border: solid 1px #e6e6e6;
@@ -446,13 +452,13 @@ footer ul.dropdown {
   padding: 6px;
 }
 
-/* line 152, ../sass/_app.scss */
+/* line 156, ../sass/_app.scss */
 .pagination a:hover {
   text-decoration: none;
 }
 
 /* Styles for 'responsive video embeds' --------------------------------  */
-/* line 158, ../sass/_app.scss */
+/* line 162, ../sass/_app.scss */
 .responsive-video {
   padding-top: 25px;
   position: relative;
@@ -462,7 +468,7 @@ footer ul.dropdown {
   margin: 0 0 1em 0;
 }
 
-/* line 166, ../sass/_app.scss */
+/* line 170, ../sass/_app.scss */
 .responsive-video iframe {
   width: 100%;
   position: absolute;
@@ -474,17 +480,17 @@ footer ul.dropdown {
 
 /* Styles for 'max-width 479px' -----------------------------------------  */
 @media only screen and (max-width: 479px) {
-  /* line 178, ../sass/_app.scss */
+  /* line 182, ../sass/_app.scss */
   .headerphoto {
     margin-bottom: 0px;
   }
 
-  /* line 182, ../sass/_app.scss */
+  /* line 186, ../sass/_app.scss */
   .headerphoto span {
     display: none;
   }
 
-  /* line 185, ../sass/_app.scss */
+  /* line 189, ../sass/_app.scss */
   .headerphoto small {
     display: block;
     font-size: 22px;
@@ -492,49 +498,49 @@ footer ul.dropdown {
     line-height: 26px;
   }
 
-  /* line 192, ../sass/_app.scss */
+  /* line 196, ../sass/_app.scss */
   h1 {
     font-size: 32px;
   }
 
-  /* line 197, ../sass/_app.scss */
+  /* line 201, ../sass/_app.scss */
   h2 {
     font-size: 28px;
   }
 
-  /* line 202, ../sass/_app.scss */
+  /* line 206, ../sass/_app.scss */
   h3 {
     font-size: 24px;
   }
 
-  /* line 207, ../sass/_app.scss */
+  /* line 211, ../sass/_app.scss */
   h4 {
     font-size: 20px;
   }
 
-  /* line 211, ../sass/_app.scss */
+  /* line 215, ../sass/_app.scss */
   h5 {
     font-size: 18px;
   }
 
-  /* line 216, ../sass/_app.scss */
+  /* line 220, ../sass/_app.scss */
   h6 {
     font-size: 15px;
   }
 
-  /* line 220, ../sass/_app.scss */
+  /* line 224, ../sass/_app.scss */
   div.imageholder {
     float: none;
     margin: 0 -17px 10px -17px;
   }
 }
-/* line 227, ../sass/_app.scss */
+/* line 231, ../sass/_app.scss */
 aside ul {
   list-style-type: none;
   padding: 0;
 }
 
-/* line 234, ../sass/_app.scss */
+/* line 238, ../sass/_app.scss */
 aside li {
   margin: 1em 0;
 }
@@ -620,15 +626,17 @@ aside li {
 .guide_content h3 {
   background-color: #001a26;
   color: white;
+  padding-left: 10px;
 }
 
-/* line 8, ../sass/_guide.scss */
+/* line 9, ../sass/_guide.scss */
 .guide_content h2 {
   background-color: #001a26;
   color: white;
+  padding-left: 10px;
 }
 
-/* line 12, ../sass/_guide.scss */
+/* line 14, ../sass/_guide.scss */
 ._titles {
   background-color: #00131c;
   color: white;
@@ -636,21 +644,20 @@ aside li {
   text-align: center;
 }
 
-/* line 19, ../sass/_guide.scss */
+/* line 21, ../sass/_guide.scss */
 .aside_guide_sous_section {
   margin-left: 10px;
   line-height: 15px;
   font-size: 15px;
 }
 
-/* line 25, ../sass/_guide.scss */
+/* line 27, ../sass/_guide.scss */
 .aside_guide_section {
   line-height: 15px;
   font-size: 15px;
 }
 
-/* line 30, ../sass/_guide.scss */
+/* line 32, ../sass/_guide.scss */
 .nav_guide h3 {
-  text-align: center;
   text-decoration: underline;
 }
