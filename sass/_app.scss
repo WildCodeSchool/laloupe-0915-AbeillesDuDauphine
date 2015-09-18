@@ -1,4 +1,12 @@
 /* Pour le full width */
+.main_title{
+    background-color: $blue;
+    color: white;
+    text-align: center;
+}
+.p_medium{
+    font-size: 14px;
+}
 .fullwidth {
     max-width: 2000px;
 }
