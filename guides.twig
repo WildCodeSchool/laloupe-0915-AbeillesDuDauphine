@@ -116,41 +116,47 @@
         <div class="row">
             <div class="container large-12 columns">
 
+{% setcontent guides = 'guide' orderby 'sous_partie' %}
 
 <!-- Main Page Content and Sidebar -->
     {# include the sidebar. The include tag can be used to break up your templates in logical parts,
        and re-use them across different templates/pages. #}
-    {% include '_aside.twig' %}
+    {% include '_aside_guide.twig' %}
 
     <!-- Main Blog Content -->
     <div class="large-9 columns">
       <main>
         
-      	<h1>Guide de l'apiculteur</h1><br/><br/>
-
-      	{% setcontent guides = 'guide' orderby 'sous_partie' %}
+      	<h1 class="_titles">Guide de l'apiculteur</h1><br/><br/>
 
       	<nav>
       		<ul style="list-style-type:none">
 				{% for guide in guides %}
-					<li>
-					<a href="#{{ guide.sous_partie }}">{{ guide.sous_partie }} {{ guide.titre }} </a>
-					</li>
+                    {% if guide.sous_partie|length == 1 %}
+    					<li class="guide_section">
+    					<a href="#{{ guide.sous_partie }}">{{ guide.sous_partie }} {{ guide.titre }} </a>
+    					</li>
+                    {% else %}
+                        <li class="guide_sous_section">
+                        <a href="#{{ guide.sous_partie }}">{{ guide.sous_partie }} {{ guide.titre }} </a>
+                        </li>
+                    {% endif %}
 				{% endfor %}
-
 			</ul>
 		</nav>
 
+        <div class="guide_content">
 		{% for guide in guides %}
-		<div id="{{ guide.sous_partie }}"></div>
-		<br/><br/>
-	    <h3>{{ guide.sous_partie }} {{ guide.titre }} <br/></h3>
-	    <p>{{ guide.texte }}<p>
-
-
-
-	    	JAIAJAOAOIAJL
-	    {% endfor %}
+    		<div id="{{ guide.sous_partie }}"></div>
+    		<br/><br/>
+    	    {% if guide.sous_partie|length == 1 %}
+            <h2>{{ guide.sous_partie }} {{ guide.titre }} <br/></h2>
+            {% else %}
+            <h3>{{ guide.sous_partie }} {{ guide.titre }} <br/></h3>
+            {% endif %}
+    	    <p>{{ guide.texte }}<p>
+            {% endfor %}
+        </div>
 
       </main>
     </div>

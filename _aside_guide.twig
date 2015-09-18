@@ -1,0 +1,19 @@
+
+<aside class="large-3 columns nav_guide">
+	<h3> Suivez le guide : </h3><br/>
+        <nav>
+      		<ul style="list-style-type:none">
+				{% for guide in guides %}
+                    {% if guide.sous_partie|length == 1 %}
+    					<li class="aside_guide_section">
+    					<a href="#{{ guide.sous_partie }}">{{ guide.sous_partie }} {{ guide.titre }} </a>
+    					</li>
+                    {% else %}
+                        <li class="aside_guide_sous_section">
+                        <a href="#{{ guide.sous_partie }}">{{ guide.sous_partie }} {{ guide.titre }} </a>
+                        </li>
+                    {% endif %}
+				{% endfor %}
+			</ul>
+		</nav>
+</aside>

@@ -246,7 +246,7 @@ button.small {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background: #FF8C00;
+  background: #F1C501;
   height: 30px;
   width: 60%;
   margin-top: 10px;
@@ -609,4 +609,48 @@ aside li {
 /* line 52, ../sass/_accordeon.scss */
 .ac-container input:checked ~ article.ac-small {
   height: auto;
+}
+
+/* line 1, ../sass/_guide.scss */
+.guide_sous_section {
+  margin-left: 10px;
+}
+
+/* line 4, ../sass/_guide.scss */
+.guide_content h3 {
+  background-color: #001a26;
+  color: white;
+}
+
+/* line 8, ../sass/_guide.scss */
+.guide_content h2 {
+  background-color: #001a26;
+  color: white;
+}
+
+/* line 12, ../sass/_guide.scss */
+._titles {
+  background-color: #00131c;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* line 19, ../sass/_guide.scss */
+.aside_guide_sous_section {
+  margin-left: 10px;
+  line-height: 15px;
+  font-size: 15px;
+}
+
+/* line 25, ../sass/_guide.scss */
+.aside_guide_section {
+  line-height: 15px;
+  font-size: 15px;
+}
+
+/* line 30, ../sass/_guide.scss */
+.nav_guide h3 {
+  text-align: center;
+  text-decoration: underline;
 }
