@@ -540,13 +540,13 @@ aside li {
 }
 
 /* line 1, ../sass/_accordeon.scss */
-.ac-container {
+.accordeon {
   width: 100%;
   text-align: left;
 }
 
 /* line 5, ../sass/_accordeon.scss */
-.ac-container label {
+.accordeon label {
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
   padding: 0px 15px 15px 15px;
   padding-top: 0px;
@@ -560,23 +560,26 @@ aside li {
   line-height: 43px;
   font-size: 22px;
   background: #00131c;
-}
-
-/* line 20, ../sass/_accordeon.scss */
-.ac-container label:hover {
-  background: #001a26;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
 /* line 23, ../sass/_accordeon.scss */
-.ac-container input:checked + label,
-.ac-container input:checked + label:hover {
-  background: #001a26;
+.accordeon label:hover {
+  background: rgba(0, 19, 28, 0.8);
+}
+
+/* line 26, ../sass/_accordeon.scss */
+.accordeon input:checked + label,
+.accordeon input:checked + label:hover {
+  background: #00131c;
   color: #FFFFFF;
 }
 
-/* line 28, ../sass/_accordeon.scss */
-.ac-container label:hover:after,
-.ac-container input:checked + label:hover:after {
+/* line 31, ../sass/_accordeon.scss */
+.accordeon label:hover:after,
+.accordeon input:checked + label:hover:after {
   content: '';
   position: absolute;
   width: 24px;
@@ -585,28 +588,38 @@ aside li {
   top: 7px;
 }
 
-/* line 37, ../sass/_accordeon.scss */
-.ac-container input {
+/* line 40, ../sass/_accordeon.scss */
+.ac-container input:checked + label:hover:after {
+  background: #00131c;
+}
+
+/* line 43, ../sass/_accordeon.scss */
+.accordeon input {
   display: none;
 }
 
-/* line 40, ../sass/_accordeon.scss */
-.ac-container article {
-  background: rgba(255, 255, 255, 0.5);
+/* line 46, ../sass/_accordeon.scss */
+.accordeon article {
+  background: rgba(255, 255, 0, 0.5);
   margin-top: -1px;
+  margin-bottom: 5px;
   overflow: hidden;
   height: 0px;
   position: relative;
   z-index: 10;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  transition: height 0.3s ease-in-out,  box-shadow 0.6s linear;
 }
 
-/* line 48, ../sass/_accordeon.scss */
-.ac-container article p {
+/* line 62, ../sass/_accordeon.scss */
+.accordeon article p {
   line-height: 23px;
   font-size: 14px;
 }
 
-/* line 52, ../sass/_accordeon.scss */
-.ac-container input:checked ~ article.ac-small {
+/* line 66, ../sass/_accordeon.scss */
+.accordeon input:checked ~ article.ac-small {
   height: auto;
 }
