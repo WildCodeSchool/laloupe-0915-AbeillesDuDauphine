@@ -246,7 +246,7 @@ button.small {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  background: #FF8C00;
+  background: #F1C501;
   height: 30px;
   width: 60%;
   margin-top: 10px;
@@ -265,58 +265,71 @@ input[type="search"] {
 
 /* Pour le full width */
 /* line 2, ../sass/_app.scss */
+.main_title {
+  background-color: #001a26;
+  color: white;
+  text-align: center;
+}
+
+/* line 7, ../sass/_app.scss */
+.p_medium {
+  font-size: 14px;
+}
+
+/* line 10, ../sass/_app.scss */
 .fullwidth {
   max-width: 2000px;
 }
 
-/* line 5, ../sass/_app.scss */
+/* line 13, ../sass/_app.scss */
 body {
   background-color: #F8F8F8;
 }
 
-/* line 9, ../sass/_app.scss */
+/* line 17, ../sass/_app.scss */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
   font-size: 16px;
 }
 
-/* line 13, ../sass/_app.scss */
+/* line 21, ../sass/_app.scss */
 h1 {
   font-weight: normal;
   font-size: 40px;
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 
-/* line 19, ../sass/_app.scss */
+/* line 27, ../sass/_app.scss */
 h2 {
   font-weight: normal;
   font-size: 34px;
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 
-/* line 25, ../sass/_app.scss */
+/* line 33, ../sass/_app.scss */
 h3 {
   font-weight: normal;
   font-size: 28px;
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 
-/* line 31, ../sass/_app.scss */
+/* line 39, ../sass/_app.scss */
 h4 {
   font-size: 24px;
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 
-/* line 36, ../sass/_app.scss */
+/* line 44, ../sass/_app.scss */
 h5 {
   font-size: 20px;
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
-/* line 39, ../sass/_app.scss */
+/* line 47, ../sass/_app.scss */
 h5 p {
   font-size: 30px;
+  color: #313131;
 }
 
-/* line 42, ../sass/_app.scss */
+/* line 51, ../sass/_app.scss */
 h6 {
   font-size: 15px;
   color: #666;
@@ -324,51 +337,56 @@ h6 {
   font-family: Roboto, Open Sans, serif;
 }
 
-/* line 49, ../sass/_app.scss */
+/* line 57, ../sass/_app.scss */
+p {
+  color: #313131;
+}
+
+/* line 61, ../sass/_app.scss */
 a {
   color: #284F76;
 }
 
-/* line 53, ../sass/_app.scss */
+/* line 65, ../sass/_app.scss */
 a:hover {
   color: #4D9C9A;
   text-decoration: underline;
 }
 
-/* line 58, ../sass/_app.scss */
+/* line 70, ../sass/_app.scss */
 p, ul, ol {
   margin: 0 0 1em 0;
   font-family: Roboto, Open Sans, serif;
 }
 
-/* line 63, ../sass/_app.scss */
+/* line 75, ../sass/_app.scss */
 ul {
   margin-left: 17px;
 }
 
-/* line 67, ../sass/_app.scss */
+/* line 79, ../sass/_app.scss */
 ol {
   margin-left: 20px;
 }
 
-/* line 71, ../sass/_app.scss */
+/* line 83, ../sass/_app.scss */
 pre {
   padding: 4px 0;
   overflow-y: auto;
   overflow-x: scroll;
 }
 
-/* line 77, ../sass/_app.scss */
+/* line 89, ../sass/_app.scss */
 aside {
   margin-top: 20px;
 }
 
-/* line 81, ../sass/_app.scss */
+/* line 93, ../sass/_app.scss */
 aside p {
   font-size: 14px;
 }
 
-/* line 85, ../sass/_app.scss */
+/* line 97, ../sass/_app.scss */
 .container {
   padding-top: 20px;
   margin: 0 auto 20px;
@@ -376,29 +394,29 @@ aside p {
   background-color: #FFF;
 }
 
-/* line 92, ../sass/_app.scss */
+/* line 104, ../sass/_app.scss */
 .top-bar h1 {
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 
-/* line 96, ../sass/_app.scss */
+/* line 108, ../sass/_app.scss */
 .top-bar h5 {
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 
-/* line 100, ../sass/_app.scss */
+/* line 112, ../sass/_app.scss */
 .top-bar a:hover {
   text-decoration: none;
 }
 
-/* line 104, ../sass/_app.scss */
+/* line 116, ../sass/_app.scss */
 .headerphoto {
   position: relative;
   margin-bottom: 30px;
   text-align: right;
 }
 
-/* line 110, ../sass/_app.scss */
+/* line 122, ../sass/_app.scss */
 .headerphoto p {
   margin: 0;
   position: absolute;
@@ -413,7 +431,7 @@ aside p {
   font-weight: bold;
 }
 
-/* line 123, ../sass/_app.scss */
+/* line 135, ../sass/_app.scss */
 .headerphoto small {
   font-size: 28px;
   color: #DDD;
@@ -422,7 +440,7 @@ aside p {
   margin-right: 14px;
 }
 
-/* line 131, ../sass/_app.scss */
+/* line 143, ../sass/_app.scss */
 div.imageholder {
   background-color: #FFF;
   border: 1px solid #BBBBBB;
@@ -432,13 +450,13 @@ div.imageholder {
   margin: 0 0 5px 5px;
 }
 
-/* line 140, ../sass/_app.scss */
+/* line 152, ../sass/_app.scss */
 footer ul.dropdown {
   display: none;
 }
 
 /* "bolt_widget" is the default container for widgets in Bolt. */
-/* line 145, ../sass/_app.scss */
+/* line 157, ../sass/_app.scss */
 .bolt_widget {
   background: #f2f2f2;
   border: solid 1px #e6e6e6;
@@ -446,13 +464,13 @@ footer ul.dropdown {
   padding: 6px;
 }
 
-/* line 152, ../sass/_app.scss */
+/* line 164, ../sass/_app.scss */
 .pagination a:hover {
   text-decoration: none;
 }
 
 /* Styles for 'responsive video embeds' --------------------------------  */
-/* line 158, ../sass/_app.scss */
+/* line 170, ../sass/_app.scss */
 .responsive-video {
   padding-top: 25px;
   position: relative;
@@ -462,7 +480,7 @@ footer ul.dropdown {
   margin: 0 0 1em 0;
 }
 
-/* line 166, ../sass/_app.scss */
+/* line 178, ../sass/_app.scss */
 .responsive-video iframe {
   width: 100%;
   position: absolute;
@@ -474,17 +492,17 @@ footer ul.dropdown {
 
 /* Styles for 'max-width 479px' -----------------------------------------  */
 @media only screen and (max-width: 479px) {
-  /* line 178, ../sass/_app.scss */
+  /* line 190, ../sass/_app.scss */
   .headerphoto {
     margin-bottom: 0px;
   }
 
-  /* line 182, ../sass/_app.scss */
+  /* line 194, ../sass/_app.scss */
   .headerphoto span {
     display: none;
   }
 
-  /* line 185, ../sass/_app.scss */
+  /* line 197, ../sass/_app.scss */
   .headerphoto small {
     display: block;
     font-size: 22px;
@@ -492,49 +510,49 @@ footer ul.dropdown {
     line-height: 26px;
   }
 
-  /* line 192, ../sass/_app.scss */
+  /* line 204, ../sass/_app.scss */
   h1 {
     font-size: 32px;
   }
 
-  /* line 197, ../sass/_app.scss */
+  /* line 209, ../sass/_app.scss */
   h2 {
     font-size: 28px;
   }
 
-  /* line 202, ../sass/_app.scss */
+  /* line 214, ../sass/_app.scss */
   h3 {
     font-size: 24px;
   }
 
-  /* line 207, ../sass/_app.scss */
+  /* line 219, ../sass/_app.scss */
   h4 {
     font-size: 20px;
   }
 
-  /* line 211, ../sass/_app.scss */
+  /* line 223, ../sass/_app.scss */
   h5 {
     font-size: 18px;
   }
 
-  /* line 216, ../sass/_app.scss */
+  /* line 228, ../sass/_app.scss */
   h6 {
     font-size: 15px;
   }
 
-  /* line 220, ../sass/_app.scss */
+  /* line 232, ../sass/_app.scss */
   div.imageholder {
     float: none;
     margin: 0 -17px 10px -17px;
   }
 }
-/* line 227, ../sass/_app.scss */
+/* line 239, ../sass/_app.scss */
 aside ul {
   list-style-type: none;
   padding: 0;
 }
 
-/* line 234, ../sass/_app.scss */
+/* line 246, ../sass/_app.scss */
 aside li {
   margin: 1em 0;
 }
@@ -622,4 +640,54 @@ aside li {
 /* line 66, ../sass/_accordeon.scss */
 .accordeon input:checked ~ article.ac-small {
   height: auto;
+}
+
+/* line 1, ../sass/_guide.scss */
+.guide_sous_section {
+  margin-left: 10px;
+}
+
+/* line 4, ../sass/_guide.scss */
+.guide_content h3 {
+  background-color: #001a26;
+  color: white;
+  padding-left: 10px;
+}
+
+/* line 9, ../sass/_guide.scss */
+.guide_content h2 {
+  background-color: #001a26;
+  color: white;
+  padding-left: 10px;
+}
+
+/* line 14, ../sass/_guide.scss */
+._titles {
+  background-color: #00131c;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* line 21, ../sass/_guide.scss */
+.aside_guide_sous_section {
+  margin-left: 10px;
+  line-height: 15px;
+  font-size: 15px;
+}
+
+/* line 27, ../sass/_guide.scss */
+.aside_guide_section {
+  line-height: 15px;
+  font-size: 15px;
+}
+
+/* line 32, ../sass/_guide.scss */
+.nav_guide h3 {
+  text-decoration: underline;
+}
+
+/* line 1, ../sass/_telechargement.scss */
+.content_telechargement h1 {
+  margin-bottom: 50px;
 }

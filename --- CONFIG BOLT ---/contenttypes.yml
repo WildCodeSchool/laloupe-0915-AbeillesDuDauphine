@@ -178,7 +178,7 @@ guide:
             type: html
             height: 300px
         sous_partie:
-            type: float
+            type: text
     listing_template: guides.twig
     record_template: guide.twig
     default_status: publish
@@ -195,7 +195,7 @@ telechargement:
         titre:
             type: text
             class: large
-        Ajouter un fichier: 
+        fichier: 
             type: file
     listing_template: telechargements.twig
     record_template: telechargement.twig

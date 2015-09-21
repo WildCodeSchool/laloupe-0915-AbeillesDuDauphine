@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {# make sure we always display a proper title: The record's title if there is one, appended with the
         sitename. If there is no title, we append the sitename with the payoff, if there is one. #}
-    <title> Page de telechargement </title>
+    <title> Téléchargement | {{ app.config.get('general/sitename') }}</title>
 
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
     {# Ajout des fonts#}
@@ -113,6 +113,7 @@
                 <!-- End header -->
             </header>
         </div>
+        {% setcontent telechargements = 'telechargement' orderby '-datechanged' %}
         <div class="row">
             <div class="container large-12 columns">
                 {# Fin du header #}
@@ -121,9 +122,17 @@
 
                 <div class="large-9 columns">
                     <main>
-                
-                        
-
+                        <div class="content_telechargement">
+                            <h1 class="main_title"> Page de téléchargement : </h1>
+                            <ul>
+                                {% for telechargement in telechargements %}
+                                    <li>
+                                    <p> <a href="files/{{ telechargement.fichier }} "> {{ telechargement.titre }} </a> 
+                                    <span class="p_medium"> - publié le {{ telechargement.datecreated|date('d-m-Y')}} par {{ telechargement.user.displayname }} </span></p>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
                     </main>
                 </div>
             </div>
