@@ -1,5 +1,11 @@
 /* Header CSS */
 
+.news_link img {
+    height: 50px;
+    max-width: 50px;
+    margin-top: -150px;
+}
+
 /* hauteur 120px */
 .top-bar {
     height: 160px;
@@ -46,10 +52,14 @@
 .headerphoto {
     background-color: $dark-blue;
     padding-bottom: 38px;
+    text-align: center;
 }
 .headerphoto img {
-    width: 1920px;
+    width: 1999px;
 }
+
+
+
 
 /* Slider */
 .slider {
