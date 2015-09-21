@@ -4,9 +4,44 @@
 /* Définition des couleurs*/
 /* Import des partials */
 /* Footer CSS */
+/* line 3, ../sass/_footer.scss */
+.footer-links .right {
+  padding-top: 5px;
+}
+
+/* line 6, ../sass/_footer.scss */
+.footer-links .left {
+  padding-top: 5px;
+}
+
+/* line 9, ../sass/_footer.scss */
+.footer-links .right a {
+  color: #D2D2D2;
+  font-size: 13px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-left: 1px solid #D2D2D2;
+}
+
+/* line 16, ../sass/_footer.scss */
+.footer-links .left p {
+  color: #D2D2D2;
+  font-size: 13px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-right: 1px solid #D2D2D2;
+  display: inline-block;
+}
+
+/* line 24, ../sass/_footer.scss */
+.footer-links .left a {
+  color: #D2D2D2;
+  font-size: 13px;
+}
+
 /* .mapper > #map-opener / #map 
  .mapper = Contient tout les elements du mapper */
-/* line 6, ../sass/_footer.scss */
+/* line 32, ../sass/_footer.scss */
 .mapper {
   min-height: 50px;
   background-color: #00131c;
@@ -14,21 +49,21 @@
   text-align: center;
 }
 
-/* line 12, ../sass/_footer.scss */
+/* line 38, ../sass/_footer.scss */
 .mapper nav {
   height: 100px;
   background-color: #00131c;
 }
 
 /* #map-opener = Bouton pour activer l'ouverture de la map */
-/* line 18, ../sass/_footer.scss */
+/* line 44, ../sass/_footer.scss */
 #map-opener {
   padding-top: 10px;
   display: inline-block;
   min-height: 30px;
 }
 
-/* line 23, ../sass/_footer.scss */
+/* line 49, ../sass/_footer.scss */
 #map-opener a {
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
   color: white;
@@ -37,7 +72,7 @@
 }
 
 @media screen and (max-width: 640px) {
-  /* line 30, ../sass/_footer.scss */
+  /* line 56, ../sass/_footer.scss */
   #map-opener a {
     font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
     color: white;
@@ -45,30 +80,30 @@
     line-height: 18px;
   }
 }
-/* line 37, ../sass/_footer.scss */
+/* line 63, ../sass/_footer.scss */
 #map-opener img {
   width: 25px;
   height: 25px;
 }
 
-/* line 41, ../sass/_footer.scss */
+/* line 67, ../sass/_footer.scss */
 #map-open {
   display: inline-block;
 }
 
 /* #map = Contient la map */
-/* line 46, ../sass/_footer.scss */
+/* line 72, ../sass/_footer.scss */
 #map {
   height: 120px;
   opacity: 0.15;
 }
 
-/* line 51, ../sass/_footer.scss */
+/* line 77, ../sass/_footer.scss */
 #map-close {
   display: none;
 }
 
-/* line 56, ../sass/_footer.scss */
+/* line 82, ../sass/_footer.scss */
 #scroll-top {
   float: right;
   width: 50px;
@@ -77,9 +112,9 @@
   padding-top: 25px;
 }
 
-/* line 64, ../sass/_footer.scss */
+/* line 90, ../sass/_footer.scss */
 .footer-links {
-  height: 70px;
+  height: 60px;
   background-color: #001a26;
   margin-bottom: -16px;
 }
@@ -209,25 +244,21 @@ article p {
 
 /* line 82, ../sass/_header.scss */
 .top-bar-section li a:hover {
-  background: #ff8c00 !important;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
+  background: #F1C501 !important;
+  color: #00131c !important;
+  transition-duration: 0.4s;
 }
 
-/* line 88, ../sass/_header.scss */
+/* line 87, ../sass/_header.scss */
 .top-bar-section li.active:not(.has-form) a:not(.button) {
   background: #F1C501 none repeat scroll 0 0;
   color: #00131c;
   font-size: 16px;
   line-height: 50px;
   padding: 0 15px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
 }
 
-/* line 98, ../sass/_header.scss */
+/* line 94, ../sass/_header.scss */
 .top-bar-section li:not(.has-form) a:not(.button) {
   background: #00131c none repeat scroll 0 0;
   line-height: 50px;
@@ -236,38 +267,51 @@ article p {
   font-size: 16px;
 }
 
-/* line 105, ../sass/_header.scss */
+/* line 101, ../sass/_header.scss */
 .top-menu-bar a:hover {
-  background: #001a26;
+  background: #00131c;
+}
+
+/* line 104, ../sass/_header.scss */
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+  background: #00131c;
+}
+
+/* line 107, ../sass/_header.scss */
+.top-bar-section .dropdown li:hover:not(.has-form):not(.active) > a:not(.button) {
+  background: #F1C501;
+  color: #00131c;
+  transition-duration: 0.4s;
 }
 
 /* Rechercher */
-/* line 109, ../sass/_header.scss */
+/* line 114, ../sass/_header.scss */
 .top-bar-section .has-form {
   background: #00131c none repeat scroll 0 0;
   height: 50px;
   padding: 0 15px;
 }
 
-/* line 114, ../sass/_header.scss */
+/* line 119, ../sass/_header.scss */
 button.small {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  background: #F1C501;
+  background: #F1C501 !important;
   height: 30px;
   width: 60%;
   margin-top: 10px;
   font-weight: bold;
   padding: 0.5rem 0.5rem 0.5rem !important;
+  color: #00131c;
 }
 
-/* line 125, ../sass/_header.scss */
+/* line 128, ../sass/_header.scss */
+button.small:hover {
+  background: #00131c !important;
+  color: #F1C501;
+}
+
+/* line 132, ../sass/_header.scss */
 input[type="search"] {
   height: 30px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
   margin-top: 10px;
 }
 
