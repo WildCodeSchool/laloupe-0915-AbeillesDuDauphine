@@ -8,9 +8,8 @@
 
 /* Logo*/
 .logo-area {
-    height: 120px;
-    width: 105px;
     float: left;
+    /* display: inline-block; */
 }
 .logo {
     height: 120px;
@@ -24,6 +23,8 @@
 /* Title */
 .title-area {
     height: 120px;
+    /*display: inline-block;
+    border-right: 300px; */
 }
 .name {
     height: 120px;
