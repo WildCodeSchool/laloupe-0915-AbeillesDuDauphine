@@ -4,7 +4,7 @@
 /* Définition des couleurs*/
 /* Import des partials */
 /* Footer CSS */
-/* .mapper > #map-opener / #map 
+/* .mapper > #map-opener / #map
  .mapper = Contient tout les elements du mapper */
 /* line 6, ../sass/_footer.scss */
 .mapper {
@@ -394,8 +394,11 @@ aside p {
 /* line 104, ../sass/_app.scss */
 .headerphoto {
   position: relative;
-  margin-bottom: 30px;
   text-align: right;
+  z-index: -1;
+  top: -161px;
+  height: 715px;
+
 }
 
 /* line 110, ../sass/_app.scss */
