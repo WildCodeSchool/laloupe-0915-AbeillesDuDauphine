@@ -122,7 +122,8 @@
                         content in 'record', or - as we do in this example - take a random one from the list
                         in the /theme/base-2014/config.yml file. #}
                         {% set headerimage = paths.theme ~ 'images/' ~ random(theme.headerimage) %}
-                        <img src="{{ headerimage }}" alt="" />
+                        <img src="{{ headerimage }}" alt=""/>
+                        <a href="#news_link" class="news_link scrollTo"> <img src="{{ paths.theme }}images/tools/header_photo_link.png" /></a>
                     </div>
                 {% else %}
                     {% include '_slider.twig'%}
@@ -130,5 +131,5 @@
                 <!-- End header -->
             </header>
         </div>
-        <div class="row">
+        <div class="row" id="news_link">
             <div class="container large-12 columns">
