@@ -1,0 +1,60 @@
+<div class="contain-to-grid sticky">
+                    <nav class="top-bar-menu" data-topbar role="navigation" data-options="sticky_on: large">
+                        <section class="top-bar-section">
+
+                            <!-- Left Nav Section -->
+                            <ul class="left">
+                                <li class="active"><a href="#">Accueil</a></li>
+                                <li class="has-dropdown">
+                                    <a href="#">Qui sommes-nous ?</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Descriptif Syndicat</a></li>
+                                        <li><a href="#">Descriptif Sections</a></li>
+                                        <li><a href="#">Descriptif Coopératives</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="#">Les sections</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Section Nord-Isére</a></li>
+                                        <li><a href="#">Section St Marcellin</a></li>
+                                        <li><a href="#">Section de Vienne</a></li>
+                                        <li><a href="#">Section de Voiron</a></li>
+                                        <li><a href="#">Section Haut Dauphiné</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="#">Nos actions</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Formations</a></li>
+                                        <li><a href="#">Relation avec Entreprises</a></li>
+                                        <li><a href="#">Acheter à la SCAPIAD</a></li>
+                                        <li><a href="#">Projet nouveau local</a></li>
+                                        <li><a href="#">J' ai un essaim dans mon jardin!</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="#">Guide de l'apiculteur</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Professionnels</a></li>
+                                        <li><a href="#">Législation</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown">
+                                    <a href="#">Archives</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Téléchargement</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </section>
+                        <!-- Barre de recherche déplacée ici -->
+                        <section class="top-bar-section">
+                            <!-- Right Nav Section -->
+                            <ul class="right">
+                                {# Include the '_sub_searchbox.twig' template, for the searchbox. If this file wasn't included in the theme, the default searchbox template in app/theme_defaults/_sub_searchbox.twig would be used. #}
+                                {% include '_sub_searchbox.twig' %}
+                            </ul>
+                        </section>
+                    </nav>
+                </div>
