@@ -1,5 +1,11 @@
 /* Header CSS */
 
+.news_link img {
+    height: 50px;
+    max-width: 50px;
+    margin-top: -150px;
+}
+
 /* hauteur 120px */
 .top-bar {
     height: 160px;
@@ -47,10 +53,14 @@
 .headerphoto {
     background-color: $dark-blue;
     padding-bottom: 38px;
+    text-align: center;
 }
 .headerphoto img {
-    width: 1920px;
+    width: 1999px;
 }
+
+
+
 
 /* Slider */
 .slider {
@@ -71,10 +81,9 @@
     text-decoration: none;
 }
 .top-bar-section li a:hover {
-    background: #ff8c00 !important;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+    background: $yellow !important;
+    color: $dark-blue !important;
+    transition-duration: 0.4s;
   }
 .top-bar-section li.active:not(.has-form) a:not(.button) {
     background: $yellow none repeat scroll 0 0;
@@ -82,9 +91,6 @@
     font-size: 16px;
     line-height: 50px;
     padding: 0 15px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
 }
 .top-bar-section li:not(.has-form) a:not(.button) {
     background: $dark-blue none repeat scroll 0 0;
@@ -94,8 +100,17 @@
     font-size: 16px;
 }
 .top-menu-bar a:hover {
-    background: $blue;
+    background: $dark-blue;
 }
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+    background: $dark-blue;
+}
+.top-bar-section .dropdown li:hover:not(.has-form):not(.active) > a:not(.button) {
+    background: $yellow;
+    color: $dark-blue;
+    transition-duration: 0.4s;
+}
+
 /* Rechercher */
 .top-bar-section .has-form {
     background: $dark-blue none repeat scroll 0 0;
@@ -103,20 +118,19 @@
     padding: 0 15px;
 }
 button.small {
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    background: $yellow;
+    background: $yellow !important;
     height: 30px;
     width: 60%;
     margin-top: 10px;
     font-weight: bold;
     padding: 0.5rem 0.5rem 0.5rem !important;
+    color: $dark-blue;
+}
+button.small:hover {
+    background: $dark-blue !important;
+    color: $yellow;
 }
 input[type="search"] {
     height: 30px;
-   -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    margin-top: 10px
+    margin-top: 10px;
 }

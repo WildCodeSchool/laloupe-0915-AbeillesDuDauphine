@@ -24,3 +24,45 @@ main:
     - label: The Bolt site
       link: http://bolt.cm
       class: last
+
+# Menu Abeille Dauphinoise
+
+abeille:
+    - label: Accueil
+      path: homepage
+      class: first
+    - label: Qui sommes-nous?
+      path: pages/qui-sommes-nous
+      submenu:
+          - label: Descriptif Syndicat
+            path: pages/descriptif-syndicat
+          - label: Descriptif Sections
+            path: pages/descriptif-sections
+          - label: Descriptif Coopératives
+            path: pages/descriptif-cooperatives
+    - label: Nos actions
+      path: pages/nos-actions
+      submenu:
+          - label: Formations
+            path: pages/formations
+          - label: Relation avec Entreprises
+            path: pages/relation-avec-entreprises
+          - label: Acheter à la SCAPIAD
+            path: pages/acheter-a-la-sacpiad
+          - label: Projet nouveau local
+            path: pages/projet-nouveau-local
+          - label: J'ai un essaim dans mon jardin!
+            path: pages/j-ai-un-essaim-dans-mon-jardin
+    - label: Guide de l'apiculteur
+      path: guide
+      submenu:
+          - label: Professionnels
+            path: pages/professionnels
+          - label: Législation
+            path: pages/legislation
+    - label: Archives
+      path: archives
+      submenu:
+          - label: Téléchargement
+            path: telechargement
+            class: last

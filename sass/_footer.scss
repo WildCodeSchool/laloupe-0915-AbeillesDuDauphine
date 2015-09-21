@@ -1,5 +1,31 @@
 /* Footer CSS */
 
+.footer-links .right {
+	padding-top: 5px;
+}
+.footer-links .left {
+	padding-top: 5px;
+}
+.footer-links .right a{
+	color: #D2D2D2;
+	font-size: 13px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-left: 1px solid #D2D2D2;
+}
+.footer-links .left p{
+	color: #D2D2D2;
+	font-size: 13px;
+	padding-right: 15px;
+	padding-left: 15px;
+	border-right: 1px solid #D2D2D2;
+	display: inline-block;
+}
+.footer-links .left a{
+	color: #D2D2D2;
+	font-size: 13px;
+}
+
 /* .mapper > #map-opener / #map 
  .mapper = Contient tout les elements du mapper */
 
@@ -62,7 +88,7 @@
 }
 
 .footer-links {
-	height: 70px;
+	height: 60px;
 	background-color: $blue;
 	margin-bottom: -16px;
 }
