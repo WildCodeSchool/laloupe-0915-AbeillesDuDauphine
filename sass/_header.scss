@@ -71,9 +71,6 @@
 }
 .top-bar-section li a:hover {
     background: $yellow !important;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
     color: $dark-blue !important;
   }
 .top-bar-section li.active:not(.has-form) a:not(.button) {
@@ -82,9 +79,6 @@
     font-size: 16px;
     line-height: 50px;
     padding: 0 15px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
 }
 .top-bar-section li:not(.has-form) a:not(.button) {
     background: $dark-blue none repeat scroll 0 0;
@@ -111,9 +105,6 @@
     padding: 0 15px;
 }
 button.small {
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
     background: $yellow !important;
     height: 30px;
     width: 60%;
@@ -128,8 +119,5 @@ button.small:hover {
 }
 input[type="search"] {
     height: 30px;
-   -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
     margin-top: 10px;
 }
