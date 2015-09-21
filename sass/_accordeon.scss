@@ -16,9 +16,6 @@
   line-height: 43px;
   font-size: 22px;
   background: $dark-blue;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
 }
 .accordeon label:hover{
   background: rgba(0, 19, 28, 0.8);
@@ -50,13 +47,7 @@
   overflow: hidden;
   height: 0px;
   position: relative;
-  z-index: 10;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;  
-  transition: 
-    height 0.3s ease-in-out, 
-    box-shadow 0.6s linear;
+  z-index: 10;  
 }
 
 .accordeon article p{
