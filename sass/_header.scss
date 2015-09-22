@@ -54,13 +54,15 @@
     background-color: $dark-blue;
     padding-bottom: 38px;
     text-align: center;
+    position: relative;    
+    text-align: center;
+    z-index: -1;
+
+    height: 715px;
 }
 .headerphoto img {
     width: 1999px;
 }
-
-
-
 
 /* Slider */
 .slider {
