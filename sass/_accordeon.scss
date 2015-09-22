@@ -2,107 +2,60 @@
   width: 100%;
   text-align: left;
 }
-
-
-/* Next, we’ll make the labels appear as clickable buttons by giving them some slick background gradient. 
-With multiple box shadows, we’ll create a subtle border and an inset effect. 
-We’ll also set the z-index to 20, to make sure it will be on top of the content section: */
-
 .accordeon label{
   font-family: $font-title;
-  padding: 5px 40px 5px 20px;
+  padding: 0px 15px 15px 15px;
+  padding-top: 0px;
   position: relative;
-  margin-top: 5px;
   z-index: 20;
   display: block;
   height: 30px;
+  min-width: 200px;
   cursor: pointer;
   color: #FFFFFF;
-  line-height: 33px;
-  font-size: 19px;
+  line-height: 43px;
+  font-size: 22px;
   background: $dark-blue;
 }
-
-/* On hover, we’ll make the label white: */
-
 .accordeon label:hover{
   background: $blue;
   color: $yellow;
 }
-
-/* When we click on a label, the checkbox get’s checked and when that happens we want the respective label 
-to have the following “selected” style: */
-
 .accordeon input:checked + label,
 .accordeon input:checked + label:hover{
   background: $blue;
   color: $yellow;
 }
-
-/* As you can see, we are using the adjacent sibling combinator to select the label 
-since it is directly preceded by the checkbox input.
-
-Let’s add a little arrow icon on hover. For that we’ll simply use 
-the pseudo-class “after” so that we don’t add unecessary markup: */
-
 .accordeon label:hover:after,
 .accordeon input:checked + label:hover:after{
   content: '';
   position: absolute;
-  width: 10px;
-  height: 10px;
-  right: 10px;
-  top: 10px;
-  background: transparent url(../images/tools/arrow_down.png) no-repeat center center;  
+  width: 24px;
+  height: 24px;
+  right: 13px;
+  top: 7px;
+  background: transparent url(../images/tools/arrow_down.png) no-repeat center center; 
 }
-
-/*For the “selected” item, we want to show the up-pointing arrow: */
-
-.accordeon input:checked + label:hover:after{
+.ac-container input:checked + label:hover:after{
   background-image: url(../images/tools/arrow_up.png);
 }
-
-/*And since we don’t want the inputs to show, we’ll hide them: */
-
 .accordeon input{
   display: none;
 }
-
-/*The content area will have an initial height of 0px and any overflow will be hidden. 
-We’ll add a transition for the height and for the box shadow. The transition that we are 
-adding here will act upon “closing” the item. We define another transition 
-for the selected item. So, we can basically control the two behaviors by doing this. 
-As you can see, we will make the closing a bit faster than the opening. */
-
 .accordeon article{
   background: rgba(255, 255, 0, 0.3);
-  margin-top: 0px; 
-  overflow: auto;
+  margin-top: -1px;
+  margin-bottom: 5px;
+  overflow: hidden;
   height: 0px;
   position: relative;
-  z-index: 10;
-  transition: 
-    height 0.3s ease-in-out, 
-    box-shadow 0.7s linear;
+  z-index: 10;  
 }
-.accordeon input:checked ~ article{
-  transition: 
-    height 0.6s ease-in-out, 
-    box-shadow 0.3s linear;
-  box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
-}
-
-/*Let’s style the content a bit: */
 
 .accordeon article p{
-  line-height: 1px;
-  font-size: 15px;
-  padding: 10px;
-  text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+  line-height: 23px;
+  font-size: 14px;
 }
-
-/*Now we define the three classes for the different heights. These are the heights that an item’s content will animate to: */
-
 .accordeon input:checked ~ article.ac-small{
-  height: 200px;
+  height: auto;
 }
