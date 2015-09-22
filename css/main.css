@@ -4,27 +4,21 @@
 /* Définition des couleurs*/
 /* Import des partials */
 /* Footer CSS */
-/* line 3, ../sass/_footer.scss */
-.footer-links .right {
+/* line 2, ../sass/_footer.scss */
+.footer-links {
+  min-height: auto;
   padding-top: 5px;
+  background-color: #001a26;
 }
 
-/* line 6, ../sass/_footer.scss */
-.footer-links .left {
-  padding-top: 5px;
-}
-
-/* line 9, ../sass/_footer.scss */
-.footer-links .right a {
+/* line 8, ../sass/_footer.scss */
+.footer-links a {
   color: #D2D2D2;
   font-size: 13px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-left: 1px solid #D2D2D2;
 }
 
-/* line 16, ../sass/_footer.scss */
-.footer-links .left p {
+/* line 12, ../sass/_footer.scss */
+.footer-links p {
   color: #D2D2D2;
   font-size: 13px;
   padding-right: 15px;
@@ -33,15 +27,9 @@
   display: inline-block;
 }
 
-/* line 24, ../sass/_footer.scss */
-.footer-links .left a {
-  color: #D2D2D2;
-  font-size: 13px;
-}
-
 /* .mapper > #map-opener / #map 
  .mapper = Contient tout les elements du mapper */
-/* line 32, ../sass/_footer.scss */
+/* line 24, ../sass/_footer.scss */
 .mapper {
   min-height: 50px;
   background-color: #00131c;
@@ -49,21 +37,26 @@
   text-align: center;
 }
 
-/* line 38, ../sass/_footer.scss */
+/* line 30, ../sass/_footer.scss */
 .mapper nav {
-  height: 100px;
+  min-height: 100px;
   background-color: #00131c;
 }
 
+/* line 34, ../sass/_footer.scss */
+.mapper ul {
+  margin-bottom: 3px;
+}
+
 /* #map-opener = Bouton pour activer l'ouverture de la map */
-/* line 44, ../sass/_footer.scss */
+/* line 39, ../sass/_footer.scss */
 #map-opener {
   padding-top: 10px;
   display: inline-block;
   min-height: 30px;
 }
 
-/* line 49, ../sass/_footer.scss */
+/* line 44, ../sass/_footer.scss */
 #map-opener a {
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
   color: white;
@@ -72,7 +65,7 @@
 }
 
 @media screen and (max-width: 640px) {
-  /* line 56, ../sass/_footer.scss */
+  /* line 51, ../sass/_footer.scss */
   #map-opener a {
     font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
     color: white;
@@ -80,43 +73,36 @@
     line-height: 18px;
   }
 }
-/* line 63, ../sass/_footer.scss */
+/* line 58, ../sass/_footer.scss */
 #map-opener img {
   width: 25px;
   height: 25px;
 }
 
-/* line 67, ../sass/_footer.scss */
+/* line 62, ../sass/_footer.scss */
 #map-open {
   display: inline-block;
 }
 
 /* #map = Contient la map */
-/* line 72, ../sass/_footer.scss */
+/* line 67, ../sass/_footer.scss */
 #map {
   height: 120px;
   opacity: 0.15;
 }
 
-/* line 77, ../sass/_footer.scss */
+/* line 72, ../sass/_footer.scss */
 #map-close {
   display: none;
 }
 
-/* line 82, ../sass/_footer.scss */
+/* line 77, ../sass/_footer.scss */
 #scroll-top {
   float: right;
   width: 50px;
   height: 50px;
   margin-right: 20px;
   padding-top: 25px;
-}
-
-/* line 90, ../sass/_footer.scss */
-.footer-links {
-  height: 60px;
-  background-color: #001a26;
-  margin-bottom: -16px;
 }
 
 /* News CSS */
@@ -150,49 +136,63 @@ article p {
   margin-top: -150px;
 }
 
-/* hauteur 120px */
-/* line 10, ../sass/_header.scss */
+/* line 8, ../sass/_header.scss */
+#news_link {
+  margin-top: 64px !important;
+}
+
+/* hauteur 160px */
+/* line 13, ../sass/_header.scss */
 .top-bar {
   height: 160px;
   background-color: #001a26;
-  margin-bottom: -60px;
 }
 
 /* Logo*/
-/* line 17, ../sass/_header.scss */
+/* line 19, ../sass/_header.scss */
 .logo-area {
   height: 120px;
   width: 105px;
   float: left;
 }
 
-/* line 22, ../sass/_header.scss */
+/* line 24, ../sass/_header.scss */
 .logo {
   height: 120px;
   padding-top: 14px;
 }
 
-/* line 26, ../sass/_header.scss */
+/* line 28, ../sass/_header.scss */
 .logo img {
   width: 105px;
   height: 90px;
 }
 
 /* Title */
-/* line 32, ../sass/_header.scss */
+/* line 34, ../sass/_header.scss */
 .title-area {
   height: 120px;
 }
 
-/* line 35, ../sass/_header.scss */
+/* line 37, ../sass/_header.scss */
+.top-bar .title-area {
+  float: none;
+}
+
+/* line 40, ../sass/_header.scss */
 .name {
   height: 120px;
   padding-top: 22px;
 }
 
-/* line 39, ../sass/_header.scss */
+/* line 44, ../sass/_header.scss */
+.top-bar .name h1 {
+  width: 90%;
+}
+
+/* line 47, ../sass/_header.scss */
 .name h1 a {
-  font-size: 40px;
+  font-size: 50px;
   color: white;
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
   line-height: 35px;
@@ -200,13 +200,15 @@ article p {
 }
 
 @media screen and (max-width: 640px) {
-  /* line 47, ../sass/_header.scss */
+  /* line 55, ../sass/_header.scss */
   .name h1 a {
     font-size: 28px;
+    line-height: 20px;
+    width: auto !important;
   }
 }
 /* Photo full size accueil */
-/* line 53, ../sass/_header.scss */
+/* line 63, ../sass/_header.scss */
 .headerphoto {
   background-color: #00131c;
   padding-bottom: 38px;
@@ -214,47 +216,48 @@ article p {
   position: relative;
   text-align: center;
   z-index: -1;
+  top: -161px;
   height: 715px;
 }
 
-/* line 63, ../sass/_header.scss */
+/* line 73, ../sass/_header.scss */
 .headerphoto img {
   width: 1999px;
 }
 
 /* Slider */
-/* line 68, ../sass/_header.scss */
+/* line 78, ../sass/_header.scss */
 .slider {
   height: 300px;
   background-color: #1e1e1e;
 }
 
 /* NavBar */
-/* line 74, ../sass/_header.scss */
+/* line 84, ../sass/_header.scss */
 .top-bar-menu {
   height: 50px;
   background-color: #00131c;
 }
 
-/* line 78, ../sass/_header.scss */
+/* line 88, ../sass/_header.scss */
 .top-bar-menu ul {
   margin-bottom: 0;
   list-style: none;
 }
 
-/* line 82, ../sass/_header.scss */
+/* line 92, ../sass/_header.scss */
 .top-bar-menu ul li a {
   text-decoration: none;
 }
 
-/* line 85, ../sass/_header.scss */
+/* line 95, ../sass/_header.scss */
 .top-bar-section li a:hover {
   background: #F1C501 !important;
   color: #00131c !important;
   transition-duration: 0.4s;
 }
 
-/* line 90, ../sass/_header.scss */
+/* line 100, ../sass/_header.scss */
 .top-bar-section li.active:not(.has-form) a:not(.button) {
   background: #F1C501 none repeat scroll 0 0;
   color: #00131c;
@@ -263,7 +266,7 @@ article p {
   padding: 0 15px;
 }
 
-/* line 97, ../sass/_header.scss */
+/* line 107, ../sass/_header.scss */
 .top-bar-section li:not(.has-form) a:not(.button) {
   background: #00131c none repeat scroll 0 0;
   line-height: 50px;
@@ -272,17 +275,17 @@ article p {
   font-size: 16px;
 }
 
-/* line 104, ../sass/_header.scss */
+/* line 114, ../sass/_header.scss */
 .top-menu-bar a:hover {
   background: #00131c;
 }
 
-/* line 107, ../sass/_header.scss */
+/* line 117, ../sass/_header.scss */
 .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
   background: #00131c;
 }
 
-/* line 110, ../sass/_header.scss */
+/* line 120, ../sass/_header.scss */
 .top-bar-section .dropdown li:hover:not(.has-form):not(.active) > a:not(.button) {
   background: #F1C501;
   color: #00131c;
@@ -290,14 +293,14 @@ article p {
 }
 
 /* Rechercher */
-/* line 117, ../sass/_header.scss */
+/* line 127, ../sass/_header.scss */
 .top-bar-section .has-form {
   background: #00131c none repeat scroll 0 0;
   height: 50px;
   padding: 0 15px;
 }
 
-/* line 122, ../sass/_header.scss */
+/* line 132, ../sass/_header.scss */
 button.small {
   background: #F1C501 !important;
   height: 30px;
@@ -308,13 +311,13 @@ button.small {
   color: #00131c;
 }
 
-/* line 131, ../sass/_header.scss */
+/* line 141, ../sass/_header.scss */
 button.small:hover {
   background: #00131c !important;
   color: #F1C501;
 }
 
-/* line 135, ../sass/_header.scss */
+/* line 145, ../sass/_header.scss */
 input[type="search"] {
   height: 30px;
   margin-top: 10px;

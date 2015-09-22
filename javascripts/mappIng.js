@@ -21,7 +21,7 @@
                 var m = document.getElementById("map");
                 var mu = document.getElementById("map-open");
                 var md = document.getElementById("map-close"); 
-                var adjustHeight = $(window).height()-180;
+                var adjustHeight = $(window).height()-240;
                 m.style.height = adjustHeight + 'px';
                 m.style.opacity = "1";
                 mu.style.display = "none";
