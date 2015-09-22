@@ -1,0 +1,207 @@
+{% include '_header.twig' %}
+
+<!-- Main Page Content and Sidebar -->
+    {# include the sidebar. The include tag can be used to break up your templates in logical parts,
+       and re-use them across different templates/pages. #}
+    {% include '_aside.twig' %}
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+      <main>
+          {# Titre de la page #}
+
+          <h1 class="main_title">{{ record.titre }}</h1>
+
+          <section class="blocs">
+
+          {# Ici les blocs #}
+
+          <h2>{{ record.titre_1 }}</h2>
+          <p>{{ record.corps_1 }}</p>
+          {{ record.image_1 }}
+
+          <h2>{{ record.titre_2 }}</h2>
+          <p>{{ record.corps_2 }}</p>
+          {{ record.image_2 }}
+
+          <h2>{{ record.titre_3 }}</h2>
+          <p>{{ record.corps_3 }}</p>
+          {{ record.image_3 }}
+
+          <h2>{{ record.titre_4 }}</h2>
+          <p>{{ record.corps_4 }}</p>
+          {{ record.image_4 }}
+
+          <h2>{{ record.titre_5 }}</h2>
+          <p>{{ record.corps_5 }}</p>
+          {{ record.image_5 }}
+        
+          </section>
+
+
+
+          <section class="accordeon">
+
+            {% if record.a_titre_1 != '' %}
+
+            <div>
+              <input id="ac-1" name="accordion-1" type="checkbox" />
+              <label for="ac-1">{{ record.a_titre_1 }}</label>
+              <article class="ac-small">
+                <p>{{ record.a_corps_1 }}</p>
+              </article>
+            </div>
+
+            {% else %}
+            {% endif %}
+            {% if record.a_titre_2 != '' %}
+
+            {% else %}
+            {% endif %}
+            {% if record.a_titre_2 != '' %}
+
+            <div>
+              <input id="ac-2" name="accordion-1" type="checkbox" />
+              <label for="ac-2">{{ record.a_titre_2 }}</label>
+              <article class="ac-small">
+                <p>{{ record.a_corps_2 }}</p>
+              </article>
+            </div>
+
+            {% else %}
+            {% endif %}
+            {% if record.a_titre_3 != '' %}
+
+            {% else %}
+            {% endif %}
+            {% if record.a_titre_3 != '' %}
+
+            <div>
+              <input id="ac-3" name="accordion-1" type="checkbox" />
+              <label for="ac-3">{{ record.a_titre_3 }}</label>
+              <article class="ac-small">
+                <p>{{ record.a_corps_3 }}</p>
+              </article>
+            </div>
+
+            {% else %}
+            {% endif %}
+            {% if record.a_titre_4 != '' %}
+
+            {% else %}
+            {% endif %}
+            {% if record.a_titre_4 != '' %}
+
+            <div>
+              <input id="ac-4" name="accordion-1" type="checkbox" />
+              <label for="ac-4">{{ record.a_titre_4 }}</label>
+              <article class="ac-small">
+                <p>{{ record.a_corps_4 }}</p>
+              </article>
+            </div>
+
+            {% else %}
+            {% endif %}
+            {% if record.a_titre_5 != '' %}
+
+            {% else %}
+            {% endif %}
+            {% if record.a_titre_5 != '' %}
+
+            <div>
+              <input id="ac-5" name="accordion-1" type="checkbox" />
+              <label for="ac-5">{{ record.a_titre_5 }}</label>
+              <article class="ac-small">
+                <p>{{ record.a_corps_5 }}</p>
+              </article>
+            </div>
+            {% else %}
+            {% endif %}
+            {% if record.a_titre_6 != '' %}
+            <div>
+              <input id="ac-6" name="accordion-1" type="checkbox" />
+              <label for="ac-6">{{ record.a_titre_6 }}</label>
+              <article class="ac-small">
+                <p>{{ record.a_corps_6 }}</p>
+              </article>
+            </div>
+
+            {% else %}
+            {% endif %}
+            {% if record.a_titre_7 != '' %}
+
+            {% else %}
+            {% endif %}
+            {% if record.a_titre_7 != '' %}
+
+            <div>
+              <input id="ac-7" name="accordion-1" type="checkbox" />
+              <label for="ac-7">{{ record.a_titre_7 }}</label>
+              <article class="ac-small">
+                <p>{{ record.a_corps_7 }}</p>
+              </article>
+            </div>
+
+            {% else %}
+            {% endif %}
+            {% if record.a_titre_8 != '' %}
+
+            {% else %}
+            {% endif %}
+            {% if record.a_titre_8 != '' %}
+
+            <div>
+              <input id="ac-8" name="accordion-1" type="checkbox" />
+              <label for="ac-8">{{ record.a_titre_8 }}</label>
+              <article class="ac-small">
+                <p>{{ record.a_corps_8 }}</p>
+              </article>
+            </div>
+
+            {% else %}
+            {% endif %}
+            {% if record.a_titre_9 != '' %}
+
+            {% else %}
+            {% endif %}
+            {% if record.a_titre_9 != '' %}
+
+            <div>
+              <input id="ac-9" name="accordion-1" type="checkbox" />
+              <label for="ac-9">{{ record.a_titre_9 }}</label>
+              <article class="ac-small">
+                <p>{{ record.a_corps_9 }}</p>
+              </article>
+            </div>
+
+            {% else %}
+            {% endif %}
+            {% if record.a_titre_10 != '' %}
+
+            {% else %}
+            {% endif %}
+            {% if record.a_titre_10 != '' %}
+
+            <div>
+              <input id="ac-10" name="accordion-1" type="checkbox" />
+              <label for="ac-10">{{ record.a_titre_10 }}</label>
+              <article class="ac-small">
+                <p>{{ record.a_corps_10 }}</p>
+              </article>
+            </div>
+            {% else %}
+            {% endif %}
+           
+          </section>
+
+      </main>
+
+    </div>
+
+    <!-- End Main Content -->
+
+<!-- End Main Content and Sidebar -->
+
+
+
+{% include '_footer.twig' %}

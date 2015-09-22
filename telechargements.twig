@@ -1,0 +1,24 @@
+{% include '_header.twig' %}
+                {# Fin du header #}
+
+                {% include '_aside.twig' %}
+
+                <div class="large-9 columns">
+                    <main>
+                        <div class="content_telechargement">
+                            <h1 class="main_title"> Page de téléchargement : </h1>
+                            <ul>
+                                {% for telechargement in telechargements %}
+                                    <li>
+                                    <p> <a href="files/{{ telechargement.fichier }} "> {{ telechargement.titre }} </a> 
+                                    <span class="p_medium"> - publié le {{ telechargement.datecreated|date('d-m-Y')}} par {{ telechargement.user.displayname }} </span></p>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+                 {% include '_footer.twig' %}

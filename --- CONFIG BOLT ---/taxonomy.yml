@@ -1,0 +1,25 @@
+# This file defines the different types of taxonomies in Bolt. See the
+# documentation for details: http://docs.bolt.cm/taxonomies#taxonomies
+
+tags:
+    slug: tags
+    singular_slug: tag
+    behaves_like: tags
+    postfix: "Add some freeform tags. Start a new tag by typing a comma or space."
+    #listing_template: tag-listing.twig #custom template
+
+chapters:
+    slug: chapters
+    singular_slug: chapter
+    behaves_like: grouping
+    options: { Accueil: "Accueil", QSN: "Qui sommes nous ?", Sections: "Les sections", Actions: "Nos actions", Guide: "Guide de l'apiculteur", Archives: "Archives" }
+    has_sortorder: true
+
+categories:
+    name: Categories
+    slug: categories
+    singular_name: Category
+    singular_slug: category
+    behaves_like: categories
+    multiple: true
+    options: [ Accueil, Qui sommes nous ?, Les sections, Nos actions, "Guide de l'apiculteur", Archives]
