@@ -3,7 +3,7 @@
         /* Script de map */
         function initMap(){
                 if (map) map.remove();
-                map = L.map('map').setView([45.180, 5.759], 12);
+                map = L.map('map').setView([45.163, 5.759], 12);
                 var marker = L.marker([45.163, 5.759]).addTo(map);
 
                 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
@@ -21,7 +21,7 @@
                 var m = document.getElementById("map");
                 var mu = document.getElementById("map-open");
                 var md = document.getElementById("map-close"); 
-                var adjustHeight = $(window).height()-240;
+                var adjustHeight = $(window).height()-210;
                 m.style.height = adjustHeight + 'px';
                 m.style.opacity = "1";
                 mu.style.display = "none";

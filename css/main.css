@@ -8,7 +8,7 @@
 .footer-links {
   min-height: auto;
   padding-top: 5px;
-  background-color: #001a26;
+  background-color: #00131c;
 }
 
 /* line 8, ../sass/_footer.scss */
@@ -33,30 +33,29 @@
 .mapper {
   min-height: 50px;
   background-color: #00131c;
-  padding-bottom: 30px;
   text-align: center;
 }
 
-/* line 30, ../sass/_footer.scss */
+/* line 29, ../sass/_footer.scss */
 .mapper nav {
   min-height: 100px;
   background-color: #00131c;
 }
 
-/* line 34, ../sass/_footer.scss */
+/* line 33, ../sass/_footer.scss */
 .mapper ul {
   margin-bottom: 3px;
 }
 
 /* #map-opener = Bouton pour activer l'ouverture de la map */
-/* line 39, ../sass/_footer.scss */
+/* line 38, ../sass/_footer.scss */
 #map-opener {
   padding-top: 10px;
   display: inline-block;
   min-height: 30px;
 }
 
-/* line 44, ../sass/_footer.scss */
+/* line 43, ../sass/_footer.scss */
 #map-opener a {
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
   color: white;
@@ -65,7 +64,7 @@
 }
 
 @media screen and (max-width: 640px) {
-  /* line 51, ../sass/_footer.scss */
+  /* line 50, ../sass/_footer.scss */
   #map-opener a {
     font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
     color: white;
@@ -73,30 +72,30 @@
     line-height: 18px;
   }
 }
-/* line 58, ../sass/_footer.scss */
+/* line 57, ../sass/_footer.scss */
 #map-opener img {
   width: 25px;
   height: 25px;
 }
 
-/* line 62, ../sass/_footer.scss */
+/* line 61, ../sass/_footer.scss */
 #map-open {
   display: inline-block;
 }
 
 /* #map = Contient la map */
-/* line 67, ../sass/_footer.scss */
+/* line 66, ../sass/_footer.scss */
 #map {
   height: 120px;
   opacity: 0.15;
 }
 
-/* line 72, ../sass/_footer.scss */
+/* line 71, ../sass/_footer.scss */
 #map-close {
   display: none;
 }
 
-/* line 77, ../sass/_footer.scss */
+/* line 76, ../sass/_footer.scss */
 #scroll-top {
   float: right;
   width: 50px;
@@ -129,65 +128,62 @@ article p {
 }
 
 /* Header CSS */
-/* line 3, ../sass/_header.scss */
-.news_link img {
-  height: 50px;
-  max-width: 50px;
-  margin-top: -150px;
-}
-
-/* line 8, ../sass/_header.scss */
+/* line 2, ../sass/_header.scss */
 #news_link {
   margin-top: 64px !important;
 }
 
 /* hauteur 160px */
-/* line 13, ../sass/_header.scss */
+/* line 7, ../sass/_header.scss */
 .top-bar {
   height: 160px;
   background-color: #001a26;
 }
 
 /* Logo*/
-/* line 19, ../sass/_header.scss */
+/* line 13, ../sass/_header.scss */
 .logo-area {
   float: left;
   /* display: inline-block; */
 }
 
+/* line 17, ../sass/_header.scss */
 .logo {
   height: 120px;
   padding-top: 14px;
 }
 
+/* line 21, ../sass/_header.scss */
 .logo img {
   width: 105px;
   height: 90px;
 }
 
+/* Title */
+/* line 27, ../sass/_header.scss */
 .title-area {
   height: 120px;
   /*display: inline-block;
   border-right: 300px; */
 }
 
-/* line 37, ../sass/_header.scss */
+/* line 32, ../sass/_header.scss */
 .top-bar .title-area {
   float: none;
 }
 
-/* line 40, ../sass/_header.scss */
+/* line 35, ../sass/_header.scss */
 .name {
   height: 120px;
   padding-top: 22px;
 }
 
-/* line 44, ../sass/_header.scss */
+/* line 39, ../sass/_header.scss */
 .top-bar .name h1 {
   width: 90%;
 }
 
-/* line 47, ../sass/_header.scss */
+/* line 42, ../sass/_header.scss */
 .name h1 a {
   font-size: 50px;
   color: white;
@@ -197,7 +193,7 @@ article p {
 }
 
 @media screen and (max-width: 640px) {
-  /* line 55, ../sass/_header.scss */
+  /* line 50, ../sass/_header.scss */
   .name h1 a {
     font-size: 28px;
     line-height: 20px;
@@ -205,7 +201,7 @@ article p {
   }
 }
 /* Photo full size accueil */
-/* line 63, ../sass/_header.scss */
+/* line 58, ../sass/_header.scss */
 .headerphoto {
   background-color: #00131c;
   padding-bottom: 38px;
@@ -217,36 +213,39 @@ article p {
   height: 715px;
 }
 
-.headerphoto img {
-  width: 1999px;
-}
-
+/* Slider */
+/* line 70, ../sass/_header.scss */
 .slider {
   height: 300px;
   background-color: #1e1e1e;
 }
 
 /* NavBar */
+/* line 76, ../sass/_header.scss */
 .top-bar-menu {
   height: 50px;
   background-color: #00131c;
 }
 
+/* line 80, ../sass/_header.scss */
 .top-bar-menu ul {
   margin-bottom: 0;
   list-style: none;
 }
 
+/* line 84, ../sass/_header.scss */
 .top-bar-menu ul li a {
   text-decoration: none;
 }
 
+/* line 87, ../sass/_header.scss */
 .top-bar-section li a:hover {
   background: #F1C501 !important;
   color: #00131c !important;
   transition-duration: 0.4s;
 }
 
+/* line 92, ../sass/_header.scss */
 .top-bar-section li.active:not(.has-form) a:not(.button) {
   background: #F1C501 none repeat scroll 0 0;
   color: #00131c;
@@ -255,6 +254,7 @@ article p {
   padding: 0 15px;
 }
 
+/* line 99, ../sass/_header.scss */
 .top-bar-section li:not(.has-form) a:not(.button) {
   background: #00131c none repeat scroll 0 0;
   line-height: 50px;
@@ -263,27 +263,32 @@ article p {
   font-size: 16px;
 }
 
-
+/* line 106, ../sass/_header.scss */
 .top-menu-bar a:hover {
   background: #00131c;
 }
 
+/* line 109, ../sass/_header.scss */
 .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
   background: #00131c;
 }
 
+/* line 112, ../sass/_header.scss */
 .top-bar-section .dropdown li:hover:not(.has-form):not(.active) > a:not(.button) {
   background: #F1C501;
   color: #00131c;
   transition-duration: 0.4s;
 }
 
+/* Rechercher */
+/* line 119, ../sass/_header.scss */
 .top-bar-section .has-form {
   background: #00131c none repeat scroll 0 0;
   height: 50px;
   padding: 0 15px;
 }
 
+/* line 124, ../sass/_header.scss */
 button.small {
   background: #F1C501 !important;
   height: 30px;
@@ -294,11 +299,13 @@ button.small {
   color: #00131c;
 }
 
+/* line 133, ../sass/_header.scss */
 button.small:hover {
   background: #00131c !important;
   color: #F1C501;
 }
 
+/* line 137, ../sass/_header.scss */
 input[type="search"] {
   height: 30px;
   margin-top: 10px;
