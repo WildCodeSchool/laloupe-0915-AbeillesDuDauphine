@@ -4,6 +4,7 @@
 /* Définition des couleurs*/
 /* Import des partials */
 /* Footer CSS */
+<<<<<<< HEAD
 /* line 3, ../sass/_footer.scss */
 .footer-links .right {
   padding-top: 5px;
@@ -40,6 +41,9 @@
 }
 
 /* .mapper > #map-opener / #map 
+=======
+/* .mapper > #map-opener / #map
+>>>>>>> 70998115e17d20050cd0faf7c88de025e3330993
  .mapper = Contient tout les elements du mapper */
 /* line 32, ../sass/_footer.scss */
 .mapper {
@@ -464,7 +468,15 @@ aside p {
 /* line 116, ../sass/_app.scss */
 .headerphoto {
   position: relative;
+<<<<<<< HEAD
   margin-bottom: 30px;
+=======
+  text-align: right;
+  z-index: -1;
+  top: -161px;
+  height: 715px;
+
+>>>>>>> 70998115e17d20050cd0faf7c88de025e3330993
 }
 
 /* line 121, ../sass/_app.scss */
