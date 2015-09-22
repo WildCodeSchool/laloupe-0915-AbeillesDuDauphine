@@ -66,5 +66,6 @@ abeille:
           - label: Téléchargement
             path: telechargement
     - label: La SCAPIAD
+      class: scapiad
       path: pages/la-scapiad
       class: last

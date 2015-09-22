@@ -10,7 +10,9 @@
         {{ app.config.get('general/sitename') }}
         {% if record.title is not defined and app.config.get('general/payoff') %} | {{ app.config.get('general/payoff') }}{% endif %}
     </title>
-
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ paths.theme }}images/favicon.ico" />
+    <!-- Fonts Google -->
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
     {# Ajout des fonts#}
     <link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
@@ -19,7 +21,7 @@
     {# paths.theme is always a correct path to the current theme. Even if you rename the theme-folder,
        this will keep working. See the documentation on paths: http://docs.bolt.cm/internals#paths #}
     <link rel="stylesheet" href="{{ paths.theme }}css/foundation.css">
-    <link rel="stylesheet" href="{{ paths.theme }}css/main.css">   
+    <link rel="stylesheet" href="{{ paths.theme }}css/main.css">
     {# Bolt comes with Magnific Popup, as it's used in the backend. We can use it here, or you can
       just swap it out for the image-viewing script of your choice. Or delete it altogether. #}
     <link rel="stylesheet" href="{{ paths.theme }}css/magnific-popup.css">
@@ -43,7 +45,7 @@
                         <li class="logo">
                             <a href="{{ paths.root }}"><img src="{{ paths.theme }}images/logo.gif" /></a>
                         </li>
-                    </ul>
+                   </ul>
                     <ul class="title-area">
                         <li class="name"><h1><a href="{{ paths.root }}">
                             {# the values in the 'app.config' object are taken directly from the file app/config/config.yml #}
@@ -54,15 +56,12 @@
                         </a></h1></li>
                     </ul>
                 </nav>
-
                 <!-- Menu -->
                 <div class="contain-to-grid sticky">
                     <nav class="top-bar-menu" data-topbar role="navigation" data-options="sticky_on: large">
                         <section class="top-bar-section">
                             <ul class="left">
-
                                 {{ menu('abeille', '_sub_menu.twig') }}
-
                             </ul>
                         </section>
                         <!-- Barre de recherche déplacée ici -->
@@ -75,7 +74,6 @@
                     </nav>
                 </div>
                 <!-- Fin Menu -->
-
                 <!-- Header bar -->
                 {# Affiche l'image full page si c'est l'accueil, sinon affiche le slider#}
                 {% if record.slug == 'descriptif-syndicat' %}
