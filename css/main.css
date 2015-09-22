@@ -164,30 +164,33 @@ article p {
   /* display: inline-block; */
 }
 
+/* line 20, ../sass/_header.scss */
 .logo {
   height: 120px;
   padding-top: 14px;
 }
 
-
+/* line 24, ../sass/_header.scss */
 .logo img {
   width: 105px;
   height: 90px;
 }
 
-
+/* Title */
+/* line 30, ../sass/_header.scss */
 .title-area {
   height: 120px;
   /*display: inline-block;
   border-right: 300px; */
 }
 
-
+/* line 35, ../sass/_header.scss */
 .name {
   height: 120px;
   padding-top: 22px;
 }
 
+/* line 39, ../sass/_header.scss */
 .name h1 a {
   font-size: 40px;
   color: white;
@@ -197,54 +200,57 @@ article p {
 }
 
 @media screen and (max-width: 640px) {
+  /* line 47, ../sass/_header.scss */
   .name h1 a {
     font-size: 28px;
   }
 }
-
+/* Photo full size accueil */
+/* line 53, ../sass/_header.scss */
 .headerphoto {
   background-color: #00131c;
   padding-bottom: 38px;
   text-align: center;
 }
 
-
+/* line 58, ../sass/_header.scss */
 .headerphoto img {
   width: 1999px;
 }
 
-
+/* Slider */
+/* line 66, ../sass/_header.scss */
 .slider {
   height: 300px;
   background-color: #1e1e1e;
 }
 
-
+/* NavBar */
+/* line 72, ../sass/_header.scss */
 .top-bar-menu {
   height: 50px;
   background-color: #00131c;
 }
 
-
+/* line 76, ../sass/_header.scss */
 .top-bar-menu ul {
   margin-bottom: 0;
   list-style: none;
 }
 
-
+/* line 80, ../sass/_header.scss */
 .top-bar-menu ul li a {
   text-decoration: none;
 }
 
-
+/* line 83, ../sass/_header.scss */
 .top-bar-section li a:hover {
   background: #F1C501 !important;
   color: #00131c !important;
   transition-duration: 0.4s;
 }
 
-
->>>>>>> d614cabc8ea11aecef39b073bd850086147273c8
+/* line 88, ../sass/_header.scss */
 .top-bar-section li.active:not(.has-form) a:not(.button) {
   background: #F1C501 none repeat scroll 0 0;
   color: #00131c;
@@ -253,7 +259,7 @@ article p {
   padding: 0 15px;
 }
 
-
+/* line 95, ../sass/_header.scss */
 .top-bar-section li:not(.has-form) a:not(.button) {
   background: #00131c none repeat scroll 0 0;
   line-height: 50px;
@@ -262,31 +268,32 @@ article p {
   font-size: 16px;
 }
 
-
+/* line 102, ../sass/_header.scss */
 .top-menu-bar a:hover {
   background: #00131c;
 }
 
-/* line 104, ../sass/_header.scss */
+/* line 105, ../sass/_header.scss */
 .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
   background: #00131c;
 }
 
-/* line 107, ../sass/_header.scss */
+/* line 108, ../sass/_header.scss */
 .top-bar-section .dropdown li:hover:not(.has-form):not(.active) > a:not(.button) {
   background: #F1C501;
   color: #00131c;
   transition-duration: 0.4s;
 }
 
-
+/* Rechercher */
+/* line 115, ../sass/_header.scss */
 .top-bar-section .has-form {
   background: #00131c none repeat scroll 0 0;
   height: 50px;
   padding: 0 15px;
 }
 
-3c8
+/* line 120, ../sass/_header.scss */
 button.small {
   background: #F1C501 !important;
   height: 30px;
@@ -297,13 +304,13 @@ button.small {
   color: #00131c;
 }
 
-/* line 128, ../sass/_header.scss */
+/* line 129, ../sass/_header.scss */
 button.small:hover {
   background: #00131c !important;
   color: #F1C501;
 }
 
-
+/* line 133, ../sass/_header.scss */
 input[type="search"] {
   height: 30px;
   margin-top: 10px;
@@ -685,12 +692,12 @@ As you can see, we will make the closing a bit faster than the opening. */
   height: 0px;
   position: relative;
   z-index: 10;
-  transition: height 0.5s ease-in-out,  box-shadow 0.7s linear;
+  transition: height 0.3s ease-in-out,  box-shadow 0.7s linear;
 }
 
 /* line 88, ../sass/_accordeon.scss */
 .accordeon input:checked ~ article {
-  transition: height 0.8s ease-in-out,  box-shadow 0.3s linear;
+  transition: height 0.6s ease-in-out,  box-shadow 0.3s linear;
   box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3);
 }
 
