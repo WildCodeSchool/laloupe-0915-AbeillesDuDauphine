@@ -18,12 +18,13 @@
   background: $dark-blue;
 }
 .accordeon label:hover{
-  background: rgba(0, 19, 28, 0.8);
+  background: $blue;
+  color: $yellow;
 }
 .accordeon input:checked + label,
 .accordeon input:checked + label:hover{
-  background: $dark-blue;
-  color: #FFFFFF;
+  background: $blue;
+  color: $yellow;
 }
 .accordeon label:hover:after,
 .accordeon input:checked + label:hover:after{
@@ -33,15 +34,16 @@
   height: 24px;
   right: 13px;
   top: 7px;
+  background: transparent url(../images/tools/arrow_down.png) no-repeat center center; 
 }
 .ac-container input:checked + label:hover:after{
-  background: $dark-blue;
+  background-image: url(../images/tools/arrow_up.png);
 }
 .accordeon input{
   display: none;
 }
 .accordeon article{
-  background: rgba(255, 255, 0, 0.5);
+  background: rgba(255, 255, 0, 0.3);
   margin-top: -1px;
   margin-bottom: 5px;
   overflow: hidden;
