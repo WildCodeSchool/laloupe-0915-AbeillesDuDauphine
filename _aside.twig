@@ -1,13 +1,13 @@
 
 <aside class="large-3 columns">
 
-        <h5><u>Actualités</u></h5>
-        {% setcontent records = "pages/latest/5" %}
+        <h4><u>Actualités :</u></h4>
+        {% setcontent actualites = "actualites/latest/5" %}
         <ul>
-        {% for record in records %}
+        {% for record in actualites %}
           <li><a href="{{ record.link }}">{{ record.title }}</a></li>
         {% endfor %}
-          <p><a href="{{ paths.root }}pages"><br><i>Plus d'articles...</i></br></a></p>
+          <p><a href="{{ paths.root }}actualites"><i>Plus d'articles...</i></a></p>
         <ul>
 
 </aside>

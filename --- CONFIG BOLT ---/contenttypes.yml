@@ -195,6 +195,9 @@ telechargement:
         titre:
             type: text
             class: large
+        description:
+            type: html
+            height: 300px
         fichier: 
             type: file
     listing_template: telechargements.twig
