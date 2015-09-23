@@ -671,7 +671,7 @@ aside li {
 
 /* line 45, ../sass/_accordeon.scss */
 .accordeon article {
-  background: rgba(255, 255, 0, 0.15);
+  background: #f8f8f8;
   margin-top: -1px;
   margin-bottom: 5px;
   overflow: hidden;
