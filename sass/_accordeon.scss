@@ -5,7 +5,7 @@
 .accordeon label{
   font-family: $font-title;
   height: 100%;
-  width: 50%;
+  min-width: 80%;
   position: relative;
   z-index: 20;
   display: block;

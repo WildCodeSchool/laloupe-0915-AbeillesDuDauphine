@@ -621,7 +621,7 @@ aside li {
 .accordeon label {
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
   height: 100%;
-  width: 50%;
+  min-width: 80%;
   position: relative;
   z-index: 20;
   display: block;
