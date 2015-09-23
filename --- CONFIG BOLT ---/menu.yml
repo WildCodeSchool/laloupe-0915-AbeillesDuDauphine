@@ -40,11 +40,11 @@ abeille:
             path: pages/descriptif-sections
           - label: Descriptif Coopératives
             path: pages/descriptif-cooperatives
+    - label: Formations
+      path: pages/formations
     - label: Nos actions
       path: pages/nos-actions
       submenu:
-          - label: Formations
-            path: pages/formations
           - label: Relation avec Entreprises
             path: pages/relation-avec-entreprises
           - label: Acheter à la SCAPIAD
