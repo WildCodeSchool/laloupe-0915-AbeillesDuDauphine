@@ -752,3 +752,30 @@ aside li {
 .h6_medium {
   font-size: 14px;
 }
+
+/* line 1, ../sass/faq.scss */
+.qr h1 {
+  background-color: #001a26;
+  color: white;
+  text-align: center;
+}
+
+/* line 6, ../sass/faq.scss */
+.qr_content {
+  background-color: #f3f3f3;
+  margin-top: 30px;
+  padding-left: 20px;
+}
+
+/* line 11, ../sass/faq.scss */
+.qr_content p {
+  margin-left: 20px;
+}
+
+/* line 14, ../sass/faq.scss */
+.qr_form h2 {
+  margin-top: 80px;
+  text-align: center;
+  background-color: #001a26;
+  color: white;
+}
