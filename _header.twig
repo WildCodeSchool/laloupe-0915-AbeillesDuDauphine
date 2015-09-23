@@ -54,14 +54,25 @@
                                 <br><small>{{ app.config.get('general/payoff') }}</small>
                             {% endif %}
                         </a></h1></li>
-                    </ul>
+                        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+                      </ul>
                 </nav>
                 <!-- Menu -->
+
+
+                 <!-- <nav class="top-bar" data-topbar>
+                    <ul class="title-area">
+                        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+                    </ul>
+                 </nav> -->
+
+
+
                 <div class="contain-to-grid sticky">
                     <nav class="top-bar-menu" data-topbar role="navigation" data-options="sticky_on: large">
                         <section class="top-bar-section">
                             <ul class="left">
-                              {{ menu('abeille', '_sub_menu.twig') }}
+                                {{ menu('abeille', '_sub_menu.twig') }}
                             </ul>
                         </section>
                         <!-- Barre de recherche déplacée ici -->
@@ -85,8 +96,7 @@
                         <video style="width: 100%; height: auto; left: auto;" id="heroVideoOne" class="heroVideo" autoplay="" muted="" loop="" >
                         <source src="{{ paths.theme }}euskalerlea2.ogg" type="video/ogg">
                         </video>
-
-                        <a href="#news_link" class="news_link scrollTo"> <img src="{{ paths.theme }}images/tools/header_photo_link.png" /></a>
+                        <a href="#news_link" class="news_link scrollTo"><img src="{{ paths.theme }}images/tools/header_photo_link.png" /></a>
                     </div>
                     </header>
                     </div>

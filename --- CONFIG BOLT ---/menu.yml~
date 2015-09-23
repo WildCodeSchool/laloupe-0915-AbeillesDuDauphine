@@ -54,7 +54,7 @@ abeille:
           - label: J'ai un essaim dans mon jardin!
             path: pages/j-ai-un-essaim-dans-mon-jardin
     - label: Guide de l'apiculteur
-      path: pages/guide-de-l-apiculteur
+      path: guide
       submenu:
           - label: Professionnels
             path: pages/professionnels
@@ -66,6 +66,5 @@ abeille:
           - label: Téléchargement
             path: telechargement
     - label: La SCAPIAD
-      class: scapiad
       path: pages/la-scapiad
       class: last

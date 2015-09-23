@@ -129,80 +129,73 @@ article p {
 }
 
 /* Header CSS */
-/* line 3, ../sass/_header.scss */
+/*body {
+    background-image: url(../images/abeille.jpg);
+    background-position: cover;
+}*/
+/* line 6, ../sass/_header.scss */
 .news_link img {
   height: 50px;
   max-width: 50px;
   margin-top: -150px;
 }
 
-/* line 8, ../sass/_header.scss */
+/* line 11, ../sass/_header.scss */
 #news_link {
   margin-top: 64px !important;
 }
 
 /* hauteur 160px */
-/* line 13, ../sass/_header.scss */
+/* line 16, ../sass/_header.scss */
 .top-bar {
-  height: 160px;
+  height: 120px;
   background-color: #001a26;
 }
 
 /* Logo*/
-/* line 19, ../sass/_header.scss */
+/* line 22, ../sass/_header.scss */
 .logo-area {
   float: left;
   /* display: inline-block; */
 }
 
-/* line 21, ../sass/_header.scss */
+/* line 26, ../sass/_header.scss */
 .logo {
   height: 120px;
   padding-top: 14px;
 }
 
-/* line 25, ../sass/_header.scss */
+/* line 30, ../sass/_header.scss */
 .logo img {
   width: 105px;
   height: 90px;
 }
 
-<<<<<<< HEAD
 /* Title */
-/* line 31, ../sass/_header.scss */
-=======
->>>>>>> 5884fcc69735f74f3f1141de9e1c41b8741b20f3
+/* line 36, ../sass/_header.scss */
 .title-area {
   height: 120px;
   /*display: inline-block;
   border-right: 300px; */
 }
 
-<<<<<<< HEAD
-/* line 36, ../sass/_header.scss */
-=======
-/* line 37, ../sass/_header.scss */
+/* line 41, ../sass/_header.scss */
 .top-bar .title-area {
   float: none;
 }
 
-/* line 40, ../sass/_header.scss */
->>>>>>> 5884fcc69735f74f3f1141de9e1c41b8741b20f3
+/* line 44, ../sass/_header.scss */
 .name {
   height: 120px;
   padding-top: 22px;
 }
 
-<<<<<<< HEAD
-/* line 40, ../sass/_header.scss */
-=======
-/* line 44, ../sass/_header.scss */
+/* line 48, ../sass/_header.scss */
 .top-bar .name h1 {
   width: 90%;
 }
 
-/* line 47, ../sass/_header.scss */
->>>>>>> 5884fcc69735f74f3f1141de9e1c41b8741b20f3
+/* line 51, ../sass/_header.scss */
 .name h1 a {
   font-size: 50px;
   color: white;
@@ -212,11 +205,7 @@ article p {
 }
 
 @media screen and (max-width: 640px) {
-<<<<<<< HEAD
-  /* line 48, ../sass/_header.scss */
-=======
-  /* line 55, ../sass/_header.scss */
->>>>>>> 5884fcc69735f74f3f1141de9e1c41b8741b20f3
+  /* line 59, ../sass/_header.scss */
   .name h1 a {
     font-size: 28px;
     line-height: 20px;
@@ -224,11 +213,7 @@ article p {
   }
 }
 /* Photo full size accueil */
-<<<<<<< HEAD
-/* line 54, ../sass/_header.scss */
-=======
-/* line 63, ../sass/_header.scss */
->>>>>>> 5884fcc69735f74f3f1141de9e1c41b8741b20f3
+/* line 67, ../sass/_header.scss */
 .headerphoto {
   background-color: #00131c;
   padding-bottom: 38px;
@@ -240,56 +225,44 @@ article p {
   height: 715px;
 }
 
-/* line 64, ../sass/_header.scss */
+/* line 77, ../sass/_header.scss */
 .headerphoto img {
   width: 1999px;
 }
 
 /* Slider */
-/* line 69, ../sass/_header.scss */
+/* line 82, ../sass/_header.scss */
 .slider {
   height: 300px;
   background-color: #1e1e1e;
 }
 
 /* NavBar */
-/* line 75, ../sass/_header.scss */
+/* line 88, ../sass/_header.scss */
 .top-bar-menu {
   height: 50px;
   background-color: #00131c;
 }
 
-<<<<<<< HEAD
-/* line 79, ../sass/_header.scss */
-=======
->>>>>>> 5884fcc69735f74f3f1141de9e1c41b8741b20f3
+/* line 92, ../sass/_header.scss */
 .top-bar-menu ul {
   margin-bottom: 0;
   list-style: none;
 }
 
-<<<<<<< HEAD
-/* line 83, ../sass/_header.scss */
-=======
->>>>>>> 5884fcc69735f74f3f1141de9e1c41b8741b20f3
+/* line 96, ../sass/_header.scss */
 .top-bar-menu ul li a {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-/* line 86, ../sass/_header.scss */
-=======
->>>>>>> 5884fcc69735f74f3f1141de9e1c41b8741b20f3
+/* line 99, ../sass/_header.scss */
 .top-bar-section li a:hover {
   background: #F1C501 !important;
   color: #00131c !important;
   transition-duration: 0.4s;
 }
 
-<<<<<<< HEAD
-/* line 91, ../sass/_header.scss */
-=======
->>>>>>> 5884fcc69735f74f3f1141de9e1c41b8741b20f3
+/* line 104, ../sass/_header.scss */
 .top-bar-section li.active:not(.has-form) a:not(.button) {
   background: #F1C501 none repeat scroll 0 0;
   color: #00131c;
@@ -298,10 +271,7 @@ article p {
   padding: 0 15px;
 }
 
-<<<<<<< HEAD
-/* line 98, ../sass/_header.scss */
-=======
->>>>>>> 5884fcc69735f74f3f1141de9e1c41b8741b20f3
+/* line 111, ../sass/_header.scss */
 .top-bar-section li:not(.has-form) a:not(.button) {
   background: #00131c none repeat scroll 0 0;
   line-height: 50px;
@@ -310,44 +280,33 @@ article p {
   font-size: 16px;
 }
 
-/* line 105, ../sass/_header.scss */
+/* line 118, ../sass/_header.scss */
 .top-menu-bar a:hover {
   background: #00131c;
 }
 
-<<<<<<< HEAD
-/* line 108, ../sass/_header.scss */
-=======
->>>>>>> 5884fcc69735f74f3f1141de9e1c41b8741b20f3
+/* line 121, ../sass/_header.scss */
 .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
   background: #00131c;
 }
 
-<<<<<<< HEAD
-/* line 111, ../sass/_header.scss */
-=======
->>>>>>> 5884fcc69735f74f3f1141de9e1c41b8741b20f3
+/* line 124, ../sass/_header.scss */
 .top-bar-section .dropdown li:hover:not(.has-form):not(.active) > a:not(.button) {
   background: #F1C501;
   color: #00131c;
   transition-duration: 0.4s;
 }
 
-<<<<<<< HEAD
+/* Menu Toggle */
 /* Rechercher */
-/* line 118, ../sass/_header.scss */
-=======
->>>>>>> 5884fcc69735f74f3f1141de9e1c41b8741b20f3
+/* line 134, ../sass/_header.scss */
 .top-bar-section .has-form {
   background: #00131c none repeat scroll 0 0;
   height: 50px;
   padding: 0 15px;
 }
 
-<<<<<<< HEAD
-/* line 123, ../sass/_header.scss */
-=======
->>>>>>> 5884fcc69735f74f3f1141de9e1c41b8741b20f3
+/* line 139, ../sass/_header.scss */
 button.small {
   background: #F1C501 !important;
   height: 30px;
@@ -358,19 +317,13 @@ button.small {
   color: #00131c;
 }
 
-<<<<<<< HEAD
-/* line 132, ../sass/_header.scss */
-=======
->>>>>>> 5884fcc69735f74f3f1141de9e1c41b8741b20f3
+/* line 148, ../sass/_header.scss */
 button.small:hover {
   background: #00131c !important;
   color: #F1C501;
 }
 
-<<<<<<< HEAD
-/* line 136, ../sass/_header.scss */
-=======
->>>>>>> 5884fcc69735f74f3f1141de9e1c41b8741b20f3
+/* line 152, ../sass/_header.scss */
 input[type="search"] {
   height: 30px;
   margin-top: 10px;

@@ -11,7 +11,7 @@
 
 /* hauteur 160px */
 .top-bar {
-    height: 160px;
+    height: 120px;
     background-color: $blue;
 }
 
@@ -58,14 +58,14 @@
         line-height: 20px;
         width: auto !important;
     }
-}
+  }
 
 /* Photo full size accueil */
 .headerphoto {
     background-color: $dark-blue;
     padding-bottom: 38px;
     text-align: center;
-    position: relative;    
+    position: relative;
     text-align: center;
     z-index: -1;
     top: -161px;
@@ -123,6 +123,9 @@
     color: $dark-blue;
     transition-duration: 0.4s;
 }
+
+/* Menu Toggle */
+
 
 /* Rechercher */
 .top-bar-section .has-form {
