@@ -377,8 +377,6 @@ h4 {
 h5 {
   font-size: 20px;
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
-  margin-left:20px; 
-
 }
 /* line 53, ../sass/_app.scss */
 h5 p {
@@ -607,11 +605,8 @@ aside ul {
   list-style-type: none;
   padding: 0;
 }
-<<<<<<< HEAD
-=======
 
 /* line 251, ../sass/_app.scss */
->>>>>>> c4c1c13701647b2c78a3ee5e1022c5977b0d345a
 aside li {
   margin-top: 5px;
 }
@@ -756,4 +751,20 @@ aside li {
 /* line 9, ../sass/_telechargement.scss */
 .h6_medium {
   font-size: 14px;
+}
+
+/* line 2, ../sass/_slider.scss */
+#carrousel {
+  position: relative;
+  height: 200px;
+  width: 700px;
+  margin: auto;
+}
+
+/* line 8, ../sass/_slider.scss */
+#carrousel ul li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  list-style: none;
 }
