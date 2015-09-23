@@ -377,8 +377,6 @@ h4 {
 h5 {
   font-size: 20px;
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
-  margin-left:20px; 
-
 }
 /* line 53, ../sass/_app.scss */
 h5 p {
@@ -607,11 +605,8 @@ aside ul {
   list-style-type: none;
   padding: 0;
 }
-<<<<<<< HEAD
-=======
 
 /* line 251, ../sass/_app.scss */
->>>>>>> c4c1c13701647b2c78a3ee5e1022c5977b0d345a
 aside li {
   margin-top: 5px;
 }
@@ -660,12 +655,12 @@ aside li {
   width: 24px;
   height: 24px;
   right: 13px;
-  top: 7px;
+  top: 4px;
   background: transparent url(../images/tools/arrow_down.png) no-repeat center center;
 }
 
 /* line 39, ../sass/_accordeon.scss */
-.ac-container input:checked + label:hover:after {
+.accordeon input:checked + label:hover:after {
   background-image: url(../images/tools/arrow_up.png);
 }
 

@@ -33,10 +33,10 @@
   width: 24px;
   height: 24px;
   right: 13px;
-  top: 7px;
+  top: 4px;
   background: transparent url(../images/tools/arrow_down.png) no-repeat center center; 
 }
-.ac-container input:checked + label:hover:after{
+.accordeon input:checked + label:hover:after{
   background-image: url(../images/tools/arrow_up.png);
 }
 .accordeon input{
