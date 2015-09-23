@@ -620,15 +620,15 @@ aside li {
 /* line 5, ../sass/_accordeon.scss */
 .accordeon label {
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
-  padding: 0px 15px 15px 15px;
-  padding-top: 0px;
+  height: 100%;
+  width: 50%;
   position: relative;
   z-index: 20;
   display: block;
   height: 30px;
-  min-width: 200px;
   cursor: pointer;
   color: #FFFFFF;
+  text-align: center;
   line-height: 43px;
   font-size: 22px;
   background: #00131c;
@@ -655,7 +655,7 @@ aside li {
   width: 24px;
   height: 24px;
   right: 13px;
-  top: 4px;
+  top: 7px;
   background: transparent url(../images/tools/arrow_down.png) no-repeat center center;
 }
 
@@ -671,7 +671,7 @@ aside li {
 
 /* line 45, ../sass/_accordeon.scss */
 .accordeon article {
-  background: rgba(255, 255, 0, 0.3);
+  background: rgba(255, 255, 0, 0.15);
   margin-top: -1px;
   margin-bottom: 5px;
   overflow: hidden;
@@ -684,9 +684,10 @@ aside li {
 .accordeon article p {
   line-height: 23px;
   font-size: 14px;
+  margin: 30px 30px;
 }
 
-/* line 59, ../sass/_accordeon.scss */
+/* line 60, ../sass/_accordeon.scss */
 .accordeon input:checked ~ article.ac-small {
   height: auto;
 }
