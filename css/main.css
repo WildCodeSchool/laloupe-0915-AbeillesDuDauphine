@@ -280,15 +280,16 @@ article p {
   transition-duration: 0.4s;
 }
 
+/* Menu Toggle */
 /* Rechercher */
-/* line 119, ../sass/_header.scss */
+/* line 122, ../sass/_header.scss */
 .top-bar-section .has-form {
   background: #00131c none repeat scroll 0 0;
   height: 50px;
   padding: 0 15px;
 }
 
-/* line 124, ../sass/_header.scss */
+/* line 127, ../sass/_header.scss */
 button.small {
   background: #F1C501 !important;
   height: 30px;
@@ -299,13 +300,13 @@ button.small {
   color: #00131c;
 }
 
-/* line 133, ../sass/_header.scss */
+/* line 136, ../sass/_header.scss */
 button.small:hover {
   background: #00131c !important;
   color: #F1C501;
 }
 
-/* line 137, ../sass/_header.scss */
+/* line 140, ../sass/_header.scss */
 input[type="search"] {
   height: 30px;
   margin-top: 10px;
@@ -313,74 +314,79 @@ input[type="search"] {
 
 /* Pour le full width */
 /* line 2, ../sass/_app.scss */
+#news_link {
+  margin-top: 64px !important;
+}
+
+/* line 6, ../sass/_app.scss */
 #top {
   margin-top: -50px;
   position: absolute;
 }
 
-/* line 7, ../sass/_app.scss */
+/* line 11, ../sass/_app.scss */
 .main_title {
   background-color: #001a26;
   color: white;
   text-align: center;
 }
 
-/* line 12, ../sass/_app.scss */
+/* line 16, ../sass/_app.scss */
 .fullwidth {
   max-width: 2000px;
 }
 
-/* line 15, ../sass/_app.scss */
+/* line 19, ../sass/_app.scss */
 body {
   background-color: #F8F8F8;
 }
 
-/* line 19, ../sass/_app.scss */
+/* line 23, ../sass/_app.scss */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
   font-size: 16px;
 }
 
-/* line 23, ../sass/_app.scss */
+/* line 27, ../sass/_app.scss */
 h1 {
   font-weight: normal;
   font-size: 40px;
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 
-/* line 29, ../sass/_app.scss */
+/* line 33, ../sass/_app.scss */
 h2 {
   font-weight: normal;
   font-size: 34px;
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 
-/* line 35, ../sass/_app.scss */
+/* line 39, ../sass/_app.scss */
 h3 {
   font-weight: normal;
   font-size: 28px;
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 
-/* line 41, ../sass/_app.scss */
+/* line 45, ../sass/_app.scss */
 h4 {
   font-size: 24px;
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 
-/* line 46, ../sass/_app.scss */
+/* line 50, ../sass/_app.scss */
 h5 {
   font-size: 20px;
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
   margin-left:20px; 
 
 }
-/* line 49, ../sass/_app.scss */
+/* line 53, ../sass/_app.scss */
 h5 p {
   font-size: 30px;
   color: #313131;
 }
 
-/* line 53, ../sass/_app.scss */
+/* line 57, ../sass/_app.scss */
 h6 {
   font-size: 15px;
   color: #666;
@@ -388,56 +394,56 @@ h6 {
   font-family: Roboto, Open Sans, serif;
 }
 
-/* line 59, ../sass/_app.scss */
+/* line 63, ../sass/_app.scss */
 p {
   color: #313131;
 }
 
-/* line 63, ../sass/_app.scss */
+/* line 67, ../sass/_app.scss */
 a {
   color: #284F76;
 }
 
-/* line 67, ../sass/_app.scss */
+/* line 71, ../sass/_app.scss */
 a:hover {
   color: #4D9C9A;
   text-decoration: underline;
 }
 
-/* line 72, ../sass/_app.scss */
+/* line 76, ../sass/_app.scss */
 p, ul, ol {
   margin: 0 0 1em 0;
   font-family: Roboto, Open Sans, serif;
 }
 
-/* line 77, ../sass/_app.scss */
+/* line 81, ../sass/_app.scss */
 ul {
   margin-left: 17px;
 }
 
-/* line 81, ../sass/_app.scss */
+/* line 85, ../sass/_app.scss */
 ol {
   margin-left: 20px;
 }
 
-/* line 85, ../sass/_app.scss */
+/* line 89, ../sass/_app.scss */
 pre {
   padding: 4px 0;
   overflow-y: auto;
   overflow-x: scroll;
 }
 
-/* line 91, ../sass/_app.scss */
+/* line 95, ../sass/_app.scss */
 aside {
   margin-top: 20px;
 }
 
-/* line 95, ../sass/_app.scss */
+/* line 99, ../sass/_app.scss */
 aside p {
   font-size: 14px;
 }
 
-/* line 99, ../sass/_app.scss */
+/* line 103, ../sass/_app.scss */
 .container {
   padding-top: 20px;
   margin: 0 auto 20px;
@@ -445,28 +451,28 @@ aside p {
   background-color: #FFF;
 }
 
-/* line 106, ../sass/_app.scss */
+/* line 110, ../sass/_app.scss */
 .top-bar h1 {
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 
-/* line 110, ../sass/_app.scss */
+/* line 114, ../sass/_app.scss */
 .top-bar h5 {
   font-family: Lobster Two, Helvetica Neue, Helvetica, Helvetica, Arial, sans-serif;
 }
 
-/* line 114, ../sass/_app.scss */
+/* line 118, ../sass/_app.scss */
 .top-bar a:hover {
   text-decoration: none;
 }
 
-/* line 118, ../sass/_app.scss */
+/* line 122, ../sass/_app.scss */
 .headerphoto {
   position: relative;
   margin-bottom: 30px;
 }
 
-/* line 123, ../sass/_app.scss */
+/* line 127, ../sass/_app.scss */
 .headerphoto p {
   margin: 0;
   position: absolute;
@@ -481,7 +487,7 @@ aside p {
   font-weight: bold;
 }
 
-/* line 136, ../sass/_app.scss */
+/* line 140, ../sass/_app.scss */
 .headerphoto small {
   font-size: 28px;
   color: #DDD;
@@ -490,7 +496,7 @@ aside p {
   margin-right: 14px;
 }
 
-/* line 144, ../sass/_app.scss */
+/* line 148, ../sass/_app.scss */
 div.imageholder {
   background-color: #FFF;
   border: 1px solid #BBBBBB;
@@ -500,13 +506,13 @@ div.imageholder {
   margin: 0 0 5px 5px;
 }
 
-/* line 153, ../sass/_app.scss */
+/* line 157, ../sass/_app.scss */
 footer ul.dropdown {
   display: none;
 }
 
 /* "bolt_widget" is the default container for widgets in Bolt. */
-/* line 158, ../sass/_app.scss */
+/* line 162, ../sass/_app.scss */
 .bolt_widget {
   background: #f2f2f2;
   border: solid 1px #e6e6e6;
@@ -514,13 +520,13 @@ footer ul.dropdown {
   padding: 6px;
 }
 
-/* line 165, ../sass/_app.scss */
+/* line 169, ../sass/_app.scss */
 .pagination a:hover {
   text-decoration: none;
 }
 
 /* Styles for 'responsive video embeds' --------------------------------  */
-/* line 171, ../sass/_app.scss */
+/* line 175, ../sass/_app.scss */
 .responsive-video {
   padding-top: 25px;
   position: relative;
@@ -530,7 +536,7 @@ footer ul.dropdown {
   margin: 0 0 1em 0;
 }
 
-/* line 179, ../sass/_app.scss */
+/* line 183, ../sass/_app.scss */
 .responsive-video iframe {
   width: 100%;
   position: absolute;
@@ -542,17 +548,17 @@ footer ul.dropdown {
 
 /* Styles for 'max-width 479px' -----------------------------------------  */
 @media only screen and (max-width: 479px) {
-  /* line 191, ../sass/_app.scss */
+  /* line 195, ../sass/_app.scss */
   .headerphoto {
     margin-bottom: 0px;
   }
 
-  /* line 195, ../sass/_app.scss */
+  /* line 199, ../sass/_app.scss */
   .headerphoto span {
     display: none;
   }
 
-  /* line 198, ../sass/_app.scss */
+  /* line 202, ../sass/_app.scss */
   .headerphoto small {
     display: block;
     font-size: 22px;
@@ -560,47 +566,52 @@ footer ul.dropdown {
     line-height: 26px;
   }
 
-  /* line 205, ../sass/_app.scss */
+  /* line 209, ../sass/_app.scss */
   h1 {
     font-size: 32px;
   }
 
-  /* line 210, ../sass/_app.scss */
+  /* line 214, ../sass/_app.scss */
   h2 {
     font-size: 28px;
   }
 
-  /* line 215, ../sass/_app.scss */
+  /* line 219, ../sass/_app.scss */
   h3 {
     font-size: 24px;
   }
 
-  /* line 220, ../sass/_app.scss */
+  /* line 224, ../sass/_app.scss */
   h4 {
     font-size: 20px;
   }
 
-  /* line 224, ../sass/_app.scss */
+  /* line 228, ../sass/_app.scss */
   h5 {
     font-size: 18px;
   }
 
-  /* line 229, ../sass/_app.scss */
+  /* line 233, ../sass/_app.scss */
   h6 {
     font-size: 15px;
   }
 
-  /* line 233, ../sass/_app.scss */
+  /* line 237, ../sass/_app.scss */
   div.imageholder {
     float: none;
     margin: 0 -17px 10px -17px;
   }
 }
-/* line 240, ../sass/_app.scss */
+/* line 244, ../sass/_app.scss */
 aside ul {
   list-style-type: none;
   padding: 0;
 }
+<<<<<<< HEAD
+=======
+
+/* line 251, ../sass/_app.scss */
+>>>>>>> c4c1c13701647b2c78a3ee5e1022c5977b0d345a
 aside li {
   margin-top: 5px;
 }
