@@ -1,3 +1,4 @@
+ (function(){
  $(document).ready(function() {
             var navpos = $('.top-bar-menu').offset();
                 console.log(navpos.top);
@@ -10,3 +11,20 @@
                 }
             });
         });
+
+
+  var elementPosition = $('#sticky').offset();
+
+  if(typeof elementPosition != "undefined"){
+
+        $(window).scroll(function(){
+                if($(window).scrollTop() > elementPosition.top - 50){
+                      $('#sticky').css('position','fixed').css('top','45px');
+                } else {
+                    $('#sticky').css('position','static');
+                }    
+        });
+    }
+    else{
+    }
+})();

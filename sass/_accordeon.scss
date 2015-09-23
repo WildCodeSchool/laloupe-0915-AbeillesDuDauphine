@@ -1,10 +1,10 @@
-.ac-container{
+.accordeon{
   width: 100%;
   text-align: left;
 }
-.ac-container label{
+.accordeon label{
   font-family: $font-title;
-  padding:0px 15px 15px 15px;
+  padding: 0px 15px 15px 15px;
   padding-top: 0px;
   position: relative;
   z-index: 20;
@@ -17,38 +17,45 @@
   font-size: 22px;
   background: $dark-blue;
 }
-.ac-container label:hover{
+.accordeon label:hover{
   background: $blue;
+  color: $yellow;
 }
-.ac-container input:checked + label,
-.ac-container input:checked + label:hover{
+.accordeon input:checked + label,
+.accordeon input:checked + label:hover{
   background: $blue;
-  color: #FFFFFF;
+  color: $yellow;
 }
-.ac-container label:hover:after,
-.ac-container input:checked + label:hover:after{
+.accordeon label:hover:after,
+.accordeon input:checked + label:hover:after{
   content: '';
   position: absolute;
   width: 24px;
   height: 24px;
   right: 13px;
   top: 7px;
+  background: transparent url(../images/tools/arrow_down.png) no-repeat center center; 
 }
-.ac-container input{
+.ac-container input:checked + label:hover:after{
+  background-image: url(../images/tools/arrow_up.png);
+}
+.accordeon input{
   display: none;
 }
-.ac-container article{
-  background: rgba(255, 255, 255, 0.5);
+.accordeon article{
+  background: rgba(255, 255, 0, 0.3);
   margin-top: -1px;
+  margin-bottom: 5px;
   overflow: hidden;
   height: 0px;
   position: relative;
-  z-index: 10;
+  z-index: 10;  
 }
-.ac-container article p{
+
+.accordeon article p{
   line-height: 23px;
   font-size: 14px;
 }
-.ac-container input:checked ~ article.ac-small{
+.accordeon input:checked ~ article.ac-small{
   height: auto;
 }

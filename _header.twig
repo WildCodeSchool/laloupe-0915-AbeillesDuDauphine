@@ -10,7 +10,9 @@
         {{ app.config.get('general/sitename') }}
         {% if record.title is not defined and app.config.get('general/payoff') %} | {{ app.config.get('general/payoff') }}{% endif %}
     </title>
-
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ paths.theme }}images/favicon.ico" />
+    <!-- Fonts Google -->
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
     {# Ajout des fonts#}
     <link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
@@ -19,7 +21,7 @@
     {# paths.theme is always a correct path to the current theme. Even if you rename the theme-folder,
        this will keep working. See the documentation on paths: http://docs.bolt.cm/internals#paths #}
     <link rel="stylesheet" href="{{ paths.theme }}css/foundation.css">
-    <link rel="stylesheet" href="{{ paths.theme }}css/main.css">   
+    <link rel="stylesheet" href="{{ paths.theme }}css/main.css">
     {# Bolt comes with Magnific Popup, as it's used in the backend. We can use it here, or you can
       just swap it out for the image-viewing script of your choice. Or delete it altogether. #}
     <link rel="stylesheet" href="{{ paths.theme }}css/magnific-popup.css">
@@ -43,7 +45,7 @@
                         <li class="logo">
                             <a href="{{ paths.root }}"><img src="{{ paths.theme }}images/logo.gif" /></a>
                         </li>
-                    </ul>
+                   </ul>
                     <ul class="title-area">
                         <li class="name"><h1><a href="{{ paths.root }}">
                             {# the values in the 'app.config' object are taken directly from the file app/config/config.yml #}
@@ -54,41 +56,12 @@
                         </a></h1></li>
                     </ul>
                 </nav>
-
-               <div class="contain-to-grid sticky">
+                <!-- Menu -->
+                <div class="contain-to-grid sticky">
                     <nav class="top-bar-menu" data-topbar role="navigation" data-options="sticky_on: large">
                         <section class="top-bar-section">
-                            <!-- Left Nav Section -->
                             <ul class="left">
-                                <li class="active"><a href="#">Accueil</a></li>
-                                <li class="has-dropdown">
-                                    <a href="#">Qui sommes-nous ?</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#">Lorem ipsum</a></li>
-                                        <li><a href="#">Lorem ipsum</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-dropdown">
-                                    <a href="#">Les sections</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#">Lorem ipsum</a></li>
-                                        <li><a href="#">Lorem ipsum</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-dropdown">
-                                    <a href="#">Nos actions</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#">Lorem ipsum</a></li>
-                                        <li><a href="#">Lorem ipsum</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-dropdown">
-                                    <a href="#">Guide de l'apiculteur</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#">Lorem ipsum</a></li>
-                                        <li><a href="#">Lorem ipsum</a></li>
-                                    </ul>
-                                </li>
+                                {{ menu('abeille', '_sub_menu.twig') }}
                             </ul>
                         </section>
                         <!-- Barre de recherche déplacée ici -->
@@ -98,9 +71,11 @@
                                 {# Include the '_sub_searchbox.twig' template, for the searchbox. If this file wasn't included in the theme, the default searchbox template in app/theme_defaults/_sub_searchbox.twig would be used. #}
                                 {% include '_sub_searchbox.twig' %}
                             </ul>
-                        </section>
                     </nav>
+
+              <!--      <div style="background-color: red; width: 100%;height:150px;position:absolute"></div> -->
                 </div>
+                <!-- Fin Menu -->
                 <!-- Header bar -->
                 {# Affiche l'image full page si c'est l'accueil, sinon affiche le slider#}
                 {% if record.slug == 'descriptif-syndicat' %}
@@ -108,14 +83,19 @@
                        {# You can either hardcode the filename for the header, or take a value from the current
                         content in 'record', or - as we do in this example - take a random one from the list
                         in the /theme/base-2014/config.yml file. #}
-                        {% set headerimage = paths.theme ~ 'images/' ~ random(theme.headerimage) %}
-                        <img src="{{ headerimage }}" alt="" />
+                        <video style="width: 100%; height: auto; left: auto;" id="heroVideoOne" class="heroVideo" autoplay="" muted="" loop="" >
+                        <source src="{{ paths.theme }}euskalerlea2.ogg" type="video/ogg">
+                        </video>
                     </div>
+                    </header>
+                    </div>
+                        <div class="row" id="news_link">
+                            <div class="container large-12 columns">
                 {% else %}
                     {% include '_slider.twig'%}
+                    </header>
+                    </div>
+                        <div class="row" id="news_link">
+                            <div class="container large-12 columns">
                 {% endif %}
                 <!-- End header -->
-            </header>
-        </div>
-        <div class="row">
-            <div class="container large-12 columns">

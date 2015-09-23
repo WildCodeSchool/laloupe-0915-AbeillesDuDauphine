@@ -1,4 +1,14 @@
 /* Pour le full width */
+#top{
+    margin-top: -50px;
+    position: absolute;
+}
+
+.main_title{
+    background-color: $blue;
+    color: white;
+    text-align: center;
+}
 .fullwidth {
     max-width: 2000px;
 }
@@ -36,7 +46,8 @@ h4 {
 h5 {
     font-size: 20px;
     font-family: $font-title;
-p{ font-size: 30px; }
+p{ font-size: 30px;
+    color: #313131; }
 }
 
 h6 {
@@ -44,6 +55,9 @@ h6 {
     color: #666;
     line-height: 1.5em;
     font-family: $font-p;
+}
+p {
+    color: #313131 ;
 }
 
 a {
@@ -104,7 +118,6 @@ aside p {
 .headerphoto {
     position: relative;
     margin-bottom: 30px;
-    text-align: right;
 }
 
 .headerphoto p {
@@ -228,12 +241,11 @@ aside ul
 {
   list-style-type: none;
   padding: 0;
-  
-}  
+
+}
 
 aside li
 {
-  margin: 1em 0;
+  margin-top: 5px;
 }
-
 

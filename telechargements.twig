@@ -1,129 +1,23 @@
-<!DOCTYPE html>
-<html class="no-js" lang="{{ htmllang() }}">
-    <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {# make sure we always display a proper title: The record's title if there is one, appended with the
-        sitename. If there is no title, we append the sitename with the payoff, if there is one. #}
-    <title> Page de telechargement </title>
-
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-    {# Ajout des fonts#}
-    <link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-
-    {# paths.theme is always a correct path to the current theme. Even if you rename the theme-folder,
-       this will keep working. See the documentation on paths: http://docs.bolt.cm/internals#paths #}
-    <link rel="stylesheet" href="{{ paths.theme }}css/foundation.css">
-    <link rel="stylesheet" href="{{ paths.theme }}css/main.css">   
-    {# Bolt comes with Magnific Popup, as it's used in the backend. We can use it here, or you can
-      just swap it out for the image-viewing script of your choice. Or delete it altogether. #}
-    <link rel="stylesheet" href="{{ paths.theme }}css/magnific-popup.css">
-    {# Lien vers le css du plugin map leaflet#}
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
-
-    {#<!-- A variable from the theme's config: {{ theme.foo }} -->#}
-
-</head>
-    <body>
-        {# Note: If you plan to modify this theme, be sure to make a _copy_ first. If you don't,
-        this theme will be overwritten when you update Bolt in the future. Just copy the 'base-2014'
-        folder to a new folder inside the 'theme/' folder, update the 'theme:' setting in
-        config.yml, and you're good to go. Happy tweaking! :-) #}
-        <div class="row fullwidth">
-            <header>
-                {% setcontent ctype = 'contenttype' %}
-                <div id="top"></div>
-                <nav class="top-bar" data-topbar>
-                    <ul class="logo-area">
-                        <li class="logo">
-                            <a href="{{ paths.root }}"><img src="{{ paths.theme }}images/logo.gif" /></a>
-                        </li>
-                    </ul>
-                    <ul class="title-area">
-                        <li class="name"><h1><a href="{{ paths.root }}">
-                            {# the values in the 'app.config' object are taken directly from the file app/config/config.yml #}
-                            <span>{{ app.config.get('general/sitename') }}</span>
-                            {% if app.config.get('general/payoff') %}
-                                <br><small>{{ app.config.get('general/payoff') }}</small>
-                            {% endif %}
-                        </a></h1></li>
-                    </ul>
-                </nav>
-
-               <div class="contain-to-grid sticky">
-                    <nav class="top-bar-menu" data-topbar role="navigation" data-options="sticky_on: large">
-                        <section class="top-bar-section">
-                            <!-- Left Nav Section -->
-                            <ul class="left">
-                                <li class="active"><a href="#">Accueil</a></li>
-                                <li class="has-dropdown">
-                                    <a href="#">Qui sommes-nous ?</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#">Lorem ipsum</a></li>
-                                        <li><a href="#">Lorem ipsum</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-dropdown">
-                                    <a href="#">Les sections</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#">Lorem ipsum</a></li>
-                                        <li><a href="#">Lorem ipsum</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-dropdown">
-                                    <a href="#">Nos actions</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#">Lorem ipsum</a></li>
-                                        <li><a href="#">Lorem ipsum</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-dropdown">
-                                    <a href="#">Guide de l'apiculteur</a>
-                                    <ul class="dropdown">
-                                        <li><a href="#">Lorem ipsum</a></li>
-                                        <li><a href="#">Lorem ipsum</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </section>
-                        <!-- Barre de recherche déplacée ici -->
-                        <section class="top-bar-section">
-                            <!-- Right Nav Section -->
-                            <ul class="right">
-                                {# Include the '_sub_searchbox.twig' template, for the searchbox. If this file wasn't included in the theme, the default searchbox template in app/theme_defaults/_sub_searchbox.twig would be used. #}
-                                {% include '_sub_searchbox.twig' %}
-                            </ul>
-                        </section>
-                    </nav>
-                </div>
-                <!-- Header bar -->
-                {# Affiche l'image full page si c'est l'accueil, sinon affiche le slider#}
-                {% if record.slug == 'descriptif-syndicat' %}
-                    <div class="headerphoto">
-                        {# You can either hardcode the filename for the header, or take a value from the current
-                        content in 'record', or - as we do in this example - take a random one from the list
-                        in the /theme/base-2014/config.yml file. #}
-                        {% set headerimage = paths.theme ~ 'images/' ~ random(theme.headerimage) %}
-                        <img src="{{ headerimage }}" alt="" />
-                    </div>
-                {% else %}
-                    {% include '_slider.twig'%}
-                {% endif %}
-                <!-- End header -->
-            </header>
-        </div>
-        <div class="row">
-            <div class="container large-12 columns">
+{% include '_header.twig' %}
                 {# Fin du header #}
 
                 {% include '_aside.twig' %}
 
                 <div class="large-9 columns">
                     <main>
-                
-                        
-
+                        <div class="content_telechargement">
+                            <h1 class="main_title"> Page de téléchargement : </h1>
+                            <ul style="list-style-type:none">
+                                {% setcontent telechargements = 'telechargement'%}
+                                {% for telechargement in telechargements %}
+                                    <li>
+                                    <h6> <a href="files/{{ telechargement.fichier }} "> {{ telechargement.titre }} </a> 
+                                    <span class="h6_medium"> - publié le {{ telechargement.datecreated|date('d-m-Y')}} par {{ telechargement.user.displayname }} </span></h6>
+                                    </li>
+                                    <p>Déscription : {{ telechargement.description }}</p><br />
+                                {% endfor %}
+                            </ul>
+                        </div>
                     </main>
                 </div>
             </div>
