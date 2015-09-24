@@ -57,13 +57,12 @@
 /* Photo full size accueil */
 .headerphoto {
     background-color: $dark-blue;
-    padding-bottom: 38px;
     text-align: center;
     position: relative;
     text-align: center;
     z-index: -1;
     top: -161px;
-    height: 715px;
+    max-height: 715px;
 }
 
 /* Slider */
