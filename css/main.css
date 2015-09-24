@@ -95,12 +95,13 @@
   display: none;
 }
 
-/* line 76, ../sass/_footer.scss */
+/* Bouton scroll to top */
+/* line 77, ../sass/_footer.scss */
 #scroll-top {
   float: right;
-  width: 60px;
-  height: 60px;
-  margin-right: 30px;
+  width: 70px;
+  height: 70px;
+  margin-right: 40px;
   padding-top: 30px;
 }
 
@@ -798,34 +799,34 @@ aside li {
 }
 
 @media only screen and (max-width: 1155px) {
-  /* line 4, ../sass/_mediaquerie.scss */
+  /* line 4, ../sass/_responsiv.scss */
   #carrousel {
     margin-top: 70px;
   }
 }
 @media only screen and (max-width: 883px) {
-  /* line 12, ../sass/_mediaquerie.scss */
+  /* line 12, ../sass/_responsiv.scss */
   .top-bar-section .has-form {
     margin-top: -50px;
   }
 
-  /* line 15, ../sass/_mediaquerie.scss */
+  /* line 15, ../sass/_responsiv.scss */
   .top-bar-section .divider {
     margin-top: -50px;
   }
 }
 @media only screen and (max-width: 645px) {
-  /* line 22, ../sass/_mediaquerie.scss */
+  /* line 22, ../sass/_responsiv.scss */
   .top-bar-section .has-form {
     margin-top: 0;
   }
 
-  /* line 25, ../sass/_mediaquerie.scss */
+  /* line 25, ../sass/_responsiv.scss */
   .top-bar-section .divider {
     margin-top: 0;
   }
 
-  /* line 29, ../sass/_mediaquerie.scss */
+  /* line 29, ../sass/_responsiv.scss */
   .header__icon {
     position: relative;
     display: block;
@@ -837,7 +838,7 @@ aside li {
     padding-top: 15px;
     color: white;
   }
-  /* line 40, ../sass/_mediaquerie.scss */
+  /* line 40, ../sass/_responsiv.scss */
   .header__icon:after {
     content: '';
     position: absolute;
@@ -851,29 +852,29 @@ aside li {
     box-shadow: 0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF;
   }
 
-  /* line 51, ../sass/_mediaquerie.scss */
+  /* line 51, ../sass/_responsiv.scss */
   .header__icon:hover {
     color: white;
     text-decoration: none;
   }
 
-  /* line 55, ../sass/_mediaquerie.scss */
+  /* line 55, ../sass/_responsiv.scss */
   .header__icon:visited {
     color: white;
     text-decoration: none;
   }
 
-  /* line 60, ../sass/_mediaquerie.scss */
+  /* line 60, ../sass/_responsiv.scss */
   .headerphoto {
     top: 0;
   }
 
-  /* line 63, ../sass/_mediaquerie.scss */
+  /* line 63, ../sass/_responsiv.scss */
   .header__hidden {
     display: none;
   }
 
-  /* line 66, ../sass/_mediaquerie.scss */
+  /* line 66, ../sass/_responsiv.scss */
   .top-bar .name h1 a {
     font-size: 35px;
     line-height: 30px;
