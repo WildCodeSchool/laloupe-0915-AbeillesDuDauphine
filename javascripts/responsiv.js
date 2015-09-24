@@ -2,7 +2,7 @@
 
 	$('#header__icon').click(function(e){
 		e.preventDefault();
-		$('body').toggleClass('with__sidebar');
+		$('.header__menu').toggleClass('header__hidden');
 	})
 
 })(jQuery);
