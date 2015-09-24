@@ -1,0 +1,22 @@
+{% include '_header.twig' %}
+
+    <div class="large-12 columns">
+        <main>
+            <div class="qr">
+                <h1>Questions / Reponses</h1>
+                {% setcontent faqs = 'FAQ' %}
+                {% for faq in faqs %}
+                    <div class="qr_content">
+                        <h4>Question: {{ faq.question }} <small> - demandé par {{ faq.nom }} </small><h4>
+                        <p>Reponse: {{ faq.reponse }} - <small>reponse de : {{ faq.user.displayname }}</small></p>
+                    </div>
+                {% endfor %}
+                <div class="qr_form">
+                <h2> Posez votre question </h2>
+                {{ boltforms('contact') }}
+                </div>
+            </div>
+        </main>
+    </div>
+
+{% include '_footer.twig' %}

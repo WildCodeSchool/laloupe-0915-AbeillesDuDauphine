@@ -183,6 +183,7 @@ guide:
     record_template: guide.twig
     default_status: publish
 
+
 #
 #
 #
@@ -291,6 +292,22 @@ Actualites:
 # copy some fields to your own contenttypes.
 # Since no templates are defined for this contenttype, the default record_template,
 # listing_template, and related settings are used from config.yml
+
+FAQ:
+    name: FAQs
+    singular_name: FAQ
+    fields:
+        nom:
+            type: text
+            class: large
+        question:
+            type: text
+            class: large
+            group: content
+        reponse:
+            type: textarea
+    listing_template: FAQ.twig
+
 
 # Using YAML repeated nodes
 #

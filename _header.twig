@@ -2,7 +2,7 @@
 <html class="no-js" lang="{{ htmllang() }}">
     <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
         {# make sure we always display a proper title: The record's title if there is one, appended with the
         sitename. If there is no title, we append the sitename with the payoff, if there is one. #}
     <title>
@@ -32,6 +32,7 @@
 
 </head>
     <body>
+        <div class="site-pusher">
         {# Note: If you plan to modify this theme, be sure to make a _copy_ first. If you don't,
         this theme will be overwritten when you update Bolt in the future. Just copy the 'base-2014'
         folder to a new folder inside the 'theme/' folder, update the 'theme:' setting in
@@ -54,14 +55,19 @@
                                 <br><small>{{ app.config.get('general/payoff') }}</small>
                             {% endif %}
                         </a></h1></li>
+<<<<<<< HEAD
                         <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
                    </ul>
+=======
+                      </ul>
+>>>>>>> 59588cd9e31d8dc76e7f630a17ce7ec9690d1657
                 </nav>
 
                 <!-- Menu -->
                 <div class="contain-to-grid sticky">
+                    <a href="#" class="header__icon" id="header__icon"></a>
                     <nav class="top-bar-menu" data-topbar role="navigation" data-options="sticky_on: large">
-                        <section class="top-bar-section">
+                        <section class="top-bar-section header__menu">
                             <ul class="left">
                                 {{ menu('abeille', '_sub_menu.twig') }}
                             </ul>
@@ -81,7 +87,7 @@
                 {# Affiche l'image full page si c'est l'accueil, sinon affiche le slider#}
                 {% if record.slug == 'descriptif-syndicat' %}
                     <div class="headerphoto">
-                        {# You can either hardcode the filename for the header, or take a value from the current
+                       {# You can either hardcode the filename for the header, or take a value from the current
                         content in 'record', or - as we do in this example - take a random one from the list
                         in the /theme/base-2014/config.yml file. #}
                         <video style="width: 100%; height: auto; left: auto;" id="heroVideoOne" class="heroVideo" autoplay="" muted="" loop="" >
@@ -93,7 +99,7 @@
                         <div class="row" id="news_link">
                             <div class="container large-12 columns">
                 {% else %}
-                    {% include '_slider.twig'%}
+                    
                     </header>
                     </div>
                         <div class="row" id="news_link">
