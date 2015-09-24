@@ -2,7 +2,6 @@
 @import "compass";
 
 @media only screen and (max-width:960px){
-
     .site-pusher{
         @include transition-duration(0.3s);
         @include transform(translateX(0px));
@@ -20,7 +19,6 @@
         top: 0;
         margin-bottom: 0;
     }
-
     .header__icon {
         position: relative;
         display: block;
@@ -28,7 +26,6 @@
         width: 50px;
         height: 50px;
         cursor: pointer;
-
         &:after{
             content: '';
             position: absolute;
@@ -40,7 +37,6 @@
             @include box-shadow(0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF);
         }
     }
-
     .header__menu{
         position: absolute;
         left: 0;
@@ -58,24 +54,18 @@
         }
     }
 }
-
-
 .with__sidebar {
     .site-pusher{ @include transform(translateX(200px)); }
 }
-
-
 
 /* Pour le full width */
 #news_link {
   margin-top: 64px !important;
 }
-
 #top{
     margin-top: -50px;
     position: absolute;
 }
-
 .main_title{
     background-color: $blue;
     color: white;
@@ -91,37 +81,31 @@ body {
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
     font-size: 16px;
 }
-
 h1 {
     font-weight: normal;
     font-size: 40px;
     font-family: $font-title;
 }
-
 h2 {
     font-weight: normal;
     font-size: 34px;
     font-family: $font-title;
 }
-
 h3 {
     font-weight: normal;
     font-size: 28px;
     font-family: $font-title;
 }
-
 h4 {
     font-size: 24px;
     font-family: $font-title;
 }
-
 h5 {
     font-size: 20px;
     font-family: $font-title;
 p{ font-size: 30px;
     color: #313131; }
 }
-
 h6 {
     font-size: 15px;
     color: #666;
@@ -131,67 +115,53 @@ h6 {
 p {
     color: #313131 ;
 }
-
 a {
     color: #284F76;
 }
-
 a:hover {
     color: #4D9C9A;
     text-decoration: underline;
 }
-
 p, ul, ol {
     margin: 0 0 1em 0;
     font-family: $font-p;
 }
-
 ul {
     margin-left: 17px;
 }
-
 ol {
     margin-left: 20px;
 }
-
 pre {
     padding: 4px 0;
     overflow-y: auto;
     overflow-x: scroll;
 }
-
 aside {
     margin-top: 20px;
 }
-
 aside p {
     font-size: 14px;
 }
-
 .container {
     padding-top: 20px;
     margin: 0 auto 20px;
     border: 1px solid #EEE;
     background-color: #FFF;
 }
-
 .top-bar h1 {
     font-family: $font-title;
 }
-
 .top-bar h5 {
     font-family: $font-title;
 }
-
 .top-bar a:hover {
     text-decoration: none;
 }
-
 .headerphoto {
     position: relative;
     margin-bottom: 30px;
 }
-
 .headerphoto p {
     margin: 0;
     position: absolute;
@@ -212,7 +182,6 @@ aside p {
     font-weight: normal;
     margin-right: 14px;
 }
-
 div.imageholder {
     background-color: #FFF;
     border: 1px solid #BBBBBB;
@@ -221,7 +190,6 @@ div.imageholder {
     float: right;
     margin: 0 0 5px 5px;
 }
-
 footer ul.dropdown {
     display: none;
 }
@@ -233,13 +201,11 @@ footer ul.dropdown {
     margin-bottom: 8px;
     padding: 6px;
 }
-
 .pagination a:hover {
     text-decoration: none;
 }
 
 /* Styles for 'responsive video embeds' --------------------------------  */
-
 .responsive-video {
     padding-top: 25px;
     position: relative;
@@ -247,7 +213,6 @@ footer ul.dropdown {
     height: 0;
     margin: 0 0 1em 0;
 }
-
 .responsive-video iframe {
     width: 100%;
     position: absolute;
@@ -259,11 +224,9 @@ footer ul.dropdown {
 
 /* Styles for 'max-width 479px' -----------------------------------------  */
 @media only screen and (max-width: 479px) {
-
     .headerphoto {
         margin-bottom: 0px;
     }
-
     .headerphoto span {
         display: none;
     }
@@ -273,51 +236,35 @@ footer ul.dropdown {
         color: #FFF;
         line-height: 26px;
     }
-
     h1 {
         font-size: 32px;
     }
-
-
     h2 {
         font-size: 28px;
     }
-
-
     h3 {
         font-size: 24px;
     }
-
-
     h4 {
         font-size: 20px;
     }
-
     h5 {
         font-size: 18px;
     }
-
-
     h6 {
         font-size: 15px;
     }
-
     div.imageholder {
         float: none;
         margin: 0 -17px 10px -17px;
     }
-
 }
-
 aside ul
 {
   list-style-type: none;
   padding: 0;
-
 }
-
 aside li
 {
   margin-top: 5px;
 }
-

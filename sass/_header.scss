@@ -102,6 +102,9 @@
     color: #fff;
     font-size: 16px;
 }
+.top-bar-section ul li:hover:not(.has-form) > a{
+    background-color: $blue;
+}
 .top-menu-bar a:hover {
     background: $dark-blue;
 }
@@ -113,9 +116,6 @@
     color: $dark-blue;
     transition-duration: 0.4s;
 }
-
-/* Menu Toggle */
-
 
 /* Rechercher */
 .top-bar-section .has-form {
