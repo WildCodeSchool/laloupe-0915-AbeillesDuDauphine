@@ -1,0 +1,71 @@
+@import "compass";
+
+@media only screen and (max-width: 1155px){
+	#carrousel{
+	    margin-top:70px;
+	}
+}
+
+
+@media only screen and (max-width: 883px){
+
+	.top-bar-section .has-form{
+		margin-top: -50px;
+	}
+	.top-bar-section .divider{
+		margin-top: -50px;
+	}
+
+}
+
+@media only screen and (max-width: 645px){
+	.top-bar-section .has-form{
+		margin-top: 0;
+	}
+	.top-bar-section .divider{
+		margin-top: 0;
+	}
+	
+	.header__icon{
+		position: relative;
+		display: block;
+		float: left;
+		width: 90px;
+		height: 50px;
+		cursor: pointer;
+		padding-left: 75px;
+		padding-top: 15px;
+		color: white;
+
+		&:after{
+			content: '';
+			position: absolute;
+			display: block;
+			width: 20px;
+			height: 0;
+			top: 10px;
+			left: 30px;
+			@include box-shadow(0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF)
+		}
+	}
+	.header__icon:hover{
+		color:white;
+		text-decoration: none;
+	}
+	.header__icon:visited{
+		color:white;
+		text-decoration: none;
+	}
+	
+	.headerphoto{
+		top:0;
+	}
+	.header__hidden {
+		display: none;
+	}
+	.top-bar .name h1 a{
+		font-size:35px;
+		line-height:30px;
+		width: 100%;
+	}
+}
