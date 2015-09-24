@@ -31,42 +31,45 @@ abeille:
     - label: Accueil
       path: homepage
       class: first
-    - label: Nous connaitre
-      path: pages/nous-connaitre
-      submenu:
-          - label: Descriptif Syndicat
-            path: pages/descriptif-syndicat
-          - label: Descriptif Sections
-            path: pages/descriptif-sections
-          - label: Descriptif Coopératives
-            path: pages/descriptif-cooperatives
-    - label: Formations
-      path: pages/formations
+    - label: Qui sommes-nous?
+      path: page/qui-sommes-nous
     - label: Nos actions
-      path: pages/nos-actions
+      path: page/nos-actions
       submenu:
-          - label: Relation avec Entreprises
-            path: pages/relation-avec-entreprises
-          - label: Acheter à la SCAPIAD
-            path: pages/acheter-a-la-sacpiad
-          - label: Projet nouveau local
-            path: pages/projet-nouveau-local
-          - label: J'ai un essaim dans mon jardin!
-            path: pages/j-ai-un-essaim-dans-mon-jardin
-    - label: Guide Apicole
-      path: guide
+          - label: Relations
+            path: page/relations
+          - label: Projets
+            path: page/projets
+          - label: Conseils
+            path: page/conseils
+    - label: Syndicat
+      path: page/syndicat
       submenu:
-          - label: Professionnels
-            path: pages/professionnels
-          - label: Législation
-            path: pages/legislation
-    - label: Archives
-      path: archives
+          - label: Sections
+            path: page/sections
+          - label: Bibliothéque
+            path: page/bibliotheque
+          - label: La vie du Syndicat
+            path: page/la-vie-du-syndicat
+    - label: SCAPIAD
+      path: page/scapiad
       submenu:
+          - label: Catalogue
+            path: page/catalogue
+          - label: Liste des dépositaires
+            path: page/liste-des-depositaires
+    - label: Formations
+      path: page/formations
+      submenu:
+          - label: Ruchers-écoles
+            path: page/ruchers-ecoles
+          - label: Guide de l'apiculteur
+            path: guide
+    - label: Adhérents
+      path: page/adherents
+      submenu:
+          - label: Faq
+            path: faq
           - label: Téléchargement
             path: telechargement
-    - label: Faq
-      path: pages/faq
-    - label: SCAPIAD
-      path: pages/scapiad
       class: last
