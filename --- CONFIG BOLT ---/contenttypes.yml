@@ -183,6 +183,7 @@ guide:
     record_template: guide.twig
     default_status: publish
 
+
 #
 #
 #
@@ -193,6 +194,8 @@ telechargement:
     singular_name: telechargement
     fields:
         titre:
+            type: text
+        description:
             type: text
             class: large
         fichier: 
@@ -249,9 +252,9 @@ telechargement:
 # The 'sort' is set to '-datepublish', which means that newer entries will be
 # shown above older entries.
 
-entries:
-    name: Entries
-    singular_name: Entry
+Actualites:
+    name: Actualites
+    singular_name: Actualite
     fields:
         title:
             type: text
@@ -290,99 +293,21 @@ entries:
 # Since no templates are defined for this contenttype, the default record_template,
 # listing_template, and related settings are used from config.yml
 
-showcases:
-    name: Showcases
-    slug: showcases
-    singular_name: Showcase
-    singular_slug: showcase
+FAQ:
+    name: FAQs
+    singular_name: FAQ
     fields:
-        title:
+        nom:
             type: text
             class: large
-            required: true
-            pattern: ".{2,255}" # see: http://html5pattern.com/
-            error: "The Title field is required, and must contain at least 2 characters"
-            group: Text
-        slug:
-            type: slug
-            uses: [ title ]
-        html:
-            type: html
-            height: 150px
-        textarea:
+        question:
+            type: text
+            class: large
+            group: content
+        reponse:
             type: textarea
-            postfix: "<p><em>This is a plain text area. the contents will not be processed.</em></p>"
-        markdown:
-            type: markdown
-            postfix: "<p><em>This field gets parsed as <a href='https://help.github.com/articles/markdown-basics'>Markdown</a>, when rendered on the site.</em></p>"
-        geolocation:
-            type: geolocation
-            group: Media
-        video:
-            type: video
-        image:
-            type: image
-            attrib: title # Note: retrieve this in your template with {{ record.values.image.title }}
-            extensions: [ gif, jpg, png ]
-        imagelist:
-            type: imagelist
-        file:
-            type: file
-            group: files
-        filelist:
-            type: filelist
-        checkbox:
-            type: checkbox
-            label: "This is a checkbox"
-            group: other
-        datetime:
-            type: datetime
-            default: "2000-01-01"
-            variant: inline
-        date:
-            type: date
-            default: "first day of last month"
-            variant: inline
-        integerfield:
-            type: integer
-            index: true
-        floatfield:
-            type: float
-        selectfield:
-            type: select
-            values: [ none, foo, bar ]
-        multiselect:
-            type: select
-            values: [ A-tuin, Donatello, Rafael, Leonardo, Michelangelo, Koopa, Squirtle ]
-            multiple: true
-            postfix: "Select your favourite turtle(s)."
-        selectentry:
-            type: select
-            values: entries/id,title
-            postfix: "Select an entry"
-            autocomplete: true
-            sort: title
-        template:
-            type: templateselect
-            filter: '*.twig'
-            group: meta
-    relations:
-        entries:
-            multiple: false
-            label: "Choose an entry"
-            order: -id
-            format: "{{ item.title|escape }} <span>(№ {{ item.id }})</span>"
-            postfix: "By selecting an Entry, you're creating a bi-directional relationship to that Entry."
-        pages:
-            multiple: true
-            order: title
-            label: Select zero or more pages
-    taxonomy: [ categories, tags ]
-    show_on_dashboard: true
-    default_status: publish
-    searchable: false
-    icon_many: "fa:cubes"
-    icon_one: "fa:cube"
+    listing_template: FAQ.twig
+
 
 # Using YAML repeated nodes
 #

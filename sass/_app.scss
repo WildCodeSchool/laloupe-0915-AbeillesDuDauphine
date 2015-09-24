@@ -1,11 +1,85 @@
+/* Responsiv */
+@import "compass";
+
+@media only screen and (max-width:960px){
+
+    .site-pusher{
+        @include transition-duration(0.3s);
+        @include transform(translateX(0px));
+    }
+    #news_link{
+        margin-top:0px;
+    }
+    header{
+        position: static;
+    }
+    .sub__menu{
+        margin-left: 200px;
+    }
+    .headerphoto{
+        top: 0;
+        margin-bottom: 0;
+    }
+
+    .header__icon {
+        position: relative;
+        display: block;
+        float: left;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+
+        &:after{
+            content: '';
+            position: absolute;
+            display: block;
+            width: 16px;
+            height: 0;
+            top: 10px;
+            left: 15px;
+            @include box-shadow(0 10px 0 1px #FFF, 0 16px 0 1px #FFF, 0 22px 0 1px #FFF);
+        }
+    }
+
+    .header__menu{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background-color: $dark-blue;
+        width: 200px;
+
+        @include transform(translateX(-200px));
+        a{
+            display: block;
+            height: 40px;
+            height: 40px;
+            border-bottom: 1px solid $blue;
+        }
+    }
+}
+
+
+.with__sidebar {
+    .site-pusher{ @include transform(translateX(200px)); }
+}
+
+
+
 /* Pour le full width */
+#news_link {
+  margin-top: 64px !important;
+}
+
+#top{
+    margin-top: -50px;
+    position: absolute;
+}
+
 .main_title{
     background-color: $blue;
     color: white;
     text-align: center;
-}
-.p_medium{
-    font-size: 14px;
 }
 .fullwidth {
     max-width: 2000px;
@@ -244,5 +318,6 @@ aside ul
 
 aside li
 {
-  margin: 1em 0;
+  margin-top: 5px;
 }
+

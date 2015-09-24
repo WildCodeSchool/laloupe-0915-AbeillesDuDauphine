@@ -1,10 +1,4 @@
 /* Header CSS */
-
-.news_link img {
-    height: 50px;
-    max-width: 50px;
-    margin-top: -150px;
-}
 #news_link {
     margin-top: 64px!important;
 }
@@ -63,16 +57,12 @@
 /* Photo full size accueil */
 .headerphoto {
     background-color: $dark-blue;
-    padding-bottom: 38px;
     text-align: center;
     position: relative;
     text-align: center;
     z-index: -1;
     top: -161px;
-    height: 715px;
-}
-.headerphoto img {
-    width: 1999px;
+    max-height: 715px;
 }
 
 /* Slider */
@@ -150,4 +140,5 @@ input[type="search"] {
     height: 30px;
     margin-top: 10px;
 }
+
 

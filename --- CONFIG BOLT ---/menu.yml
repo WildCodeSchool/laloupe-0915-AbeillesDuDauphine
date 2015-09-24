@@ -31,8 +31,8 @@ abeille:
     - label: Accueil
       path: homepage
       class: first
-    - label: Qui sommes-nous?
-      path: pages/qui-sommes-nous
+    - label: Nous connaitre
+      path: pages/nous-connaitre
       submenu:
           - label: Descriptif Syndicat
             path: pages/descriptif-syndicat
@@ -53,7 +53,7 @@ abeille:
             path: pages/projet-nouveau-local
           - label: J'ai un essaim dans mon jardin!
             path: pages/j-ai-un-essaim-dans-mon-jardin
-    - label: Guide de l'apiculteur
+    - label: Guide Apicole
       path: guide
       submenu:
           - label: Professionnels
@@ -65,6 +65,8 @@ abeille:
       submenu:
           - label: Téléchargement
             path: telechargement
-    - label: La SCAPIAD
-      path: pages/la-scapiad
+    - label: Faq
+      path: pages/faq
+    - label: SCAPIAD
+      path: pages/scapiad
       class: last

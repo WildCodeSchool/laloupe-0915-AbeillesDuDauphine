@@ -4,15 +4,15 @@
 }
 .accordeon label{
   font-family: $font-title;
-  padding: 0px 15px 15px 15px;
-  padding-top: 0px;
+  height: 100%;
+  min-width: 80%;
   position: relative;
   z-index: 20;
   display: block;
   height: 30px;
-  min-width: 200px;
   cursor: pointer;
   color: #FFFFFF;
+  text-align: center;
   line-height: 43px;
   font-size: 22px;
   background: $dark-blue;
@@ -36,25 +36,26 @@
   top: 7px;
   background: transparent url(../images/tools/arrow_down.png) no-repeat center center; 
 }
-.ac-container input:checked + label:hover:after{
+.accordeon input:checked + label:hover:after{
   background-image: url(../images/tools/arrow_up.png);
 }
 .accordeon input{
   display: none;
 }
 .accordeon article{
-  background: rgba(255, 255, 0, 0.3);
+  background: #f8f8f8;
   margin-top: -1px;
   margin-bottom: 5px;
   overflow: hidden;
   height: 0px;
   position: relative;
-  z-index: 10;  
+  z-index: 10;
 }
 
 .accordeon article p{
   line-height: 23px;
   font-size: 14px;
+  margin: 30px 30px;
 }
 .accordeon input:checked ~ article.ac-small{
   height: auto;

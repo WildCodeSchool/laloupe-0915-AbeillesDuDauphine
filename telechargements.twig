@@ -7,12 +7,14 @@
                     <main>
                         <div class="content_telechargement">
                             <h1 class="main_title"> Page de téléchargement : </h1>
-                            <ul>
+                            <ul style="list-style-type:none">
+                                {% setcontent telechargements = 'telechargement'%}
                                 {% for telechargement in telechargements %}
                                     <li>
-                                    <p> <a href="files/{{ telechargement.fichier }} "> {{ telechargement.titre }} </a> 
-                                    <span class="p_medium"> - publié le {{ telechargement.datecreated|date('d-m-Y')}} par {{ telechargement.user.displayname }} </span></p>
+                                    <h6> <a href="files/{{ telechargement.fichier }} "> {{ telechargement.titre }} </a> 
+                                    <span class="h6_medium"> - publié le {{ telechargement.datecreated|date('d-m-Y')}} par {{ telechargement.user.displayname }} </span></h6>
                                     </li>
+                                    <p>Déscription : {{ telechargement.description }}</p><br />
                                 {% endfor %}
                             </ul>
                         </div>
