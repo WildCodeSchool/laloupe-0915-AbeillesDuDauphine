@@ -424,7 +424,7 @@ input[type="search"] {
 
 /* line 87, ../sass/_app.scss */
 body {
-  background-color: #F3F3F3;
+  background-color: #DADAF9;
 }
 
 /* line 91, ../sass/_app.scss */
@@ -865,4 +865,20 @@ aside li {
   text-align: center;
   background-color: #001a26;
   color: white;
+}
+
+/* line 2, ../sass/_slider.scss */
+#carrousel {
+  position: relative;
+  height: 200px;
+  width: 700px;
+  margin: auto;
+}
+
+/* line 8, ../sass/_slider.scss */
+#carrousel ul li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  list-style: none;
 }
