@@ -12,7 +12,7 @@ chapters:
     slug: chapters
     singular_slug: chapter
     behaves_like: grouping
-    options: { Accueil: "Accueil", QSN: "Qui sommes nous", Actions: "Nos actions", Syndicat: "Syndicat", SCAPIAD: "SCAPIAD", Formations: "Formations", Adherents: "Adherents" }
+    options: { Accueil: "Accueil", QSN: "Qui sommes nous ?", Actions: "Nos actions", Syndicat: "Syndicat", SCAPIAD: "SCAPIAD", Formations: "Formations", Adherents: "Adhérents"}
     has_sortorder: true
 
 categories:
@@ -22,4 +22,4 @@ categories:
     singular_slug: category
     behaves_like: categories
     multiple: true
-    options: [ Accueil, Qui sommes nous, Nos actions, Syndicat, SCAPIAD, Formations, Adherents]
+    options: [ Accueil, Qui sommes nous ?, Nos actions, Syndicat, SCAPIAD, Formations, Adhérents]
