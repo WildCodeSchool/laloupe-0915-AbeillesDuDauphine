@@ -300,10 +300,10 @@ FAQ:
         nom:
             type: text
             class: large
+            group: content
         question:
             type: text
             class: large
-            group: content
         reponse:
             type: textarea
     listing_template: FAQ.twig
