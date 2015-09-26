@@ -134,57 +134,76 @@ article p {
   margin-top: 64px !important;
 }
 
+/* line 6, ../sass/_header.scss */
+.scroll_to_news {
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  top: 420px;
+  text-align: center;
+}
+
+/* line 14, ../sass/_header.scss */
+.scroll_to_news img {
+  width: 150px;
+  height: 150px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 /* hauteur 160px */
-/* line 7, ../sass/_header.scss */
+/* line 24, ../sass/_header.scss */
 .top-bar {
   height: 120px;
   background-color: #001a26;
 }
 
 /* Logo*/
-/* line 13, ../sass/_header.scss */
+/* line 30, ../sass/_header.scss */
 .logo-area {
   float: left;
   /* display: inline-block; */
 }
 
-/* line 17, ../sass/_header.scss */
+/* line 34, ../sass/_header.scss */
 .logo {
   height: 120px;
   padding-top: 14px;
 }
 
-/* line 21, ../sass/_header.scss */
+/* line 38, ../sass/_header.scss */
 .logo img {
   width: 105px;
   height: 90px;
 }
 
 /* Title */
-/* line 27, ../sass/_header.scss */
+/* line 44, ../sass/_header.scss */
 .title-area {
   height: 120px;
   /*display: inline-block;
   border-right: 300px; */
 }
 
-/* line 32, ../sass/_header.scss */
+/* line 49, ../sass/_header.scss */
 .top-bar .title-area {
   float: none;
 }
 
-/* line 35, ../sass/_header.scss */
+/* line 52, ../sass/_header.scss */
 .name {
   height: 120px;
   padding-top: 22px;
 }
 
-/* line 39, ../sass/_header.scss */
+/* line 56, ../sass/_header.scss */
 .top-bar .name h1 {
   width: 90%;
 }
 
-/* line 42, ../sass/_header.scss */
+/* line 59, ../sass/_header.scss */
 .name h1 a {
   font-size: 50px;
   color: white;
@@ -194,7 +213,7 @@ article p {
 }
 
 /* Photo full size accueil */
-/* line 51, ../sass/_header.scss */
+/* line 68, ../sass/_header.scss */
 .headerphoto {
   background-color: #00131c;
   text-align: center;
@@ -206,38 +225,38 @@ article p {
 }
 
 /* Slider */
-/* line 62, ../sass/_header.scss */
+/* line 79, ../sass/_header.scss */
 .slider {
   height: 300px;
   background-color: #1e1e1e;
 }
 
 /* NavBar */
-/* line 68, ../sass/_header.scss */
+/* line 85, ../sass/_header.scss */
 .top-bar-menu {
   height: 50px;
   background-color: #00131c;
 }
 
-/* line 72, ../sass/_header.scss */
+/* line 89, ../sass/_header.scss */
 .top-bar-menu ul {
   margin-bottom: 0;
   list-style: none;
 }
 
-/* line 76, ../sass/_header.scss */
+/* line 93, ../sass/_header.scss */
 .top-bar-menu ul li a {
   text-decoration: none;
 }
 
-/* line 79, ../sass/_header.scss */
+/* line 96, ../sass/_header.scss */
 .top-bar-section li a:hover {
   background: #F1C501 !important;
   color: #00131c !important;
   transition-duration: 0.4s;
 }
 
-/* line 84, ../sass/_header.scss */
+/* line 101, ../sass/_header.scss */
 .top-bar-section li.active:not(.has-form) a:not(.button) {
   background: #F1C501 none repeat scroll 0 0;
   color: #00131c;
@@ -246,7 +265,7 @@ article p {
   padding: 0 15px;
 }
 
-/* line 91, ../sass/_header.scss */
+/* line 108, ../sass/_header.scss */
 .top-bar-section li:not(.has-form) a:not(.button) {
   background: #00131c none repeat scroll 0 0;
   line-height: 50px;
@@ -255,42 +274,42 @@ article p {
   font-size: 16px;
 }
 
-/* line 98, ../sass/_header.scss */
+/* line 115, ../sass/_header.scss */
 .top-bar-section ul li:hover:not(.has-form) > a {
   background-color: #001a26;
 }
 
-/* line 101, ../sass/_header.scss */
+/* line 118, ../sass/_header.scss */
 .top-menu-bar a:hover {
   background: #00131c;
 }
 
-/* line 104, ../sass/_header.scss */
+/* line 121, ../sass/_header.scss */
 .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
   background: #00131c;
 }
 
-/* line 107, ../sass/_header.scss */
+/* line 124, ../sass/_header.scss */
 .top-bar-section .dropdown li:hover:not(.has-form):not(.active) > a:not(.button) {
   background: #F1C501;
   color: #00131c;
   transition-duration: 0.4s;
 }
 
-/* line 112, ../sass/_header.scss */
+/* line 129, ../sass/_header.scss */
 .header__icon {
   display: none;
 }
 
 /* Rechercher */
-/* line 117, ../sass/_header.scss */
+/* line 134, ../sass/_header.scss */
 .top-bar-section .has-form {
   background: #00131c none repeat scroll 0 0;
   height: 50px;
   padding: 0 15px;
 }
 
-/* line 122, ../sass/_header.scss */
+/* line 139, ../sass/_header.scss */
 button.small {
   background: #F1C501 !important;
   height: 30px;
@@ -301,13 +320,13 @@ button.small {
   color: #00131c;
 }
 
-/* line 131, ../sass/_header.scss */
+/* line 148, ../sass/_header.scss */
 button.small:hover {
   background: #00131c !important;
   color: #F1C501;
 }
 
-/* line 135, ../sass/_header.scss */
+/* line 152, ../sass/_header.scss */
 input[type="search"] {
   height: 30px;
   margin-top: 10px;
