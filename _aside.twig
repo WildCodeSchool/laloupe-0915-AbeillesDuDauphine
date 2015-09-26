@@ -1,85 +1,86 @@
 {# On defini le side-menu selon la taxonomy#}
 
-<aside class="large-3 columns"> 	
-	{% for chapter in record.taxonomy.chapters %}
-		{# Si Nos actions#}
-		{% if chapter == 'Nos actions' %}
-			<h4><u>Nos actions :</u></h4>
-			{% setcontent actions = "pages/latest/5" where { chapters: 'Nos actions' }%}
-			<ul>
-				{% for record in actions %}
-				  <li><a href="{{ record.link }}">{{ record.title }}</a></li>
-				{% endfor %}
-				<p><br/><a href="{{ paths.root }}pages"><i>Plus de pages...</i></a></p>
-			<ul>   
+<aside class="large-3 columns"> 
+	{% if record.taxonomy.chapters is defined %}
+		{% for chapter in record.taxonomy.chapters %}
+			{# Si Nos actions#}
+			{% if chapter == 'Nos actions' %}
+				<h4><u>Nos actions :</u></h4>
+				{% setcontent actions = "pages" where { chapters: 'Nos actions' }%}
+				<ul>
+					{% for record in actions %}
+					  <li><a href="{{ record.link }}">{{ record.title }}</a></li>
+					{% endfor %}
+				<ul>   
 
-		{# Sinon si Qui sommes nous#}
-		{% elseif chapter == 'Qui sommes nous' %}
-			<h4><u>Qui sommes nous :</u></h4>
-			{% setcontent actions = "pages/latest/5" where { chapters: 'Qui sommes nous' }%}
-			<ul>
-				{% for record in actions %}
-				  <li><a href="{{ record.link }}">{{ record.title }}</a></li>
-				{% endfor %}
-				<p><br/><a href="{{ paths.root }}pages"><i>Plus de pages...</i></a></p>
-			<ul>   
+			{# Sinon si Qui sommes nous#}
+			{% elseif chapter == 'Qui sommes nous' %}
+				<h4><u>Qui sommes nous :</u></h4>
+				{% setcontent actions = "pages" where { chapters: 'Qui sommes nous' }%}
+				<ul>
+					{% for record in actions %}
+					  <li><a href="{{ record.link }}">{{ record.title }}</a></li>
+					{% endfor %}
+				<ul>   
 
-		{# Sinon si Syndicat#}
-		{% elseif chapter == 'Syndicat' %}
-			<h4><u>Syndicat :</u></h4>
-			{% setcontent actions = "pages/latest/5" where { chapters: 'Syndicat' }%}
-			<ul>
-				{% for record in actions %}
-				  <li><a href="{{ record.link }}">{{ record.title }}</a></li>
-				{% endfor %}
-				<p><br/><a href="{{ paths.root }}pages"><i>Plus de pages...</i></a></p>
-			<ul>   
+			{# Sinon si Syndicat#}
+			{% elseif chapter == 'Syndicat' %}
+				{% include '_aside_section.twig' %}
 
-		{# Sinon si SCAPIAD#}
-		{% elseif chapter == 'SCAPIAD' %}
-			<h4><u>La SCAPIAD :</u></h4>
-			{% setcontent actions = "pages/latest/5" where { chapters: 'SCAPIAD' }%}
-			<ul>
-				{% for record in actions %}
-				  <li><a href="{{ record.link }}">{{ record.title }}</a></li>
-				{% endfor %}
-				<p><br/><a href="{{ paths.root }}pages"><i>Plus de pages...</i></a></p>
-			<ul>   
+			{# Sinon si SCAPIAD#}
+			{% elseif chapter == 'SCAPIAD' %}
+				<h4><u>La SCAPIAD :</u></h4>
+				{% setcontent actions = "pages" where { chapters: 'SCAPIAD' }%}
+				<ul>
+					{% for record in actions %}
+					  <li><a href="{{ record.link }}">{{ record.title }}</a></li>
+					{% endfor %}
+				<ul>   
 
-		{# Sinon si Formations#}
-		{% elseif chapter == 'Formations' %}
-			<h4><u>Formations :</u></h4>
-			{% setcontent actions = "pages/latest/5" where { chapters: 'Formations' }%}
-			<ul>
-				{% for record in actions %}
-				  <li><a href="{{ record.link }}">{{ record.title }}</a></li>
-				{% endfor %}
-				<p><br/><a href="{{ paths.root }}pages"><i>Plus de pages...</i></a></p>
-			<ul>   
+			{# Sinon si Formations#}
+			{% elseif chapter == 'Formations' %}
+				<h4><u>Formations :</u></h4>
+				{% setcontent actions = "pages" where { chapters: 'Formations' }%}
+				<ul>
+					{% for record in actions %}
+					  <li><a href="{{ record.link }}">{{ record.title }}</a></li>
+					{% endfor %}
+				<ul>   
 
-		{# Sinon si Adherents#}
-		{% elseif chapter == 'Adherents' %}
-			<h4><u>Adherents :</u></h4>
-			{% setcontent actions = "pages/latest/5" where { chapters: 'Adherents' }%}
-			<ul>
-				{% for record in actions %}
-				  <li><a href="{{ record.link }}">{{ record.title }}</a></li>
-				{% endfor %}
-				<p><br/><a href="{{ paths.root }}pages"><i>Plus de pages...</i></a></p>
-			<ul>   
+			{# Sinon si Adherents#}
+			{% elseif chapter == 'Adherents' %}
+				<h4><u>Adherents :</u></h4>
+				{% setcontent actions = "pages" where { chapters: 'Adherents' }%}
+				<ul>
+					{% for record in actions %}
+					  <li><a href="{{ record.link }}">{{ record.title }}</a></li>
+					{% endfor %}
+				<ul>   
 
-		{# Sinon on affiche les dernieres nouvelles #}
-		{% else %}    
-			<h4><u>Actualités :</u></h4>
-			{% setcontent actualites = "actualites/latest/5" %}
-			<ul>
-				{% for record in actualites %}
-				  <li><a href="{{ record.link }}">{{ record.title }}</a></li>
-				{% endfor %}
-				  <p><br/><a href="{{ paths.root }}actualites"><i>Plus d'articles...</i></a></p>
-			<ul> 
-		{% endif %}
-	{% endfor %}
+			{# Sinon on affiche les dernieres nouvelles #}
+			{% else %}    
+				<h4><u>Actualités :</u></h4>
+				{% setcontent actualites = "actualites/latest/5" %}
+				<ul>
+					{% for record in actualites %}
+					  <li><a href="{{ record.link }}">{{ record.title }}</a></li>
+					{% endfor %}
+					  <p><br/><a href="{{ paths.root }}actualites"><i>Plus d'articles...</i></a></p>
+				<ul> 
+			{% endif %}
+
+		{% endfor %}
+		{% else %}
+		<h4><u>Actualités :</u></h4>
+				{% setcontent actualites = "actualites/latest/5" %}
+				<ul>
+					{% for record in actualites %}
+					  <li><a href="{{ record.link }}">{{ record.title }}</a></li>
+					{% endfor %}
+					  <p><br/><a href="{{ paths.root }}actualites"><i>Plus d'articles...</i></a></p>
+				<ul> 
+	{% endif %}
+
 </aside>
 
  
