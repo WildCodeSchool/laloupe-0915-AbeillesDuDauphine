@@ -15,51 +15,44 @@ pages:
         slug:
             type: slug
             uses: titre
+        importer_images:
+            group: Ajouter des images
+            type: imagelist
         titre_1:
             group: Bloc 1
             type: text
             class: large
-        corps 1:
+        corps_1:
             type: html
             height: 300px
-        image 1:
-            type: image
-        titre 2:
+        titre_2:
             group: Bloc 2
             type: text
             class: large
-        corps 2:
+        corps_2:
             type: html
             height: 300px
-        image 2:
-            type: image
-        titre 3:
+        titre_3:
             group: Bloc 3
             type: text
             class: large
-        corps 3:
+        corps_3:
             type: html
             height: 300px
-        image 3:
-            type: image
-        titre 4:
+        titre_4:
             group: Bloc 4
             type: text
             class: large
-        corps 4:
+        corps_4:
             type: html
             height: 300px
-        image 4:
-            type: image
-        titre 5:
+        titre_5:
             group: Bloc 5
             type: text
             class: large
-        corps 5:
+        corps_5:
             type: html
             height: 300px
-        image 5:
-            type: image
         a_titre_1:
             group: accordeon 1
             type: text
@@ -67,8 +60,6 @@ pages:
         a_corps_1:
             type: html
             height: 300px
-        a_image_1: 
-            type: image
         a_titre_2:
             group: accordeon 2
             type: text
@@ -76,8 +67,6 @@ pages:
         a_corps_2:
             type: html
             height: 300px
-        a_image_2: 
-            type: image
         a_titre_3:
             group: accordeon 3
             type: text
@@ -85,8 +74,6 @@ pages:
         a_corps_3:
             type: html
             height: 300px
-        a_image_3: 
-            type: image
         a_titre_4:
             group: accordeon 4
             type: text
@@ -94,8 +81,6 @@ pages:
         a_corps_4:
             type: html
             height: 300px
-        a_image_4: 
-            type: image
         a_titre_5:
             group: accordeon 5
             type: text
@@ -103,8 +88,6 @@ pages:
         a_corps_5:
             type: html
             height: 300px
-        a_image_5: 
-            type: image
         a_titre_6:
             group: accordeon 6
             type: text
@@ -112,8 +95,6 @@ pages:
         a_corps_6:
             type: html
             height: 300px
-        a_image_6: 
-            type: image
         a_titre_7:
             group: accordeon 7
             type: text
@@ -121,8 +102,6 @@ pages:
         a_corps_7:
             type: html
             height: 300px
-        a_image_7: 
-            type: image
         a_titre_8:
             group: accordeon 8
             type: text
@@ -130,8 +109,6 @@ pages:
         a_corps_8:
             type: html
             height: 300px
-        a_image_8: 
-            type: image
         a_titre_9:
             group: accordeon 9
             type: text
@@ -139,8 +116,6 @@ pages:
         a_corps_9:
             type: html
             height: 300px
-        a_image_9: 
-            type: image
         a_titre_10:
             group: accordeon 10
             type: text
@@ -148,8 +123,6 @@ pages:
         a_corps_10:
             type: html
             height: 300px
-        a_image_10: 
-            type: image
     listing_template: pages.twig
     record_template: page.twig
     default_status: publish
@@ -171,14 +144,14 @@ guide:
     name: Guides
     singular_name: guide
     fields:
+        sous_partie:
+            type: text
         titre:
             type: text
             class: large
         texte: 
             type: html
             height: 300px
-        sous_partie:
-            type: text
     listing_template: guides.twig
     record_template: guide.twig
     default_status: publish

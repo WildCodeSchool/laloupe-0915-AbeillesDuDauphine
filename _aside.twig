@@ -5,7 +5,7 @@
 		{% for chapter in record.taxonomy.chapters %}
 			{# Si Nos actions#}
 			{% if chapter == 'Nos actions' %}
-				<h4><u>Nos actions :</u></h4>
+				<h5><u>Nos actions :</u></h5>
 				{% setcontent actions = "pages" where { chapters: 'Nos actions' }%}
 				<ul>
 					{% for record in actions %}
@@ -15,7 +15,7 @@
 
 			{# Sinon si Qui sommes nous#}
 			{% elseif chapter == 'Qui sommes nous' %}
-				<h4><u>Qui sommes nous :</u></h4>
+				<h5><u>Qui sommes nous :</u></h5>
 				{% setcontent actions = "pages" where { chapters: 'Qui sommes nous' }%}
 				<ul>
 					{% for record in actions %}
@@ -29,7 +29,7 @@
 
 			{# Sinon si SCAPIAD#}
 			{% elseif chapter == 'SCAPIAD' %}
-				<h4><u>La SCAPIAD :</u></h4>
+				<h5><u>La SCAPIAD :</u></h5>
 				{% setcontent actions = "pages" where { chapters: 'SCAPIAD' }%}
 				<ul>
 					{% for record in actions %}
@@ -39,7 +39,7 @@
 
 			{# Sinon si Formations#}
 			{% elseif chapter == 'Formations' %}
-				<h4><u>Formations :</u></h4>
+				<h5><u>Formations :</u></h5>
 				{% setcontent actions = "pages" where { chapters: 'Formations' }%}
 				<ul>
 					{% for record in actions %}
@@ -49,7 +49,7 @@
 
 			{# Sinon si Adherents#}
 			{% elseif chapter == 'Adherents' %}
-				<h4><u>Adherents :</u></h4>
+				<h5><u>Adherents :</u></h5>
 				{% setcontent actions = "pages" where { chapters: 'Adherents' }%}
 				<ul>
 					{% for record in actions %}
@@ -59,7 +59,7 @@
 
 			{# Sinon on affiche les dernieres nouvelles #}
 			{% else %}    
-				<h4><u>Actualités :</u></h4>
+				<h5><u>Actualités :</u></h5>
 				{% setcontent actualites = "actualites/latest/5" %}
 				<ul>
 					{% for record in actualites %}
@@ -71,7 +71,7 @@
 
 		{% endfor %}
 		{% else %}
-		<h4><u>Actualités :</u></h4>
+		<h5><u>Actualités :</u></h5>
 				{% setcontent actualites = "actualites/latest/5" %}
 				<ul>
 					{% for record in actualites %}

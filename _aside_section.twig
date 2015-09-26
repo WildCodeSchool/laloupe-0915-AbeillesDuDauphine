@@ -4,7 +4,7 @@
 		{# Si Nord isere#}
 		{% if category == 'section NORD ISERE' %}
 			{% setcontent categories = "pages" where { categories: 'section NORD ISERE' }%}
-			<h4><u>Section Nord Isère</u></h4>
+			<h5><u>Section Nord Isère</u></h5>
 			<ul>
 				{% for category in categories %}
 					<li><a href="{{ category.link }}">{{ category.title }}</a></li>
@@ -13,7 +13,7 @@
 
 		{% elseif category == 'section de SAINT MARCELLIN' %}
 			{% setcontent categories = "pages" where { categories: 'section de SAINT MARCELLIN' }%}
-			<h4><u>Section de Saint Marcellin</u></h4>
+			<h5><u>Section de Saint Marcellin</u></h5>
 			<ul>
 				{% for category in categories %}
 					<li><a href="{{ category.link }}">{{ category.title }}</a></li>
@@ -22,7 +22,7 @@
 		
 		{% elseif category == 'section de VIENNE' %}
 			{% setcontent categories = "pages" where { categories: 'section de VIENNE' }%}
-			<h4><u>Section de Vienne</u></h4>
+			<h5><u>Section de Vienne</u></h5>
 			<ul>
 				{% for category in categories %}
 					<li><a href="{{ category.link }}">{{ category.title }}</a></li>
@@ -31,7 +31,7 @@
 
 		{% elseif category == 'section de VOIRON' %}
 			{% setcontent categories = "pages" where { categories: 'section de VOIRON' }%}
-			<h4><u>Section de Voiron</u></h4>
+			<h5><u>Section de Voiron</u></h5>
 			<ul>
 				{% for category in categories %}
 					<li><a href="{{ category.link }}">{{ category.title }}</a></li>
@@ -40,7 +40,7 @@
 
 		{% elseif category == 'section du HAUT DAUPHINE' %}
 			{% setcontent categories = "pages" where { categories: 'section du HAUT DAUPHINE' }%}
-			<h4><u>Section du Haut Dauphine</u></h4>
+			<h5><u>Section du Haut Dauphine</u></h5>
 			<ul>
 				{% for category in categories %}
 					<li><a href="{{ category.link }}">{{ category.title }}</a></li>
@@ -54,7 +54,7 @@
 	{% endfor %}
 
 {% else %}
-	<h4><u>Syndicat :</u></h4>
+	<h5><u>Syndicat :</u></h5>
 	{% setcontent actions = "pages" where { chapters: 'Syndicat' }%}
 	<ul>
 		{% for record in actions %}

@@ -16,25 +16,24 @@
 
           {# Ici les blocs #}
 
-          <h2>{{ record.titre_1 }}</h2>
-          <p>{{ record.corps_1 }}</p>
-          {{ record.image_1 }}
+          <div class="one_bloc"> 
+            <h3>{{ record.titre_1 }}</h3>
+            <p>{{ record.corps_1 }}</p>
+          </div>
+          
+          <div class="">
+            <h3>{{ record.titre_2 }}</h3>
+            <p>{{ record.corps_2 }}</p>
+          </div>
 
-          <h2>{{ record.titre_2 }}</h2>
-          <p>{{ record.corps_2 }}</p>
-          {{ record.image_2 }}
-
-          <h2>{{ record.titre_3 }}</h2>
+          <h3>{{ record.titre_3 }}</h3>
           <p>{{ record.corps_3 }}</p>
-          {{ record.image_3 }}
 
-          <h2>{{ record.titre_4 }}</h2>
+          <h3>{{ record.titre_4 }}</h3>
           <p>{{ record.corps_4 }}</p>
-          {{ record.image_4 }}
 
-          <h2>{{ record.titre_5 }}</h2>
+          <h3>{{ record.titre_5 }}</h3>
           <p>{{ record.corps_5 }}</p>
-          {{ record.image_5 }}
         
           </section>
 
@@ -52,11 +51,6 @@
               </article>
             </div>
 
-            {% else %}
-            {% endif %}
-            {% if record.a_titre_2 != '' %}
-
-            {% else %}
             {% endif %}
             {% if record.a_titre_2 != '' %}
 
@@ -68,11 +62,6 @@
               </article>
             </div>
 
-            {% else %}
-            {% endif %}
-            {% if record.a_titre_3 != '' %}
-
-            {% else %}
             {% endif %}
             {% if record.a_titre_3 != '' %}
 
@@ -84,11 +73,6 @@
               </article>
             </div>
 
-            {% else %}
-            {% endif %}
-            {% if record.a_titre_4 != '' %}
-
-            {% else %}
             {% endif %}
             {% if record.a_titre_4 != '' %}
 
@@ -100,11 +84,6 @@
               </article>
             </div>
 
-            {% else %}
-            {% endif %}
-            {% if record.a_titre_5 != '' %}
-
-            {% else %}
             {% endif %}
             {% if record.a_titre_5 != '' %}
 
@@ -115,9 +94,10 @@
                 <p>{{ record.a_corps_5 }}</p>
               </article>
             </div>
-            {% else %}
+
             {% endif %}
             {% if record.a_titre_6 != '' %}
+
             <div>
               <input id="ac-6" name="accordion-1" type="checkbox" />
               <label for="ac-6">{{ record.a_titre_6 }}</label>
@@ -126,11 +106,6 @@
               </article>
             </div>
 
-            {% else %}
-            {% endif %}
-            {% if record.a_titre_7 != '' %}
-
-            {% else %}
             {% endif %}
             {% if record.a_titre_7 != '' %}
 
@@ -142,11 +117,6 @@
               </article>
             </div>
 
-            {% else %}
-            {% endif %}
-            {% if record.a_titre_8 != '' %}
-
-            {% else %}
             {% endif %}
             {% if record.a_titre_8 != '' %}
 
@@ -158,11 +128,6 @@
               </article>
             </div>
 
-            {% else %}
-            {% endif %}
-            {% if record.a_titre_9 != '' %}
-
-            {% else %}
             {% endif %}
             {% if record.a_titre_9 != '' %}
 
@@ -174,11 +139,6 @@
               </article>
             </div>
 
-            {% else %}
-            {% endif %}
-            {% if record.a_titre_10 != '' %}
-
-            {% else %}
             {% endif %}
             {% if record.a_titre_10 != '' %}
 
@@ -189,7 +149,6 @@
                 <p>{{ record.a_corps_10 }}</p>
               </article>
             </div>
-            {% else %}
             {% endif %}
            
           </section>
