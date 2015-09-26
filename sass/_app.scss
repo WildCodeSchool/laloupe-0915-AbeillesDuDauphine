@@ -1,4 +1,6 @@
-
+.blocs h3 {
+    margin-left: 5%;
+}
 /* Pour le full width */
 #news_link {
   margin-top: 64px !important;
@@ -20,41 +22,40 @@ body {
 }
 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
-    font-size: 16px;
+    font-size: 15px;
 }
 h1 {
     font-weight: normal;
     font-size: 40px;
-    font-family: $font-title;
+    font-family: $font-p;
 }
 h2 {
     font-weight: normal;
     font-size: 34px;
-    font-family: $font-title;
+    font-family: $font-p;
 }
 h3 {
     font-weight: normal;
     font-size: 28px;
-    font-family: $font-title;
+    font-family: $font-p;
 }
 h4 {
     font-size: 24px;
-    font-family: $font-title;
+    font-family: $font-p;
 }
 h5 {
     font-size: 20px;
-    font-family: $font-title;
-p{ font-size: 30px;
-    color: #313131; }
+    font-family: $font-p;
 }
 h6 {
-    font-size: 15px;
+    font-size: 14px;
     color: #666;
     line-height: 1.5em;
     font-family: $font-p;
 }
 p {
     color: #313131 ;
+    font-size: 14px;
 }
 a {
     color: #284F76;
@@ -68,7 +69,7 @@ p, ul, ol {
     font-family: $font-p;
 }
 ul {
-    margin-left: 17px;
+    margin-left: 16px;
 }
 ol {
     margin-left: 20px;
@@ -207,6 +208,7 @@ aside ul
 }
 aside li
 {
-  margin-top: 5px;
+  margin-top: 0px;
   margin-left: -20px;
+  font-size: 14px;
 }
