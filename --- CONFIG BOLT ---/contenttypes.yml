@@ -153,7 +153,7 @@ pages:
     listing_template: pages.twig
     record_template: page.twig
     default_status: publish
-    taxonomy: [ chapters ]
+    taxonomy: [ chapters, categories ]
 
 #
 #
