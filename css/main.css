@@ -610,6 +610,7 @@ aside ul {
 /* line 208, ../sass/_app.scss */
 aside li {
   margin-top: 5px;
+  margin-left: -20px;
 }
 
 /* line 1, ../sass/_accordeon.scss */
